@@ -39,6 +39,8 @@ export interface ScaleResult {
   confidence: number;
 }
 
+export type PublicScaleResult = Omit<ScaleResult, "confidence">;
+
 export interface Recommendation {
   profession: Profession;
   metaSimilarity: number;
@@ -48,9 +50,22 @@ export interface Recommendation {
   matches: string[];
 }
 
-export interface AssessmentResult {
+export interface CalculationResult {
   scales: ScaleResult[];
   poles: Record<PoleKey, number>;
   radicalShares: Record<RadicalKey, number>;
   recommendations: Recommendation[];
+}
+
+export interface PublicProfession {
+  id: number;
+  name_ru: string;
+  name_kk: string;
+  category_ru: string;
+  category_kk: string;
+}
+
+export interface AssessmentResult {
+  scales: PublicScaleResult[];
+  professions: PublicProfession[];
 }

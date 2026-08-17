@@ -5,20 +5,26 @@ import { ArrowRightOutlined, CheckOutlined, SearchOutlined } from "@ant-design/i
 import { Button, Input, Progress, Select, Tag } from "antd";
 import questionsData from "./data/questions.json";
 import professionsData from "./data/professions.json";
-import type { AssessmentResult, Lang, Profession, Question, RadicalKey } from "./types";
+import type { AssessmentResult, Lang, PoleKey, Profession, Question } from "./types";
 
 const questions = questionsData as Question[];
 const professions = professionsData as Profession[];
-const radicalLabels: Record<Lang, Record<RadicalKey, string>> = {
+const poleLabels: Record<Lang, Record<PoleKey, string>> = {
   ru: {
-    paranoid: "Целеустремлённый организатор", schizoid: "Аналитик и исследователь",
-    epileptoid: "Системный исполнитель", hysteroid: "Коммуникатор и презентатор",
-    emotive: "Помогающий и поддерживающий", anxious: "Осторожный контролёр качества",
+    motivation_toward: "Движение к цели", motivation_away: "Предотвращение рисков",
+    internal_reference: "Своё мнение", external_reference: "Обратная связь",
+    active: "Действие", reflective: "Анализ",
+    options: "Возможности", procedures: "Порядок",
+    global: "Общая картина", detail: "Детали",
+    associated: "Вовлечённость", dissociated: "Объективность",
   },
   kk: {
-    paranoid: "Мақсатқа бағытталған ұйымдастырушы", schizoid: "Талдаушы және зерттеуші",
-    epileptoid: "Жүйелі орындаушы", hysteroid: "Коммуникатор және таныстырушы",
-    emotive: "Қолдаушы және көмек көрсетуші", anxious: "Мұқият сапа бақылаушысы",
+    motivation_toward: "Мақсатқа ұмтылу", motivation_away: "Тәуекелдің алдын алу",
+    internal_reference: "Өз пікірі", external_reference: "Кері байланыс",
+    active: "Әрекет", reflective: "Талдау",
+    options: "Мүмкіндіктер", procedures: "Реттілік",
+    global: "Жалпы көрініс", detail: "Егжей-тегжей",
+    associated: "Қатысу", dissociated: "Объективтілік",
   },
 };
 
@@ -245,10 +251,17 @@ function ResultsPage() {
     if (location.state) window.history.replaceState({}, document.title, location.pathname);
   }, [location.pathname, location.state]);
   if (!result) return <Shell><div className="empty"><h1>{t("resultExpired")}</h1><p>{t("resultExpiredText")}</p><Button type="primary" onClick={() => navigate("/test")}>{t("start")}</Button></div></Shell>;
-  const sortedProfiles = (Object.entries(result.radicalShares) as [RadicalKey, number][])
-    .sort((a, b) => b[1] - a[1]);
-  const strongestProfile = radicalLabels[lang][sortedProfiles[0][0]];
-  const maxProfileValue = sortedProfiles[0][1] || 1;
+  const scaleProfiles = result.scales.map((scale) => {
+    const firstLeads = scale.firstScore >= scale.secondScore;
+    return {
+      key: firstLeads ? scale.first : scale.second,
+      label: poleLabels[lang][firstLeads ? scale.first : scale.second],
+      value: Math.max(scale.firstScore, scale.secondScore),
+      balance: Math.abs(scale.firstScore - scale.secondScore),
+    };
+  }).sort((a, b) => b.balance - a.balance);
+  const strongestProfile = scaleProfiles[0]?.label ?? "";
+  const maxProfileValue = 6;
   return <Shell>
     <section className="result-head">
       <p className="eyebrow">ADAM / RESULT</p>
@@ -263,19 +276,19 @@ function ResultsPage() {
         <p>{lang === "kk" ? "Бұл рейтинг емес. Диаграмма тапсырмаларға қай тәсілмен кірісу саған табиғи екенін көрсетеді." : "Это не оценка и не рейтинг. Диаграмма показывает, какие способы решать задачи даются тебе естественнее."}</p>
       </div>
       <div className="profile-highlights">
-        {sortedProfiles.slice(0, 3).map(([key, value], i) =>
-          <article className={i === 0 ? "primary" : ""} key={key}>
+        {scaleProfiles.slice(0, 3).map((profile, i) =>
+          <article className={i === 0 ? "primary" : ""} key={profile.key}>
             <span>{String(i + 1).padStart(2, "0")}</span>
-            <h3>{radicalLabels[lang][key]}</h3>
+            <h3>{profile.label}</h3>
             <p>{lang === "kk" ? (i === 0 ? "Негізгі тәсіл" : "Қосымша күш") : (i === 0 ? "Основной способ" : "Дополняющая сила")}</p>
           </article>)}
       </div>
       <div className="work-map">
-        {sortedProfiles.map(([key, value], index) =>
-          <div className="work-map-row" key={key}>
+        {scaleProfiles.map((profile, index) =>
+          <div className="work-map-row" key={profile.key}>
             <span className="work-map-index">{String(index + 1).padStart(2, "0")}</span>
-            <span className="work-map-label">{radicalLabels[lang][key]}</span>
-            <div className="work-map-track"><i style={{ width: `${Math.max(18, value / maxProfileValue * 100)}%`, animationDelay: `${index * 70}ms` }} /></div>
+            <span className="work-map-label">{profile.label}</span>
+            <div className="work-map-track"><i style={{ width: `${Math.max(18, profile.value / maxProfileValue * 100)}%`, animationDelay: `${index * 70}ms` }} /></div>
             <b>{index < 2 ? (lang === "kk" ? "күшті" : "сильная") : index < 4 ? (lang === "kk" ? "тұрақты" : "устойчивая") : (lang === "kk" ? "қосымша" : "дополняющая")}</b>
           </div>)}
       </div>
@@ -284,11 +297,11 @@ function ResultsPage() {
       <div className="recommendation-heading"><div><p className="eyebrow">CAREER MAP</p><h2>{t("recommendations")}</h2></div>
         <p>{lang === "kk" ? "Алдымен осы бағыттарды зертте: сипаттаманы оқы, маманмен сөйлес және шағын тапсырма жасап көр." : "Начни исследование с этих направлений: изучи задачи, поговори со специалистом и попробуй небольшой проект."}</p></div>
       <div className="recommendations">
-        {result.recommendations.slice(0, 10).map((item, index) =>
-          <article className={index < 3 ? "featured" : ""} key={item.profession.id} style={{ animationDelay: `${index * 55}ms` }}>
+        {result.professions.slice(0, 10).map((profession, index) =>
+          <article className={index < 3 ? "featured" : ""} key={profession.id} style={{ animationDelay: `${index * 55}ms` }}>
             <div className="rec-rank">{String(index + 1).padStart(2, "0")}</div>
-            <div className="rec-main"><Tag>{lang === "kk" ? item.profession.category_kk : item.profession.category_ru}</Tag>
-              <h3>{lang === "kk" ? item.profession.name_kk : item.profession.name_ru}</h3>
+            <div className="rec-main"><Tag>{lang === "kk" ? profession.category_kk : profession.category_ru}</Tag>
+              <h3>{lang === "kk" ? profession.name_kk : profession.name_ru}</h3>
             </div>
           </article>)}
       </div>

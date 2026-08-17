@@ -1,5 +1,5 @@
 import type {
-  AssessmentResult, PoleKey, Profession, Question, RadicalKey,
+  CalculationResult, PoleKey, Profession, Question, RadicalKey,
   Recommendation, ScaleResult,
 } from "./types";
 
@@ -59,7 +59,7 @@ export function calculate(
   answers: Record<number, boolean>,
   questions: Question[],
   professions: Profession[],
-): AssessmentResult {
+): CalculationResult {
   const raw = emptyPoles();
   questions.forEach((question) => {
     const answer = answers[question.id];

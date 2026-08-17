@@ -128,6 +128,35 @@ def calculate(answer_list: list[Answer]) -> dict:
     return {"scales": scales, "poles": poles, "radicalShares": shares, "recommendations": recommendations}
 
 
+def public_result(result: dict) -> dict:
+    """Expose only the fields required by the result screen.
+
+    The full calculation is retained server-side for auditability, while internal
+    weights and profession profiles never leave the API.
+    """
+    return {
+        "scales": [
+            {
+                "first": scale["first"],
+                "second": scale["second"],
+                "firstScore": scale["firstScore"],
+                "secondScore": scale["secondScore"],
+            }
+            for scale in result["scales"]
+        ],
+        "professions": [
+            {
+                "id": item["profession"]["id"],
+                "name_ru": item["profession"]["name_ru"],
+                "name_kk": item["profession"]["name_kk"],
+                "category_ru": item["profession"]["category_ru"],
+                "category_kk": item["profession"]["category_kk"],
+            }
+            for item in result["recommendations"][:10]
+        ],
+    }
+
+
 def db():
     return psycopg.connect(DATABASE_URL)
 
@@ -218,7 +247,7 @@ def create_assessment(payload: AssessmentInput, request: Request):
     # Result is returned only in this POST response; there is intentionally no public GET endpoint.
     return JSONResponse(
         status_code=status.HTTP_201_CREATED,
-        content=result,
+        content=public_result(result),
         headers={"Cache-Control": "no-store", "Pragma": "no-cache"},
     )
 
