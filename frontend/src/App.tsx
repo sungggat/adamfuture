@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, Route, Routes, useLocation, useNavigate } from "react-router-dom";
-import { ArrowRightOutlined, CheckOutlined, ClockCircleOutlined, SearchOutlined } from "@ant-design/icons";
+import { ArrowRightOutlined, CheckOutlined, SearchOutlined } from "@ant-design/icons";
 import { Button, Input, Progress, Select, Tag } from "antd";
 import questionsData from "./data/questions.json";
 import professionsData from "./data/professions.json";
@@ -226,7 +226,6 @@ function TestPage() {
       </article>
       <div className="test-controls">
         <Button disabled={index === 0 || submitting} onClick={() => setIndex(index - 1)}>{t("back")}</Button>
-        <span><ClockCircleOutlined /> {t("secureSubmit")}</span>
         {index === 35 && answered === 36
           ? <Button type="primary" loading={submitting} onClick={complete}>{t("finish")}</Button>
           : <Button disabled={index === 35} onClick={() => setIndex(index + 1)}>{t("next")}</Button>}
