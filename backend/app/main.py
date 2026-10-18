@@ -4,14 +4,17 @@ import json
 import math
 import os
 import uuid
+import urllib.error
+import urllib.request
 from base64 import urlsafe_b64encode
 from contextlib import asynccontextmanager
 from pathlib import Path
+from typing import Optional
 
 import psycopg
 from cryptography.fernet import Fernet
 from fastapi import Depends, FastAPI, Header, HTTPException, Request, status
-from fastapi.responses import JSONResponse
+from fastapi.responses import FileResponse, JSONResponse
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 from psycopg.types.json import Jsonb
 
@@ -23,6 +26,10 @@ ADMIN_API_KEY = os.environ.get("ADMIN_API_KEY", "")
 PRIVACY_SECRET = os.environ.get("PRIVACY_SECRET", "change-me")
 DATA_ENCRYPTION_KEY = os.environ.get("DATA_ENCRYPTION_KEY", "change-me")
 ENVIRONMENT = os.environ.get("ENVIRONMENT", "development")
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
+OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-5")
+REPORTS_DIR = Path(os.environ.get("REPORTS_DIR", "/tmp/adam-reports"))
+MAX_REPORT_BYTES = int(os.environ.get("MAX_REPORT_BYTES", str(15 * 1024 * 1024)))
 ALGORITHM_VERSION = "2026.1"
 
 PAIRS = [
@@ -68,6 +75,54 @@ class AssessmentInput(BaseModel):
             raise ValueError("Exactly one answer for every question is required")
         return value
 
+
+class InterpretationScale(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    first: str = Field(max_length=32)
+    second: str = Field(max_length=32)
+    firstScore: int = Field(ge=0, le=6)
+    secondScore: int = Field(ge=0, le=6)
+
+
+class InterpretationIntelligence(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    key: str = Field(max_length=32)
+    name_ru: str = Field(max_length=80)
+    name_kk: str = Field(max_length=80)
+    score: Optional[int] = Field(default=None, ge=0, le=100)
+
+
+class InterpretationInput(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    answers: list[Answer] = Field(min_length=36, max_length=36)
+    scales: list[InterpretationScale] = Field(min_length=6, max_length=6)
+    intelligences: list[InterpretationIntelligence] = Field(default_factory=list, max_length=9)
+
+    @field_validator("answers")
+    @classmethod
+    def interpretation_answers_are_complete(cls, value: list[Answer]) -> list[Answer]:
+        if {item.questionId for item in value} != set(range(1, 37)):
+            raise ValueError("Exactly one answer for every question is required")
+        return value
+
+
+INTERPRETATION_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "summary_ru": {"type": "string"}, "summary_kk": {"type": "string"},
+        "strengths_ru": {"type": "array", "items": {"type": "string"}},
+        "strengths_kk": {"type": "array", "items": {"type": "string"}},
+        "next_step_ru": {"type": "string"}, "next_step_kk": {"type": "string"},
+        "intro_ru": {"type": "string"}, "intro_kk": {"type": "string"},
+        "style_details_ru": {"type": "array", "minItems": 6, "maxItems": 6, "items": {"type": "object", "properties": {"title": {"type": "string"}, "text": {"type": "string"}}, "required": ["title", "text"], "additionalProperties": False}},
+        "style_details_kk": {"type": "array", "minItems": 6, "maxItems": 6, "items": {"type": "object", "properties": {"title": {"type": "string"}, "text": {"type": "string"}}, "required": ["title", "text"], "additionalProperties": False}},
+        "attention_ru": {"type": "string"}, "attention_kk": {"type": "string"},
+        "conclusion_ru": {"type": "string"}, "conclusion_kk": {"type": "string"},
+        "intelligence_analysis_ru": {"type": "string"}, "intelligence_analysis_kk": {"type": "string"},
+    },
+    "required": ["summary_ru", "summary_kk", "strengths_ru", "strengths_kk", "next_step_ru", "next_step_kk", "intro_ru", "intro_kk", "style_details_ru", "style_details_kk", "attention_ru", "attention_kk", "conclusion_ru", "conclusion_kk", "intelligence_analysis_ru", "intelligence_analysis_kk"],
+    "additionalProperties": False,
+}
 
 def cosine(a: dict, b: dict) -> float:
     dot = sum(a[key] * b[key] for key in RADICALS)
@@ -190,6 +245,7 @@ def validate_secrets():
 @asynccontextmanager
 async def lifespan(_: FastAPI):
     validate_secrets()
+    REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     with db() as connection, connection.cursor() as cursor:
         cursor.execute("""
             CREATE TABLE IF NOT EXISTS assessments (
@@ -219,6 +275,14 @@ async def lifespan(_: FastAPI):
         cursor.execute("ALTER TABLE assessments ALTER COLUMN algorithm_version SET NOT NULL")
         cursor.execute("ALTER TABLE assessments DROP COLUMN IF EXISTS answers")
         cursor.execute("CREATE INDEX IF NOT EXISTS assessments_created_at_idx ON assessments (created_at DESC)")
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS stored_reports (
+              id UUID PRIMARY KEY, subject_id VARCHAR(128) NOT NULL,
+              file_name VARCHAR(255) NOT NULL, sha256 CHAR(64) NOT NULL,
+              size_bytes BIGINT NOT NULL, created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+            )
+        """)
+        cursor.execute("CREATE INDEX IF NOT EXISTS stored_reports_created_at_idx ON stored_reports (created_at DESC)")
     yield
 
 
@@ -228,6 +292,77 @@ app = FastAPI(title="ADAM Future API", docs_url=None, redoc_url=None, lifespan=l
 @app.get("/health", include_in_schema=False)
 def health():
     return {"status": "ok"}
+
+
+@app.post("/interpretations")
+def create_interpretation(payload: InterpretationInput):
+    """Create a short bilingual explanation without sending personal data."""
+    if not OPENAI_API_KEY:
+        raise HTTPException(status_code=503, detail="AI interpretation is not configured")
+    answer_map = {item.questionId: item.value for item in payload.answers}
+    response_evidence = [
+        {
+            "question_id": question["id"],
+            "question_ru": question["text_ru"],
+            "question_kk": question["text_kk"],
+            "answer": "yes" if answer_map[question["id"]] else "no",
+        }
+        for question in QUESTIONS
+    ]
+    safe_result = {
+        "responses": response_evidence,
+        "calculated_scales": [item.model_dump() for item in payload.scales],
+        "calculated_learning_preferences": [item.model_dump() for item in payload.intelligences],
+    }
+    request_body = {
+        "model": OPENAI_MODEL,
+        "store": False,
+        "input": [
+            {"role": "system", "content": (
+                "Ты опытный профориентолог, работающий со старшеклассниками Казахстана. Проанализируй только "
+                "36 предоставленных ответов и рассчитанные по ним шкалы. Пиши как бережный профессиональный "
+                "комментарий к способам учиться, принимать решения, начинать задачу, работать с информацией и "
+                "обратной связью. Не диагностируй личность, не оценивай ответы как хорошие или плохие, не предсказывай "
+                "успех и не делай выводов о семье, здоровье, характере или личной жизни. Не называй и не рекомендуй "
+                "профессии. Не выбирай один главный тип: если несколько шкал имеют одинаковую выраженность, опиши их "
+                "равноправно. Каждый вывод должен иметь прямую опору в ответах или рассчитанной шкале; ничего не выдумывай. "
+                "Подготовь две смыслово одинаковые версии: естественный современный русский и грамотный казахский. "
+                "summary — связный анализ из 4 коротких предложений; strengths — ровно 3 коротких наблюдения; "
+                "next_step — одно безопасное упражнение для самонаблюдения. intro — вводный абзац на 2–3 предложения. "
+                "style_details — ровно шесть элементов, по одному для каждой рассчитанной пары шкал: краткий живой "
+                "заголовок и объяснение на 2–3 предложения. Не нумеруй заголовки и не называй ни один способ главным: "
+                "одинаковые баллы трактуй равноправно. attention — один конкретный развивающий абзац без запугивания. "
+                "conclusion — профессиональный итог на 2–3 предложения только о способах работы, без профессий. "
+                "intelligence_analysis — один связный абзац из 5–7 коротких предложений. Сопоставь все 36 ответов с "
+                "calculated_learning_preferences: назови 2–3 наиболее подтверждённых способа учиться, поясни конкретно, "
+                "какие паттерны ответов их поддерживают, укажи полезное сочетание между ними и предложи один способ "
+                "проверить вывод на учебной задаче. Не пересказывай проценты, не перечисляй все типы и не называй "
+                "показатели интеллектом, способностью или IQ: это только индикаторы учебных предпочтений из текущей анкеты. "
+                "Обращайся на 'ты', спокойно, точно и уважительно."
+            )},
+            {"role": "user", "content": json.dumps(safe_result, ensure_ascii=False)},
+        ],
+        "text": {"format": {"type": "json_schema", "name": "career_interpretation", "strict": True, "schema": INTERPRETATION_SCHEMA}},
+    }
+    api_request = urllib.request.Request(
+        "https://api.openai.com/v1/responses",
+        data=json.dumps(request_body).encode(),
+        headers={"Authorization": f"Bearer {OPENAI_API_KEY}", "Content-Type": "application/json"},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(api_request, timeout=20) as response:
+            data = json.loads(response.read())
+        output_text = next(
+            content["text"]
+            for item in data.get("output", []) if item.get("type") == "message"
+            for content in item.get("content", []) if content.get("type") == "output_text"
+        )
+        parsed = json.loads(output_text)
+        parsed["source"] = "openai"
+        return JSONResponse(content=parsed, headers={"Cache-Control": "no-store"})
+    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, StopIteration, KeyError, json.JSONDecodeError) as error:
+        raise HTTPException(status_code=502, detail="AI interpretation is temporarily unavailable") from error
 
 
 @app.post("/assessments", status_code=status.HTTP_201_CREATED)
@@ -256,6 +391,61 @@ def require_admin(authorization: str | None = Header(default=None)):
     expected = f"Bearer {ADMIN_API_KEY}"
     if not ADMIN_API_KEY or not authorization or not hmac.compare_digest(authorization, expected):
         raise HTTPException(status_code=401, detail="Unauthorized")
+
+
+@app.post("/admin/reports/{subject_id}", dependencies=[Depends(require_admin)], status_code=status.HTTP_201_CREATED)
+async def store_report(subject_id: str, request: Request):
+    """Persist an already generated PDF in the private reports volume."""
+    if not subject_id or len(subject_id) > 128 or not all(char.isalnum() or char in "-_" for char in subject_id):
+        raise HTTPException(status_code=400, detail="Invalid subject id")
+    if request.headers.get("content-type", "").split(";", 1)[0].strip().lower() != "application/pdf":
+        raise HTTPException(status_code=415, detail="Expected application/pdf")
+    content_length = request.headers.get("content-length")
+    if content_length:
+        try:
+            if int(content_length) > MAX_REPORT_BYTES:
+                raise HTTPException(status_code=413, detail="Report is too large")
+        except ValueError as error:
+            raise HTTPException(status_code=400, detail="Invalid Content-Length") from error
+    payload = await request.body()
+    if len(payload) > MAX_REPORT_BYTES:
+        raise HTTPException(status_code=413, detail="Report is too large")
+    if not payload.startswith(b"%PDF-") or b"%%EOF" not in payload[-2048:]:
+        raise HTTPException(status_code=400, detail="Invalid PDF file")
+    report_id = uuid.uuid4()
+    file_name = f"{report_id}.pdf"
+    digest = hashlib.sha256(payload).hexdigest()
+    temporary = REPORTS_DIR / f".{file_name}.tmp"
+    destination = REPORTS_DIR / file_name
+    temporary.write_bytes(payload)
+    os.replace(temporary, destination)
+    with db() as connection, connection.cursor() as cursor:
+        cursor.execute(
+            "INSERT INTO stored_reports (id, subject_id, file_name, sha256, size_bytes) VALUES (%s, %s, %s, %s, %s)",
+            (report_id, subject_id, file_name, digest, len(payload)),
+        )
+    return {"id": str(report_id), "subjectId": subject_id, "sha256": digest, "sizeBytes": len(payload)}
+
+
+@app.get("/admin/reports", dependencies=[Depends(require_admin)])
+def list_reports():
+    with db() as connection, connection.cursor() as cursor:
+        cursor.execute("SELECT id, subject_id, sha256, size_bytes, created_at FROM stored_reports ORDER BY created_at DESC LIMIT 500")
+        rows = cursor.fetchall()
+    return [{"id": str(row[0]), "subjectId": row[1], "sha256": row[2], "sizeBytes": row[3], "createdAt": row[4].isoformat()} for row in rows]
+
+
+@app.get("/admin/reports/{report_id}", dependencies=[Depends(require_admin)])
+def download_report(report_id: uuid.UUID):
+    with db() as connection, connection.cursor() as cursor:
+        cursor.execute("SELECT file_name, subject_id FROM stored_reports WHERE id = %s", (report_id,))
+        row = cursor.fetchone()
+    if not row:
+        raise HTTPException(status_code=404, detail="Report not found")
+    path = REPORTS_DIR / row[0]
+    if not path.is_file():
+        raise HTTPException(status_code=404, detail="Report file is missing")
+    return FileResponse(path, media_type="application/pdf", filename=f"adam-report-{row[1]}.pdf")
 
 
 @app.get("/admin/stats", dependencies=[Depends(require_admin)])

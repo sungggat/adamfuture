@@ -9,6 +9,8 @@ backend, PostgreSQL и внешний Nginx работают в отдельны
 Browser → HTTPS Nginx → frontend (static React)
                     └→ backend (FastAPI) → PostgreSQL
                          └→ server-side calculation
+                         └→ OpenAI Responses API (optional interpretation)
+                         └→ private PDF volume
 ```
 
 - Регистрация и логин не требуются.
@@ -20,6 +22,29 @@ Browser → HTTPS Nginx → frontend (static React)
   завершение теста и не сохраняется в localStorage/sessionStorage.
 - PostgreSQL доступен только во внутренней Docker-сети.
 - Nginx ограничивает размер и частоту запросов, включает security headers и TLS.
+
+## Локальный демо-кабинет без backend
+
+```bash
+cd frontend
+pnpm install
+pnpm dev
+```
+
+Откройте `http://localhost:5173/login`.
+
+- код ученика: `ADAM-DEMO-001`
+- код администратора/профориентолога: `ADAM-ADMIN-2026`
+
+В этом режиме пользователи, лицензионные коды, анкеты и результаты хранятся
+только в `localStorage` текущего браузера. Администратор может создавать коды,
+видеть результаты и вести заметки. Пользователь получает оформленный отчёт:
+кнопка «Скачать PDF» открывает системную печать, где нужно выбрать
+«Сохранить как PDF».
+
+Это локальный MVP, а не production-аутентификация. Перед публикацией необходимо
+перенести пользователей, лицензии и результаты в PostgreSQL, хранить коды в
+хешированном виде и использовать серверные сессии.
 
 ## Локальный Docker-запуск
 
@@ -40,6 +65,24 @@ openssl rand -hex 32
 docker compose up --build
 ```
 
+### Краткая AI-интерпретация в отчёте
+
+Интерпретация является дополнительным слоем над детерминированным расчётом:
+модель не меняет баллы и список профессий. Без API результат и PDF продолжают
+работать с локальным текстом. Чтобы включить улучшенную двуязычную формулировку,
+создайте новый ключ и добавьте его только в серверный `.env`:
+
+```bash
+OPENAI_API_KEY=your-new-server-side-key
+OPENAI_MODEL=gpt-5
+```
+
+Не добавляйте реальный ключ в Git, frontend-переменные `VITE_*` или Dockerfile.
+Backend отправляет в OpenAI только 36 обезличенных ответов, рассчитанные шкалы
+и учебные предпочтения — без профессий, ФИО, телефона, школы и других
+персональных данных. Ответ запрашивается через
+Structured Outputs и не сохраняется OpenAI-запросом (`store: false`).
+
 Откройте `http://localhost`. В production ответы передаются только по HTTPS.
 
 ## Production HTTPS для adamfuture.kz
@@ -49,7 +92,19 @@ docker compose up --build
 1. A/AAAA-записи `adamfuture.kz` и `www.adamfuture.kz` направлены на сервер.
 2. В firewall открыты TCP 80 и 443.
 3. На сервере установлены Docker Engine и Docker Compose v2.
-4. В `.env` заполнен реальный `LETSENCRYPT_EMAIL` и четыре случайных секрета.
+4. Создан закрытый `.env`, заполнены `LETSENCRYPT_EMAIL` и новый OpenAI API key.
+
+Подготовка окружения:
+
+```bash
+chmod +x scripts/create-production-env.sh scripts/backup-production.sh
+./scripts/create-production-env.sh
+nano .env
+```
+
+Скрипт создаёт разные криптографически случайные значения и файл с правами
+`600`. Никогда не коммитьте `.env`. Ключ, который когда-либо был отправлен в
+чат или опубликован, необходимо отозвать и заменить новым.
 
 Первичный выпуск сертификата и запуск production:
 
@@ -92,10 +147,31 @@ curl -H "Authorization: Bearer $ADMIN_API_KEY" \
 Перед обновлениями сохраняйте БД и `.env`/ключ шифрования отдельно:
 
 ```bash
-docker compose exec -T postgres pg_dump -U adam -d adam -Fc > adam-backup.dump
+./scripts/backup-production.sh
+```
+
+Скрипт сохраняет PostgreSQL и приватный Docker volume `reports_data`. PDF
+загружаются и скачиваются только через защищённый Admin API:
+
+```bash
+curl -X POST -H "Authorization: Bearer $ADMIN_API_KEY" \
+  -H "Content-Type: application/pdf" --data-binary @report.pdf \
+  https://adamfuture.kz/api/admin/reports/STUDENT_ID
+
+curl -H "Authorization: Bearer $ADMIN_API_KEY" \
+  https://adamfuture.kz/api/admin/reports
 ```
 
 Без `DATA_ENCRYPTION_KEY` расшифровать сохранённые ответы невозможно.
+
+## Важная граница текущей версии
+
+Docker, TLS, база тестирований, AI-интерпретация и приватное PDF-хранилище
+подготовлены для сервера. Однако кабинет с лицензионными кодами из раздела
+«Локальный демо-кабинет» всё ещё является browser-local MVP. Его демонстрационные
+коды нельзя считать production-аутентификацией. До открытия кабинета реальным
+пользователям необходимо перенести лицензии и сессии в backend с HttpOnly-cookie;
+не публикуйте демонстрационный admin-код как рабочий доступ.
 
 ## Проверка кода
 

@@ -29,6 +29,11 @@ export interface Profession {
   confidence_level: string;
   meta: Record<PoleKey, number>;
   radicals: Record<RadicalKey, number>;
+  description_ru: string;
+  nkz_code?: string | null;
+  nkz_name?: string | null;
+  gop_code: string;
+  gop_name: string;
 }
 
 export interface ScaleResult {
@@ -68,4 +73,58 @@ export interface PublicProfession {
 export interface AssessmentResult {
   scales: PublicScaleResult[];
   professions: PublicProfession[];
+  intelligences?: IntelligenceResult[];
+  interpretation?: ResultInterpretation;
 }
+
+export interface ResultInterpretation {
+  summary_ru: string;
+  summary_kk: string;
+  strengths_ru: string[];
+  strengths_kk: string[];
+  next_step_ru: string;
+  next_step_kk: string;
+  intro_ru?: string;
+  intro_kk?: string;
+  style_details_ru?: InterpretationDetail[];
+  style_details_kk?: InterpretationDetail[];
+  attention_ru?: string;
+  attention_kk?: string;
+  conclusion_ru?: string;
+  conclusion_kk?: string;
+  intelligence_analysis_ru?: string;
+  intelligence_analysis_kk?: string;
+  source: "local" | "openai";
+}
+
+export interface InterpretationDetail {
+  title: string;
+  text: string;
+}
+
+export interface IntelligenceResult {
+  key: string;
+  name_ru: string;
+  name_kk: string;
+  score: number | null;
+}
+
+export interface DemoUser {
+  id: string;
+  code: string;
+  firstName: string;
+  lastName: string;
+  birthYear: string;
+  city: string;
+  school: string;
+  grade: string;
+  phone: string;
+  createdAt: string;
+  completedAt?: string;
+  result?: AssessmentResult;
+  consultantNotes?: string;
+}
+
+export type DemoSession =
+  | { role: "admin" }
+  | { role: "user"; userId: string };

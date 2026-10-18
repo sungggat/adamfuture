@@ -1,0 +1,465 @@
+{"kind":"deck","id":"pr/2eygci","name":"Deck"}
+{"kind":"layout","layoutId":"6b7dee7b-ea14-4a01-9dda-d44c4c7291c3","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"d3b1a596-193b-4bd9-8b06-6da7d4c67d29","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/mnok93","slide":1,"title":"PhD-СЕМИНАР","textShapes":5}
+{"kind":"shape","id":"sh/ixgnqdwj","slide":1,"bbox":[0,0,710,720]}
+{"kind":"textbox","id":"sh/jypozixo","slide":1,"text":"PhD-СЕМИНАР","textPreview":"PhD-СЕМИНАР","textChars":11,"textLines":1,"bbox":[64,62,165,30]}
+{"kind":"textbox","id":"sh/snipw7el","slide":1,"text":"Интеллектуальная система цифрового контроля объектов дорожной инфраструктуры","textPreview":"Интеллектуальная система цифрового контроля объектов дорожной инфраструктуры","textChars":76,"textLines":1,"bbox":[64,142,610,220]}
+{"kind":"textbox","id":"sh/tor65sf6","slide":1,"text":"Видеоаналитика автомобильных регистраторов для оценки состояния и формирования отчётов","textPreview":"Видеоаналитика автомобильных регистраторов для оценки состояния и формирования отчётов","textChars":86,"textLines":1,"bbox":[66,392,535,86]}
+{"kind":"shape","id":"sh/6l07uxwf","slide":1,"bbox":[66,512,220,4]}
+{"kind":"textbox","id":"sh/rm9o32x0","slide":1,"text":"Астана  •  2026","textPreview":"Астана  •  2026","textChars":15,"textLines":1,"bbox":[66,538,280,35]}
+{"kind":"textbox","id":"sh/8re5k3e1","slide":1,"text":"Иллюстрация концепции, создана с помощью генеративной модели","textPreview":"Иллюстрация концепции, создана с помощью генеративной модели","textChars":60,"textLines":1,"bbox":[66,672,580,18]}
+{"kind":"image","id":"im/0f2p0ba9","slide":1,"name":"","alt":"Сгенерированная иллюстрация видеомониторинга дорог Астаны","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/mnok93","slide":1,"text":"Обложка: сгенерированная иллюстрация для презентации. Не является фотографической фиксацией конкретного участка Астаны."}
+{"kind":"slide","id":"sl/bq3c8p","slide":2,"title":"Проблема и доступный городской ресурс","textShapes":19}
+{"kind":"textbox","id":"sh/nyl8r254","slide":2,"text":"Проблема и доступный городской ресурс","textPreview":"Проблема и доступный городской ресурс","textChars":37,"textLines":1,"bbox":[58,37,1100,62]}
+{"kind":"shape","id":"sh/8zu9076p","slide":2,"bbox":[58,104,74,5]}
+{"kind":"textbox","id":"sh/903qtsna","slide":2,"text":"Город уже производит видеоданные","textPreview":"Город уже производит видеоданные","textChars":32,"textLines":1,"bbox":[60,145,500,42]}
+{"kind":"textbox","id":"sh/y9c7udon","slide":2,"text":"Регистраторы городских служб и жителей ежедневно фиксируют дороги и объекты вдоль маршрутов\nЗаписи содержат географические и временные свидетельства о состоянии инфраструктуры\nОбъём данных превышает возможности ручного просмотра и систематизации","textPreview":"Регистраторы городских служб и жителей ежедневно фиксируют дороги и объекты вдоль маршрутов | Записи содержат географические и временные ...","textChars":245,"textLines":3,"bbox":[64,205,500,250]}
+{"kind":"shape","id":"sh/zal8ni5s","slide":2,"bbox":[620,144,590,390]}
+{"kind":"textbox","id":"sh/0bu9wn6d","slide":2,"text":"Поток видео превращается в управленческий цикл","textPreview":"Поток видео превращается в управленческий цикл","textChars":46,"textLines":1,"bbox":[660,177,500,50]}
+{"kind":"shape","id":"sh/lc3qpsny","slide":2,"bbox":[655,270,112,122]}
+{"kind":"textbox","id":"sh/q5s7qdob","slide":2,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[667,282,40,22]}
+{"kind":"textbox","id":"sh/b618jipw","slide":2,"text":"Видео + GPS","textPreview":"Видео + GPS","textChars":11,"textLines":1,"bbox":[667,308,90,55]}
+{"kind":"textbox","id":"sh/76lonuto","slide":2,"text":"регистраторы","textPreview":"регистраторы","textChars":12,"textLines":1,"bbox":[667,370,90,18]}
+{"kind":"shape","id":"sh/mlcnupc3","slide":2,"bbox":[773,322,16,26]}
+{"kind":"shape","id":"sh/9836p4be","slide":2,"bbox":[792,270,112,122]}
+{"kind":"textbox","id":"sh/87upwzu9","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[804,282,40,22]}
+{"kind":"textbox","id":"sh/valoretk","slide":2,"text":"Анализ","textPreview":"Анализ","textChars":6,"textLines":1,"bbox":[804,308,90,55]}
+{"kind":"textbox","id":"sh/u9c7y9cz","slide":2,"text":"объекты и дефекты","textPreview":"объекты и дефекты","textChars":17,"textLines":1,"bbox":[804,370,90,18]}
+{"kind":"shape","id":"sh/hc36t4bq","slide":2,"bbox":[910,322,16,26]}
+{"kind":"shape","id":"sh/wbup0ju5","slide":2,"bbox":[929,270,112,122]}
+{"kind":"textbox","id":"sh/be1ovadg","slide":2,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[941,282,40,22]}
+{"kind":"textbox","id":"sh/ad8nm5cv","slide":2,"text":"Карта состояния","textPreview":"Карта состояния","textChars":15,"textLines":1,"bbox":[941,308,90,55]}
+{"kind":"textbox","id":"sh/e9grudwj","slide":2,"text":"история","textPreview":"история","textChars":7,"textLines":1,"bbox":[941,370,90,18]}
+{"kind":"shape","id":"sh/faps3id4","slide":2,"bbox":[1047,322,16,26]}
+{"kind":"shape","id":"sh/gby9wnep","slide":2,"bbox":[1066,270,112,122]}
+{"kind":"textbox","id":"sh/1wra5svu","slide":2,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1078,282,40,22]}
+{"kind":"textbox","id":"sh/65grqdw7","slide":2,"text":"Отчёт и задача","textPreview":"Отчёт и задача","textChars":14,"textLines":1,"bbox":[1078,308,90,55]}
+{"kind":"textbox","id":"sh/r6p8zids","slide":2,"text":"приоритет ремонта","textPreview":"приоритет ремонта","textChars":17,"textLines":1,"bbox":[1078,370,90,18]}
+{"kind":"textbox","id":"sh/s7y9sned","slide":2,"text":"Ключевой разрыв","textPreview":"Ключевой разрыв","textChars":15,"textLines":1,"bbox":[65,497,180,28]}
+{"kind":"textbox","id":"sh/t87q18vy","slide":2,"text":"Сегодня данные существуют отдельно от реестров объектов, регламентов обследования и процессов ремонта.","textPreview":"Сегодня данные существуют отдельно от реестров объектов, регламентов обследования и процессов ремонта.","textChars":102,"textLines":1,"bbox":[65,532,535,80]}
+{"kind":"textbox","id":"sh/i1wrmtwb","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1190,679,38,22]}
+{"kind":"notes","id":"nt/bq3c8p","slide":2,"text":"Проблематика и актуальность сформулированы на основе текста пользователя. Числовые оценки объёма видеоданных не приводятся, поскольку исходные значения не предоставлены."}
+{"kind":"slide","id":"sl/cmjega","slide":3,"title":"Цель и основная гипотеза","textShapes":8}
+{"kind":"textbox","id":"sh/94bmxgji","slide":3,"text":"Цель и основная гипотеза","textPreview":"Цель и основная гипотеза","textChars":24,"textLines":1,"bbox":[58,37,1100,62]}
+{"kind":"shape","id":"sh/m103m1k7","slide":3,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/n2t4v61s","slide":3,"bbox":[60,150,555,395]}
+{"kind":"textbox","id":"sh/w725sbi9","slide":3,"text":"ЦЕЛЬ","textPreview":"ЦЕЛЬ","textChars":4,"textLines":1,"bbox":[88,177,92,30]}
+{"kind":"textbox","id":"sh/x8bm1gju","slide":3,"text":"Создать систему, которая оценивает функциональное состояние дорожной инфраструктуры по видео автомобильных регистраторов и автоматически формирует отчёты.","textPreview":"Создать систему, которая оценивает функциональное состояние дорожной инфраструктуры по видео автомобильных регистраторов и автоматически ...","textChars":154,"textLines":1,"bbox":[88,236,480,220]}
+{"kind":"shape","id":"sh/a5k3qlk3","slide":3,"bbox":[665,150,555,395]}
+{"kind":"textbox","id":"sh/b6t4zq1o","slide":3,"text":"ГИПОТЕЗА","textPreview":"ГИПОТЕЗА","textChars":8,"textLines":1,"bbox":[693,177,120,30]}
+{"kind":"textbox","id":"sh/cbilgr25","slide":3,"text":"Если известны координаты объектов мониторинга, то повторные наблюдения из движущихся автомобилей позволяют определить их состояние с помощью моделей машинного обучения.","textPreview":"Если известны координаты объектов мониторинга, то повторные наблюдения из движущихся автомобилей позволяют определить их состояние с помо...","textChars":168,"textLines":1,"bbox":[693,236,480,220]}
+{"kind":"textbox","id":"sh/dcrmpwjq","slide":3,"text":"Единица результата","textPreview":"Единица результата","textChars":18,"textLines":1,"bbox":[88,584,200,26]}
+{"kind":"textbox","id":"sh/9gzyhg3a","slide":3,"text":"объект + координаты + время + класс состояния + достоверность + фотофрагмент","textPreview":"объект + координаты + время + класс состояния + достоверность + фотофрагмент","textChars":76,"textLines":1,"bbox":[300,580,870,40]}
+{"kind":"textbox","id":"sh/8fqhobmp","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1190,679,38,22]}
+{"kind":"notes","id":"nt/cmjega","slide":3,"text":"Цель и гипотеза приведены в редакции, сохраняющей смысл исходного текста пользователя."}
+{"kind":"slide","id":"sl/o248nu","slide":4,"title":"Научная постановка исследования","textShapes":15}
+{"kind":"textbox","id":"sh/ih43ux4z","slide":4,"text":"Научная постановка исследования","textPreview":"Научная постановка исследования","textChars":31,"textLines":1,"bbox":[58,37,1100,62]}
+{"kind":"shape","id":"sh/5kvm5s3q","slide":4,"bbox":[58,104,74,5]}
+{"kind":"textbox","id":"sh/4jmlwnm5","slide":4,"text":"Объект исследования","textPreview":"Объект исследования","textChars":19,"textLines":1,"bbox":[64,150,260,34]}
+{"kind":"textbox","id":"sh/rmd472lw","slide":4,"text":"Процесс цифрового мониторинга функционального состояния объектов дорожной инфраструктуры по мобильным видеоданным.","textPreview":"Процесс цифрового мониторинга функционального состояния объектов дорожной инфраструктуры по мобильным видеоданным.","textChars":114,"textLines":1,"bbox":[64,195,510,100]}
+{"kind":"textbox","id":"sh/6l43yx4b","slide":4,"text":"Предмет исследования","textPreview":"Предмет исследования","textChars":20,"textLines":1,"bbox":[64,320,260,34]}
+{"kind":"textbox","id":"sh/t8vm9c3m","slide":4,"text":"Методы обнаружения, географического сопоставления и агрегирования наблюдений для оценки состояния конкретного объекта.","textPreview":"Методы обнаружения, географического сопоставления и агрегирования наблюдений для оценки состояния конкретного объекта.","textChars":118,"textLines":1,"bbox":[64,365,510,100]}
+{"kind":"shape","id":"sh/snm507m1","slide":4,"bbox":[630,145,590,405]}
+{"kind":"textbox","id":"sh/7qt4vi5c","slide":4,"text":"Исследовательские вопросы","textPreview":"Исследовательские вопросы","textChars":25,"textLines":1,"bbox":[666,176,500,40]}
+{"kind":"textbox","id":"sh/mp03md4r","slide":4,"text":"RQ1","textPreview":"RQ1","textChars":3,"textLines":1,"bbox":[666,246,58,28]}
+{"kind":"textbox","id":"sh/0v6twnml","slide":4,"text":"Как обеспечить устойчивое распознавание при снеге, дожде, темноте и различной высоте камеры?","textPreview":"Как обеспечить устойчивое распознавание при снеге, дожде, темноте и различной высоте камеры?","textChars":92,"textLines":1,"bbox":[742,246,420,66]}
+{"kind":"textbox","id":"sh/1wfupsn6","slide":4,"text":"RQ2","textPreview":"RQ2","textChars":3,"textLines":1,"bbox":[666,338,58,28]}
+{"kind":"textbox","id":"sh/etobud4v","slide":4,"text":"Как сопоставить обнаружение в кадре с объектом городского реестра при погрешности GPS?","textPreview":"Как сопоставить обнаружение в кадре с объектом городского реестра при погрешности GPS?","textChars":86,"textLines":1,"bbox":[742,338,420,66]}
+{"kind":"textbox","id":"sh/zuxcni50","slide":4,"text":"RQ3","textPreview":"RQ3","textChars":3,"textLines":1,"bbox":[666,430,58,28]}
+{"kind":"textbox","id":"sh/oz6t07mx","slide":4,"text":"Как объединить повторные проезды в воспроизводимую оценку функционального состояния?","textPreview":"Как объединить повторные проезды в воспроизводимую оценку функционального состояния?","textChars":84,"textLines":1,"bbox":[742,430,420,66]}
+{"kind":"textbox","id":"sh/90zutcni","slide":4,"text":"Проверяемый результат","textPreview":"Проверяемый результат","textChars":21,"textLines":1,"bbox":[64,584,230,28]}
+{"kind":"textbox","id":"sh/mxobyx4r","slide":4,"text":"метрики на уровне кадра, события и физического объекта","textPreview":"метрики на уровне кадра, события и физического объекта","textChars":54,"textLines":1,"bbox":[307,579,820,42]}
+{"kind":"textbox","id":"sh/nyxcr25c","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1190,679,38,22]}
+{"kind":"notes","id":"nt/o248nu","slide":4,"text":"Научная постановка сформулирована для диссертационного семинара. Термины и границы объекта и предмета исследования следует синхронизировать с утвержденной темой и паспортом специальности."}
+{"kind":"slide","id":"sl/u1vzoj","slide":5,"title":"Научное подтверждение на данных Астаны","textShapes":8}
+{"kind":"textbox","id":"sh/jqpcnmt4","slide":5,"text":"Научное подтверждение на данных Астаны","textPreview":"Научное подтверждение на данных Астаны","textChars":38,"textLines":1,"bbox":[58,37,1100,62]}
+{"kind":"shape","id":"sh/krydgrup","slide":5,"bbox":[58,104,74,5]}
+{"kind":"textbox","id":"sh/ls7upwba","slide":5,"text":"4260","textPreview":"4260","textChars":4,"textLines":1,"bbox":[64,145,220,72]}
+{"kind":"textbox","id":"sh/6t0vi1cv","slide":5,"text":"размеченных кадров","textPreview":"размеченных кадров","textChars":18,"textLines":1,"bbox":[64,213,250,32]}
+{"kind":"textbox","id":"sh/7u9crmt0","slide":5,"text":"Ночная съёмка с видеорегистраторов: 1494 кадров при ясной погоде, 1524 при снегопаде, 1242 при дожде.","textPreview":"Ночная съёмка с видеорегистраторов: 1494 кадров при ясной погоде, 1524 при снегопаде, 1242 при дожде.","textChars":101,"textLines":1,"bbox":[64,270,330,135]}
+{"kind":"textbox","id":"sh/8vidkrul","slide":5,"text":"Классы: опоры и светильники\nРазделение: 75% / 10% / 15%","textPreview":"Классы: опоры и светильники | Разделение: 75% / 10% / 15%","textChars":55,"textLines":2,"bbox":[64,425,330,70]}
+{"kind":"textbox","id":"sh/mxwb6xcb","slide":5,"text":"YOLO‑CSE улучшает полноту обнаружения и F1 относительно сильнейшей базовой модели YOLOv8m.","textPreview":"YOLO‑CSE улучшает полноту обнаружения и F1 относительно сильнейшей базовой модели YOLOv8m.","textChars":90,"textLines":1,"bbox":[430,565,740,58]}
+{"kind":"textbox","id":"sh/ny5cf2dw","slide":5,"text":"Источник: Aiymbay et al., Symmetry 2025, 17(8), 1294","textPreview":"Источник: Aiymbay et al., Symmetry 2025, 17(8), 1294","textChars":52,"textLines":1,"bbox":[58,683,1040,20]}
+{"kind":"textbox","id":"sh/7mlkvudg","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1190,679,38,22]}
+{"kind":"chart","id":"ch/1wr21wv2","slide":5,"name":"","chartType":"bar","bbox":[430,150,760,405]}
+{"kind":"notes","id":"nt/u1vzoj","slide":5,"text":"Источник: Aiymbay, S.; Zhumadillayeva, A.; Matson, E.T.; Matkarimov, B.; Mukhametzhanova, B. Applying Computer Vision for the Detection and Analysis of the Condition and Operation of Street Lighting. Symmetry 2025, 17, 1294. https://doi.org/10.3390/sym17081294\nЗначения таблицы: YOLOv8m precision 0.823, recall 0.756, F1 0.788, mAP 0.791; YOLO-CSE precision 0.824, recall 0.794, F1 0.808, mAP 0.798."}
+{"kind":"slide","id":"sl/ged16v","slide":6,"title":"Промышленный аналог подтверждает востребованность","textShapes":22}
+{"kind":"textbox","id":"sh/7id8r65g","slide":6,"text":"Промышленный аналог подтверждает востребованность","textPreview":"Промышленный аналог подтверждает востребованность","textChars":49,"textLines":1,"bbox":[58,37,1100,62]}
+{"kind":"shape","id":"sh/8jmp0b6l","slide":6,"bbox":[58,104,74,5]}
+{"kind":"textbox","id":"sh/94vqtgn6","slide":6,"text":"ПО ДАННЫМ ПРОИЗВОДИТЕЛЯ","textPreview":"ПО ДАННЫМ ПРОИЗВОДИТЕЛЯ","textChars":23,"textLines":1,"bbox":[64,143,240,30]}
+{"kind":"textbox","id":"sh/u5472lor","slide":6,"text":"500 км","textPreview":"500 км","textChars":6,"textLines":1,"bbox":[64,205,220,55]}
+{"kind":"textbox","id":"sh/v6d8vq5c","slide":6,"text":"возможный объём ежедневного автоматического мониторинга","textPreview":"возможный объём ежедневного автоматического мониторинга","textChars":55,"textLines":1,"bbox":[64,269,220,78]}
+{"kind":"textbox","id":"sh/w7m94b6x","slide":6,"text":"> 50","textPreview":"> 50","textChars":4,"textLines":1,"bbox":[314,205,220,55]}
+{"kind":"textbox","id":"sh/h8vqxgni","slide":6,"text":"видов детектируемых административных нарушений","textPreview":"видов детектируемых административных нарушений","textChars":46,"textLines":1,"bbox":[314,269,220,78]}
+{"kind":"textbox","id":"sh/q907qhon","slide":6,"text":"5 лет","textPreview":"5 лет","textChars":5,"textLines":1,"bbox":[564,205,220,55]}
+{"kind":"textbox","id":"sh/bat8jmp8","slide":6,"text":"заявленной промышленной эксплуатации","textPreview":"заявленной промышленной эксплуатации","textChars":36,"textLines":1,"bbox":[564,269,220,78]}
+{"kind":"textbox","id":"sh/zm54rmt0","slide":6,"text":"Заявленная схема работы","textPreview":"Заявленная схема работы","textChars":23,"textLines":1,"bbox":[64,397,320,35]}
+{"kind":"shape","id":"sh/ylwni1sf","slide":6,"bbox":[64,455,162,125]}
+{"kind":"textbox","id":"sh/lonmtwb6","slide":6,"text":"Анализ","textPreview":"Анализ","textChars":6,"textLines":1,"bbox":[78,474,134,30]}
+{"kind":"textbox","id":"sh/0ne5kral","slide":6,"text":"GPU обрабатывает изображение","textPreview":"GPU обрабатывает изображение","textChars":28,"textLines":1,"bbox":[78,517,134,48]}
+{"kind":"shape","id":"sh/ril4nmt4","slide":6,"bbox":[232,500,13,24]}
+{"kind":"shape","id":"sh/qhc3ehsj","slide":6,"bbox":[251,455,162,125]}
+{"kind":"textbox","id":"sh/dk3mpwbu","slide":6,"text":"Оценка","textPreview":"Оценка","textChars":6,"textLines":1,"bbox":[265,474,134,30]}
+{"kind":"textbox","id":"sh/cjulgrap","slide":6,"text":"нейросеть выявляет дефекты","textPreview":"нейросеть выявляет дефекты","textChars":26,"textLines":1,"bbox":[265,517,134,48]}
+{"kind":"shape","id":"sh/3el4j2ts","slide":6,"bbox":[419,500,13,24]}
+{"kind":"shape","id":"sh/2ts3ahs7","slide":6,"bbox":[438,455,162,125]}
+{"kind":"textbox","id":"sh/6psn2xwf","slide":6,"text":"Геометка","textPreview":"Геометка","textChars":8,"textLines":1,"bbox":[452,474,134,30]}
+{"kind":"textbox","id":"sh/7q14v2d0","slide":6,"text":"GPS/ГЛОНАСС, дата","textPreview":"GPS/ГЛОНАСС, дата","textChars":17,"textLines":1,"bbox":[452,517,134,48]}
+{"kind":"shape","id":"sh/sra547e5","slide":6,"bbox":[606,500,13,24]}
+{"kind":"shape","id":"sh/tcj6xcvq","slide":6,"bbox":[625,455,162,125]}
+{"kind":"textbox","id":"sh/udsn6hwb","slide":6,"text":"Передача","textPreview":"Передача","textChars":8,"textLines":1,"bbox":[639,474,134,30]}
+{"kind":"textbox","id":"sh/felozmdw","slide":6,"text":"LTE и облачная платформа","textPreview":"LTE и облачная платформа","textChars":24,"textLines":1,"bbox":[639,517,134,48]}
+{"kind":"shape","id":"sh/gfu58ruh","slide":6,"bbox":[845,145,365,435]}
+{"kind":"textbox","id":"sh/hg361wv2","slide":6,"text":"Заявленные классы","textPreview":"Заявленные классы","textChars":17,"textLines":1,"bbox":[875,177,300,32]}
+{"kind":"textbox","id":"sh/2hcnahcn","slide":6,"text":"дефекты покрытия и разметки\nлетняя и зимняя уборка дорог\nнеисправное уличное освещение\nостановки, знаки и благоустройство\nмусор и нарушения парковки","textPreview":"дефекты покрытия и разметки | летняя и зимняя уборка дорог | неисправное уличное освещение | остановки, знаки и благоустройство | мусор и...","textChars":148,"textLines":5,"bbox":[875,237,295,240]}
+{"kind":"textbox","id":"sh/3ilo3mds","slide":6,"text":"Практический аналог показывает реализуемость мобильного формата, но не заменяет экспериментальную проверку диссертационных гипотез.","textPreview":"Практический аналог показывает реализуемость мобильного формата, но не заменяет экспериментальную проверку диссертационных гипотез.","textChars":131,"textLines":1,"bbox":[875,500,295,60]}
+{"kind":"textbox","id":"sh/dcnqtgfa","slide":6,"text":"Источник: SoftLogic.ai, «Автономный комплекс ИИ»","textPreview":"Источник: SoftLogic.ai, «Автономный комплекс ИИ»","textChars":48,"textLines":1,"bbox":[58,683,1040,20]}
+{"kind":"textbox","id":"sh/cbep0vyp","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1190,679,38,22]}
+{"kind":"notes","id":"nt/ged16v","slide":6,"text":"Источник и заявления производителя: https://softlogic.ai/solution/kontrol_odx\nСайт сообщает о возможном мониторинге до 500 км в день, более чем 50 видах нарушений и пяти годах промышленной эксплуатации. Эти показатели не верифицировались независимо и представлены как заявления компании. На сайте описана последовательность: анализ изображения, оценка состояния, добавление GPS/ГЛОНАСС-геометки и даты, передача по LTE в облачную платформу."}
+{"kind":"slide","id":"sl/ig8c4j","slide":7,"title":"Исследовательский разрыв","textShapes":18}
+{"kind":"textbox","id":"sh/zmd0b2tc","slide":7,"text":"Исследовательский разрыв","textPreview":"Исследовательский разрыв","textChars":24,"textLines":1,"bbox":[58,37,1100,62]}
+{"kind":"shape","id":"sh/knmhk7ax","slide":7,"bbox":[58,104,74,5]}
+{"kind":"textbox","id":"sh/lovidcbi","slide":7,"text":"Промышленный продукт","textPreview":"Промышленный продукт","textChars":20,"textLines":1,"bbox":[64,145,360,38]}
+{"kind":"textbox","id":"sh/qhkzexsv","slide":7,"text":"Диссертационное исследование","textPreview":"Диссертационное исследование","textChars":28,"textLines":1,"bbox":[670,145,490,38]}
+{"kind":"shape","id":"sh/bit072tg","slide":7,"bbox":[605,140,2,430]}
+{"kind":"textbox","id":"sh/cjmhg7al","slide":7,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[64,215,42,28]}
+{"kind":"textbox","id":"sh/xkvi9cb6","slide":7,"text":"Специализированный сертифицированный мобильный комплекс","textPreview":"Специализированный сертифицированный мобильный комплекс","textChars":55,"textLines":1,"bbox":[120,215,440,68]}
+{"kind":"textbox","id":"sh/udozq1sz","slide":7,"text":"Использование разнородных регистраторов уже существующего городского транспорта","textPreview":"Использование разнородных регистраторов уже существующего городского транспорта","textChars":79,"textLines":1,"bbox":[670,215,500,68]}
+{"kind":"shape","id":"sh/vex0j6tk","slide":7,"bbox":[120,294,440,1]}
+{"kind":"shape","id":"sh/3ylczm5c","slide":7,"bbox":[670,294,500,1]}
+{"kind":"textbox","id":"sh/2xcbqhor","slide":7,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[64,315,42,28]}
+{"kind":"textbox","id":"sh/p0nu1wni","slide":7,"text":"Широкий набор нарушений и административная фиксация","textPreview":"Широкий набор нарушений и административная фиксация","textChars":51,"textLines":1,"bbox":[120,315,440,68]}
+{"kind":"textbox","id":"sh/4zutsr6x","slide":7,"text":"Функциональное состояние конкретного объекта и история повторных наблюдений","textPreview":"Функциональное состояние конкретного объекта и история повторных наблюдений","textChars":75,"textLines":1,"bbox":[670,315,500,68]}
+{"kind":"shape","id":"sh/r25c3658","slide":7,"bbox":[120,394,440,1]}
+{"kind":"shape","id":"sh/q1wbu1o3","slide":7,"bbox":[670,394,500,1]}
+{"kind":"textbox","id":"sh/d4nu5gne","slide":7,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[64,415,42,28]}
+{"kind":"textbox","id":"sh/c3etwb6t","slide":7,"text":"На странице отсутствуют открытые метрики качества по классам и погодным условиям","textPreview":"На странице отсутствуют открытые метрики качества по классам и погодным условиям","textChars":80,"textLines":1,"bbox":[120,415,440,68]}
+{"kind":"textbox","id":"sh/zq5c765k","slide":7,"text":"Воспроизводимая оценка precision, recall, F1, mAP и ошибки географического сопоставления","textPreview":"Воспроизводимая оценка precision, recall, F1, mAP и ошибки географического сопоставления","textChars":88,"textLines":1,"bbox":[670,415,500,68]}
+{"kind":"shape","id":"sh/e5wvy1oz","slide":7,"bbox":[120,494,440,1]}
+{"kind":"shape","id":"sh/al0f6587","slide":7,"bbox":[670,494,500,1]}
+{"kind":"textbox","id":"sh/vm9wzaps","slide":7,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[64,515,42,28]}
+{"kind":"textbox","id":"sh/wnix8fqd","slide":7,"text":"Работа и нормативная база описаны для городов России","textPreview":"Работа и нормативная база описаны для городов России","textChars":52,"textLines":1,"bbox":[120,515,440,68]}
+{"kind":"textbox","id":"sh/xore1k7y","slide":7,"text":"Адаптация к реестрам, климату и эксплуатационным условиям Астаны","textPreview":"Адаптация к реестрам, климату и эксплуатационным условиям Астаны","textChars":64,"textLines":1,"bbox":[670,515,500,68]}
+{"kind":"shape","id":"sh/mxgf258b","slide":7,"bbox":[64,620,1105,2]}
+{"kind":"textbox","id":"sh/nypwvapg","slide":7,"text":"Научная задача заключается в формализации, измерении и проверке перехода от видеокадра к состоянию физического объекта.","textPreview":"Научная задача заключается в формализации, измерении и проверке перехода от видеокадра к состоянию физического объекта.","textChars":119,"textLines":1,"bbox":[64,640,1100,38]}
+{"kind":"textbox","id":"sh/8zix4fq1","slide":7,"text":"Сопоставление выполнено по публичному описанию SoftLogic.ai","textPreview":"Сопоставление выполнено по публичному описанию SoftLogic.ai","textChars":59,"textLines":1,"bbox":[58,683,1040,20]}
+{"kind":"textbox","id":"sh/9krexk7m","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1190,679,38,22]}
+{"kind":"notes","id":"nt/ig8c4j","slide":7,"text":"Сравнение опирается только на публичную страницу https://softlogic.ai/solution/kontrol_odx. Отсутствие описания на странице не означает отсутствие функции в продукте. Слайд фиксирует различие между публично описанным коммерческим решением и проверяемой научной постановкой диссертации."}
+{"kind":"slide","id":"sl/podz14","slide":8,"title":"Видеореференс расширяет класс задач","textShapes":7}
+{"kind":"textbox","id":"sh/kvmxkvu5","slide":8,"text":"Видеореференс расширяет класс задач","textPreview":"Видеореференс расширяет класс задач","textChars":35,"textLines":1,"bbox":[58,37,1100,62]}
+{"kind":"shape","id":"sh/jadwbqt0","slide":8,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/i94filcf","slide":8,"bbox":[58,150,620,430]}
+{"kind":"textbox","id":"sh/sz6xovah","slide":8,"text":"ДЕМОНСТРАЦИЯ","textPreview":"ДЕМОНСТРАЦИЯ","textChars":12,"textLines":1,"bbox":[725,155,150,30]}
+{"kind":"textbox","id":"sh/7yxwfqtw","slide":8,"text":"Сегментация дорожного покрытия","textPreview":"Сегментация дорожного покрытия","textChars":30,"textLines":1,"bbox":[725,207,450,78]}
+{"kind":"textbox","id":"sh/6x4fmlsb","slide":8,"text":"выбоины и локальные разрушения\nтрещины дорожного покрытия\nливневые решётки и элементы водоотведения","textPreview":"выбоины и локальные разрушения | трещины дорожного покрытия | ливневые решётки и элементы водоотведения","textChars":99,"textLines":3,"bbox":[725,307,450,160]}
+{"kind":"shape","id":"sh/h4fyl0by","slide":8,"bbox":[725,500,440,2]}
+{"kind":"textbox","id":"sh/g36xsfad","slide":8,"text":"Ролик подтверждает практический формат выдачи модели. Автор сообщает о стабильной версии сегментации, но не публикует метрики в подписи.","textPreview":"Ролик подтверждает практический формат выдачи модели. Автор сообщает о стабильной версии сегментации, но не публикует метрики в подписи.","textChars":136,"textLines":1,"bbox":[725,520,450,100]}
+{"kind":"textbox","id":"sh/mh4v6p8j","slide":8,"text":"Референс: Instagram @santiagsanchezr, ролик от 1 июля 2026","textPreview":"Референс: Instagram @santiagsanchezr, ролик от 1 июля 2026","textChars":58,"textLines":1,"bbox":[58,683,1040,20]}
+{"kind":"textbox","id":"sh/n2xwfup4","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1190,679,38,22]}
+{"kind":"image","id":"im/0zmpobux","slide":8,"name":"","alt":"Кадр демонстрации сегментации дефектов дороги из Instagram","bbox":[72,164,592,402]}
+{"kind":"notes","id":"nt/podz14","slide":8,"text":"Источник видеореференса: https://www.instagram.com/santiagsanchezr/reel/DaRQP1vBLLu/\nПодпись автора: новый вариант модели сегментации выбоин, трещин и решёток; метрики обещаны позднее. Кадр используется как иллюстрация интерфейса распознавания, а не как доказательство точности."}
+{"kind":"slide","id":"sl/ltpurk","slide":9,"title":"Объекты цифрового контроля","textShapes":21}
+{"kind":"textbox","id":"sh/ahk7atcf","slide":9,"text":"Объекты цифрового контроля","textPreview":"Объекты цифрового контроля","textChars":26,"textLines":1,"bbox":[58,37,1100,62]}
+{"kind":"shape","id":"sh/xkbq58bq","slide":9,"bbox":[58,104,74,5]}
+{"kind":"textbox","id":"sh/wj2pc3u5","slide":9,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[64,152,58,48]}
+{"kind":"textbox","id":"sh/nu9ozyto","slide":9,"text":"Освещение","textPreview":"Освещение","textChars":9,"textLines":1,"bbox":[136,145,470,40]}
+{"kind":"textbox","id":"sh/mt076tc3","slide":9,"text":"опора, светильник, включение, повреждение","textPreview":"опора, светильник, включение, повреждение","textChars":41,"textLines":1,"bbox":[136,194,470,62]}
+{"kind":"shape","id":"sh/9gbq1obu","slide":9,"bbox":[136,271,470,1]}
+{"kind":"textbox","id":"sh/of2p83u9","slide":9,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[652,152,58,48]}
+{"kind":"textbox","id":"sh/zq9ovets","slide":9,"text":"Покрытие","textPreview":"Покрытие","textChars":8,"textLines":1,"bbox":[724,145,470,40]}
+{"kind":"textbox","id":"sh/ep0729c7","slide":9,"text":"выбоина, трещина, просадка, люк и решётка","textPreview":"выбоина, трещина, просадка, люк и решётка","textChars":41,"textLines":1,"bbox":[724,194,470,62]}
+{"kind":"shape","id":"sh/8r61gja1","slide":9,"bbox":[724,271,470,1]}
+{"kind":"textbox","id":"sh/9sfi9ob6","slide":9,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[64,307,58,48]}
+{"kind":"textbox","id":"sh/mpoje9sv","slide":9,"text":"Разметка","textPreview":"Разметка","textChars":8,"textLines":1,"bbox":[136,300,470,40]}
+{"kind":"textbox","id":"sh/nqx07etg","slide":9,"text":"наличие, видимость, износ, закрытие снегом","textPreview":"наличие, видимость, износ, закрытие снегом","textChars":42,"textLines":1,"bbox":[136,349,470,62]}
+{"kind":"shape","id":"sh/0n6hczap","slide":9,"bbox":[136,426,470,1]}
+{"kind":"textbox","id":"sh/lofi54ba","slide":9,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[652,307,58,48]}
+{"kind":"textbox","id":"sh/y14za9sj","slide":9,"text":"Зимнее состояние","textPreview":"Зимнее состояние","textChars":16,"textLines":1,"bbox":[724,300,470,40]}
+{"kind":"textbox","id":"sh/zmx03et4","slide":9,"text":"снег, лёд, колея, очистка проезжей части","textPreview":"снег, лёд, колея, очистка проезжей части","textChars":40,"textLines":1,"bbox":[724,349,470,62]}
+{"kind":"shape","id":"sh/kjq1o3at","slide":9,"bbox":[724,426,470,1]}
+{"kind":"textbox","id":"sh/5kzih8be","slide":9,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[64,462,58,48]}
+{"kind":"textbox","id":"sh/tgfi183i","slide":9,"text":"Остановки и знаки","textPreview":"Остановки и знаки","textChars":17,"textLines":1,"bbox":[136,455,470,40]}
+{"kind":"textbox","id":"sh/sfm1832d","slide":9,"text":"наличие, целостность, доступность обзора","textPreview":"наличие, целостность, доступность обзора","textChars":40,"textLines":1,"bbox":[136,504,470,62]}
+{"kind":"textbox","id":"sh/red0zyls","slide":9,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[652,462,58,48]}
+{"kind":"textbox","id":"sh/6d4z6tk7","slide":9,"text":"Дорожная обстановка","textPreview":"Дорожная обстановка","textChars":19,"textLines":1,"bbox":[724,455,470,40]}
+{"kind":"textbox","id":"sh/5cvixo3m","slide":9,"text":"авария, затор, препятствие, перекрытие","textPreview":"авария, затор, препятствие, перекрытие","textChars":38,"textLines":1,"bbox":[724,504,470,62]}
+{"kind":"textbox","id":"sh/4bmh4j21","slide":9,"text":"Модульная архитектура позволяет вводить классы поэтапно, начиная с освещения и дорожного покрытия.","textPreview":"Модульная архитектура позволяет вводить классы поэтапно, начиная с освещения и дорожного покрытия.","textChars":98,"textLines":1,"bbox":[64,628,1090,42]}
+{"kind":"textbox","id":"sh/jad0velg","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1190,679,38,22]}
+{"kind":"notes","id":"nt/ltpurk","slide":9,"text":"Перечень классов сформирован из описания пользователя и видеореференса. Финальный состав классов следует уточнить с владельцами городских реестров и регламентов обследования."}
+{"kind":"slide","id":"sl/02u08b","slide":10,"title":"Предполагаемая научная новизна","textShapes":25}
+{"kind":"textbox","id":"sh/58z6lkrq","slide":10,"text":"Предполагаемая научная новизна","textPreview":"Предполагаемая научная новизна","textChars":30,"textLines":1,"bbox":[58,37,1100,62]}
+{"kind":"shape","id":"sh/i58na58z","slide":10,"bbox":[58,104,74,5]}
+{"kind":"textbox","id":"sh/36hoja9k","slide":10,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[64,150,50,32]}
+{"kind":"textbox","id":"sh/g3658vat","slide":10,"text":"Объектный уровень","textPreview":"Объектный уровень","textChars":17,"textLines":1,"bbox":[132,150,470,36]}
+{"kind":"textbox","id":"sh/h4z6h0re","slide":10,"text":"Оценка относится к конкретному элементу реестра, а не только к отдельному кадру.","textPreview":"Оценка относится к конкретному элементу реестра, а не только к отдельному кадру.","textChars":80,"textLines":1,"bbox":[132,199,470,70]}
+{"kind":"textbox","id":"sh/uhon6ls3","slide":10,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[654,150,50,32]}
+{"kind":"textbox","id":"sh/v2xofq98","slide":10,"text":"Неопределённая геопривязка","textPreview":"Неопределённая геопривязка","textChars":26,"textLines":1,"bbox":[722,150,470,36]}
+{"kind":"textbox","id":"sh/8f654vax","slide":10,"text":"Сопоставление учитывает GPS, курс, калибровку камеры и вероятностный допуск.","textPreview":"Сопоставление учитывает GPS, курс, калибровку камеры и вероятностный допуск.","textChars":76,"textLines":1,"bbox":[722,199,470,70]}
+{"kind":"textbox","id":"sh/tgf6d0ri","slide":10,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[64,310,50,32]}
+{"kind":"textbox","id":"sh/xw7itkjm","slide":10,"text":"Повторные наблюдения","textPreview":"Повторные наблюдения","textChars":20,"textLines":1,"bbox":[132,310,470,36]}
+{"kind":"textbox","id":"sh/cvyhkf2h","slide":10,"text":"Несколько проездов объединяются с учётом качества кадра, времени и согласованности.","textPreview":"Несколько проездов объединяются с учётом качества кадра, времени и согласованности.","textChars":83,"textLines":1,"bbox":[132,359,470,70]}
+{"kind":"textbox","id":"sh/bupgra1w","slide":10,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[654,310,50,32]}
+{"kind":"textbox","id":"sh/atwzi5kb","slide":10,"text":"Локальная адаптация","textPreview":"Локальная адаптация","textChars":19,"textLines":1,"bbox":[722,310,470,36]}
+{"kind":"textbox","id":"sh/p8nyp0jq","slide":10,"text":"Модели и критерии состояния проверяются для климата, дорог и реестров Астаны.","textPreview":"Модели и критерии состояния проверяются для климата, дорог и реестров Астаны.","textChars":77,"textLines":1,"bbox":[722,359,470,70]}
+{"kind":"shape","id":"sh/o7ehgf25","slide":10,"bbox":[64,486,1100,1]}
+{"kind":"textbox","id":"sh/n65gna1k","slide":10,"text":"Задачи исследования","textPreview":"Задачи исследования","textChars":19,"textLines":1,"bbox":[64,520,280,36]}
+{"kind":"shape","id":"sh/25wze5kz","slide":10,"bbox":[64,578,192,62]}
+{"kind":"textbox","id":"sh/14nyl0ju","slide":10,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[76,594,24,24]}
+{"kind":"textbox","id":"sh/03ehcv29","slide":10,"text":"сформировать набор данных","textPreview":"сформировать набор данных","textChars":25,"textLines":1,"bbox":[103,587,140,40]}
+{"kind":"shape","id":"sh/szi9oze1","slide":10,"bbox":[284,578,192,62]}
+{"kind":"textbox","id":"sh/dkrqh4vm","slide":10,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[296,594,24,24]}
+{"kind":"textbox","id":"sh/qx07mpwb","slide":10,"text":"разработать модели","textPreview":"разработать модели","textChars":18,"textLines":1,"bbox":[323,587,140,40]}
+{"kind":"shape","id":"sh/ry98fudw","slide":10,"bbox":[504,578,192,62]}
+{"kind":"textbox","id":"sh/4vipkfe5","slide":10,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[516,594,24,24]}
+{"kind":"textbox","id":"sh/5wrqdkvq","slide":10,"text":"решить сопоставление","textPreview":"решить сопоставление","textChars":20,"textLines":1,"bbox":[543,587,140,40]}
+{"kind":"shape","id":"sh/it07ipwz","slide":10,"bbox":[724,578,192,62]}
+{"kind":"textbox","id":"sh/3u98badk","slide":10,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[736,594,24,24]}
+{"kind":"textbox","id":"sh/or29wje9","slide":10,"text":"построить индекс","textPreview":"построить индекс","textChars":16,"textLines":1,"bbox":[763,587,140,40]}
+{"kind":"shape","id":"sh/psvqpovu","slide":10,"bbox":[944,578,192,62]}
+{"kind":"textbox","id":"sh/zmxcvixw","slide":10,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[956,594,24,24]}
+{"kind":"textbox","id":"sh/ylobmdgr","slide":10,"text":"провести эксперимент","textPreview":"провести эксперимент","textChars":20,"textLines":1,"bbox":[983,587,140,40]}
+{"kind":"textbox","id":"sh/lofuxsf2","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1190,679,38,22]}
+{"kind":"notes","id":"nt/02u08b","slide":10,"text":"Формулировки научной новизны являются рабочими. Перед диссертационным семинаром их следует согласовать с научным руководителем и привести в соответствие с фактически полученными результатами."}
+{"kind":"slide","id":"sl/f3naxl","slide":11,"title":"Архитектура системы","textShapes":22}
+{"kind":"textbox","id":"sh/cnatw7al","slide":11,"text":"Архитектура системы","textPreview":"Архитектура системы","textChars":19,"textLines":1,"bbox":[58,37,1100,62]}
+{"kind":"shape","id":"sh/bmhcn2t0","slide":11,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/q18buxsf","slide":11,"bbox":[54,205,174,250]}
+{"kind":"textbox","id":"sh/lsjutcb2","slide":11,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[72,224,45,34]}
+{"kind":"textbox","id":"sh/0rat07ah","slide":11,"text":"Сбор","textPreview":"Сбор","textChars":4,"textLines":1,"bbox":[72,280,138,54]}
+{"kind":"textbox","id":"sh/zq1cr2tw","slide":11,"text":"MP4, GPS, время, маршрут","textPreview":"MP4, GPS, время, маршрут","textChars":24,"textLines":1,"bbox":[72,354,138,76]}
+{"kind":"shape","id":"sh/ypsbyhsb","slide":11,"bbox":[235,313,14,25]}
+{"kind":"shape","id":"sh/9w3uxwby","slide":11,"bbox":[256,205,174,250]}
+{"kind":"textbox","id":"sh/8vut4rad","slide":11,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[274,224,45,34]}
+{"kind":"textbox","id":"sh/29gryl8b","slide":11,"text":"Подготовка","textPreview":"Подготовка","textChars":10,"textLines":1,"bbox":[274,280,138,54]}
+{"kind":"textbox","id":"sh/nap87q9w","slide":11,"text":"кадры, качество, деперсонализация","textPreview":"кадры, качество, деперсонализация","textChars":33,"textLines":1,"bbox":[274,354,138,76]}
+{"kind":"shape","id":"sh/oby90vqh","slide":11,"bbox":[437,313,14,25]}
+{"kind":"shape","id":"sh/pc7q9gr2","slide":11,"bbox":[458,205,174,250]}
+{"kind":"textbox","id":"sh/adgr2l8n","slide":11,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[476,224,45,34]}
+{"kind":"textbox","id":"sh/bep8vq9s","slide":11,"text":"Аналитика","textPreview":"Аналитика","textChars":9,"textLines":1,"bbox":[476,280,138,54]}
+{"kind":"textbox","id":"sh/czi94vqd","slide":11,"text":"детекция, сегментация, состояние","textPreview":"детекция, сегментация, состояние","textChars":32,"textLines":1,"bbox":[476,354,138,76]}
+{"kind":"shape","id":"sh/x0rax07y","slide":11,"bbox":[639,313,14,25]}
+{"kind":"shape","id":"sh/qhwrq183","slide":11,"bbox":[660,205,174,250]}
+{"kind":"textbox","id":"sh/ri58z69o","slide":11,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[678,224,45,34]}
+{"kind":"textbox","id":"sh/vahwbyl4","slide":11,"text":"Привязка","textPreview":"Привязка","textChars":8,"textLines":1,"bbox":[678,280,138,54]}
+{"kind":"textbox","id":"sh/u98fitkj","slide":11,"text":"сопоставление с реестром объектов","textPreview":"сопоставление с реестром объектов","textChars":33,"textLines":1,"bbox":[678,354,138,76]}
+{"kind":"shape","id":"sh/hcjed83a","slide":11,"bbox":[841,313,14,25]}
+{"kind":"shape","id":"sh/wbaxk32p","slide":11,"bbox":[862,205,174,250]}
+{"kind":"textbox","id":"sh/76hw7yl8","slide":11,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[880,224,45,34]}
+{"kind":"textbox","id":"sh/m58fetkn","slide":11,"text":"Агрегация","textPreview":"Агрегация","textChars":9,"textLines":1,"bbox":[880,280,138,54]}
+{"kind":"textbox","id":"sh/98ze9o3e","slide":11,"text":"несколько проездов и оценка доверия","textPreview":"несколько проездов и оценка доверия","textChars":35,"textLines":1,"bbox":[880,354,138,76]}
+{"kind":"shape","id":"sh/87qxg32t","slide":11,"bbox":[1043,313,14,25]}
+{"kind":"shape","id":"sh/r2lgjilc","slide":11,"bbox":[1064,205,174,250]}
+{"kind":"textbox","id":"sh/61sfqdkr","slide":11,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[1082,224,45,34]}
+{"kind":"textbox","id":"sh/onmt4fi9","slide":11,"text":"Выдача","textPreview":"Выдача","textChars":6,"textLines":1,"bbox":[1082,280,138,54]}
+{"kind":"textbox","id":"sh/p8vudkju","slide":11,"text":"карта, отчёт, API, задача службе","textPreview":"карта, отчёт, API, задача службе","textChars":32,"textLines":1,"bbox":[1082,354,138,76]}
+{"kind":"shape","id":"sh/2l4b250j","slide":11,"bbox":[54,505,1185,2]}
+{"kind":"textbox","id":"sh/3mdcba1o","slide":11,"text":"Сквозные сервисы","textPreview":"Сквозные сервисы","textChars":16,"textLines":1,"bbox":[54,535,210,28]}
+{"kind":"textbox","id":"sh/cbmt8zil","slide":11,"text":"хранилище видеоданных     реестр моделей и версий     контроль качества     журнал решений","textPreview":"хранилище видеоданных     реестр моделей и версий     контроль качества     журнал решений","textChars":90,"textLines":1,"bbox":[270,532,920,45]}
+{"kind":"textbox","id":"sh/dcfuh4j6","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1190,679,38,22]}
+{"kind":"notes","id":"nt/f3naxl","slide":11,"text":"Предлагаемая архитектура. Компоненты и границы интеграции необходимо уточнить после обследования существующих городских ИС и реестров."}
+{"kind":"slide","id":"sl/nrcu9l","slide":12,"title":"Связь обнаружения с реальным объектом","textShapes":18}
+{"kind":"textbox","id":"sh/tkra907e","slide":12,"text":"Связь обнаружения с реальным объектом","textPreview":"Связь обнаружения с реальным объектом","textChars":37,"textLines":1,"bbox":[58,37,1100,62]}
+{"kind":"shape","id":"sh/6hgryl8n","slide":12,"bbox":[58,104,74,5]}
+{"kind":"textbox","id":"sh/ri987qp8","slide":12,"text":"Ключ к проверке гипотезы","textPreview":"Ключ к проверке гипотезы","textChars":24,"textLines":1,"bbox":[64,151,420,42]}
+{"kind":"textbox","id":"sh/4vy9wbqh","slide":12,"text":"Система должна объединить координаты реестра, траекторию автомобиля и положение объекта в кадре.","textPreview":"Система должна объединить координаты реестра, траекторию автомобиля и положение объекта в кадре.","textChars":96,"textLines":1,"bbox":[64,208,490,100]}
+{"kind":"shape","id":"sh/5w7q5g72","slide":12,"bbox":[610,142,56,56]}
+{"kind":"textbox","id":"sh/itgrul8r","slide":12,"text":"A","textPreview":"A","textChars":1,"textLines":1,"bbox":[610,151,56,32]}
+{"kind":"textbox","id":"sh/jup83qpw","slide":12,"text":"Кандидат","textPreview":"Кандидат","textChars":8,"textLines":1,"bbox":[694,142,220,34]}
+{"kind":"textbox","id":"sh/or298f61","slide":12,"text":"модель находит объект в кадре","textPreview":"модель находит объект в кадре","textChars":29,"textLines":1,"bbox":[694,180,470,46]}
+{"kind":"shape","id":"sh/pcbahk7m","slide":12,"bbox":[637,206,2,42]}
+{"kind":"shape","id":"sh/tofylcbe","slide":12,"bbox":[610,257,56,56]}
+{"kind":"textbox","id":"sh/8n6xs7ut","slide":12,"text":"B","textPreview":"B","textChars":1,"textLines":1,"bbox":[610,266,56,32]}
+{"kind":"textbox","id":"sh/7mxwj2t8","slide":12,"text":"Проекция","textPreview":"Проекция","textChars":8,"textLines":1,"bbox":[694,257,220,34]}
+{"kind":"textbox","id":"sh/6l4fqhcn","slide":12,"text":"GPS, курс и калибровка камеры задают область поиска","textPreview":"GPS, курс и калибровка камеры задают область поиска","textChars":51,"textLines":1,"bbox":[694,295,470,46]}
+{"kind":"shape","id":"sh/lkvehcb2","slide":12,"bbox":[637,321,2,42]}
+{"kind":"shape","id":"sh/kjmxo7ux","slide":12,"bbox":[610,372,56,56]}
+{"kind":"textbox","id":"sh/zidwf2tc","slide":12,"text":"C","textPreview":"C","textChars":1,"textLines":1,"bbox":[610,381,56,32]}
+{"kind":"textbox","id":"sh/yh4fmxcr","slide":12,"text":"Сопоставление","textPreview":"Сопоставление","textChars":13,"textLines":1,"bbox":[694,372,220,34]}
+{"kind":"textbox","id":"sh/5gzytwbm","slide":12,"text":"ближайший объект реестра получает наблюдение","textPreview":"ближайший объект реестра получает наблюдение","textChars":44,"textLines":1,"bbox":[694,410,470,46]}
+{"kind":"shape","id":"sh/4fqx0ra1","slide":12,"bbox":[637,436,2,42]}
+{"kind":"shape","id":"sh/ovi9czm9","slide":12,"bbox":[610,487,56,56]}
+{"kind":"textbox","id":"sh/pwrql4nu","slide":12,"text":"D","textPreview":"D","textChars":1,"textLines":1,"bbox":[610,496,56,32]}
+{"kind":"textbox","id":"sh/2tgrap4j","slide":12,"text":"Подтверждение","textPreview":"Подтверждение","textChars":13,"textLines":1,"bbox":[694,487,220,34]}
+{"kind":"textbox","id":"sh/nup8ju5o","slide":12,"text":"несколько проездов повышают достоверность","textPreview":"несколько проездов повышают достоверность","textChars":41,"textLines":1,"bbox":[694,525,470,46]}
+{"kind":"shape","id":"sh/0ry98zmd","slide":12,"bbox":[64,359,460,176]}
+{"kind":"textbox","id":"sh/1s7qh4ny","slide":12,"text":"Результат на уровне объекта","textPreview":"Результат на уровне объекта","textChars":27,"textLines":1,"bbox":[90,383,390,34]}
+{"kind":"textbox","id":"sh/e5g76p47","slide":12,"text":"ID SL-004182\n51.1286° N, 71.4304° E\nсостояние: вероятная неисправность\nдоверие: 0,86  •  3 наблюдения","textPreview":"ID SL-004182 | 51.1286° N, 71.4304° E | состояние: вероятная неисправность | доверие: 0,86  •  3 наблюдения","textChars":101,"textLines":4,"bbox":[90,432,390,94]}
+{"kind":"textbox","id":"sh/f6p8fu5s","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1190,679,38,22]}
+{"kind":"notes","id":"nt/nrcu9l","slide":12,"text":"Пример ID, координат и значения доверия иллюстративный. Он показывает требуемую структуру результата, а не реальный объект."}
+{"kind":"slide","id":"sl/h9zz2j","slide":13,"title":"Оценка функционального состояния","textShapes":16}
+{"kind":"textbox","id":"sh/zqpgfmdk","slide":13,"text":"Оценка функционального состояния","textPreview":"Оценка функционального состояния","textChars":32,"textLines":1,"bbox":[58,37,1100,62]}
+{"kind":"shape","id":"sh/krix87up","slide":13,"bbox":[58,104,74,5]}
+{"kind":"textbox","id":"sh/lsryhcva","slide":13,"text":"ПРЕДЛАГАЕМАЯ МЕТОДИКА","textPreview":"ПРЕДЛАГАЕМАЯ МЕТОДИКА","textChars":21,"textLines":1,"bbox":[64,143,225,30]}
+{"kind":"textbox","id":"sh/a1gf2xcn","slide":13,"text":"S = Σ (вес × оценка × доверие)","textPreview":"S = Σ (вес × оценка × доверие)","textChars":30,"textLines":1,"bbox":[64,205,760,70]}
+{"kind":"textbox","id":"sh/b2pgb2d8","slide":13,"text":"Индекс рассчитывается для объекта и временного окна. Вес признака задаёт профильная служба, а доверие учитывает качество кадра и согласованность нескольких проездов.","textPreview":"Индекс рассчитывается для объекта и временного окна. Вес признака задаёт профильная служба, а доверие учитывает качество кадра и согласов...","textChars":165,"textLines":1,"bbox":[64,296,760,105]}
+{"kind":"shape","id":"sh/cnyx47ut","slide":13,"bbox":[870,160,16,102]}
+{"kind":"textbox","id":"sh/xo7ydcve","slide":13,"text":"Норма","textPreview":"Норма","textChars":5,"textLines":1,"bbox":[910,160,270,35]}
+{"kind":"textbox","id":"sh/ux0fe1c7","slide":13,"text":"S ≥ 0,80","textPreview":"S ≥ 0,80","textChars":8,"textLines":1,"bbox":[910,200,270,30]}
+{"kind":"textbox","id":"sh/vitgn6ds","slide":13,"text":"плановый контроль","textPreview":"плановый контроль","textChars":17,"textLines":1,"bbox":[910,234,270,28]}
+{"kind":"shape","id":"sh/3elg721g","slide":13,"bbox":[870,305,16,102]}
+{"kind":"textbox","id":"sh/idcfex0v","slide":13,"text":"Требует проверки","textPreview":"Требует проверки","textChars":16,"textLines":1,"bbox":[910,305,270,35]}
+{"kind":"textbox","id":"sh/5g3y9sjm","slide":13,"text":"0,55 ≤ S < 0,80","textPreview":"0,55 ≤ S < 0,80","textChars":15,"textLines":1,"bbox":[910,345,270,30]}
+{"kind":"textbox","id":"sh/4fuhg7i1","slide":13,"text":"назначить инспекцию","textPreview":"назначить инспекцию","textChars":19,"textLines":1,"bbox":[910,379,270,28]}
+{"kind":"shape","id":"sh/r25gb21c","slide":13,"bbox":[870,450,16,102]}
+{"kind":"textbox","id":"sh/qhwzix07","slide":13,"text":"Критично","textPreview":"Критично","textChars":8,"textLines":1,"bbox":[910,450,270,35]}
+{"kind":"textbox","id":"sh/d4nydcji","slide":13,"text":"S < 0,55","textPreview":"S < 0,55","textChars":8,"textLines":1,"bbox":[910,490,270,30]}
+{"kind":"textbox","id":"sh/s3ehk7ix","slide":13,"text":"приоритетная задача","textPreview":"приоритетная задача","textChars":19,"textLines":1,"bbox":[910,524,270,28]}
+{"kind":"shape","id":"sh/f65gfm1o","slide":13,"bbox":[64,468,745,118]}
+{"kind":"textbox","id":"sh/e5wzmh03","slide":13,"text":"Пример для освещения","textPreview":"Пример для освещения","textChars":20,"textLines":1,"bbox":[89,492,240,30]}
+{"kind":"textbox","id":"sh/adkru5on","slide":13,"text":"наличие опоры 0,25   работа светильника 0,45   повреждение 0,20   видимость 0,10","textPreview":"наличие опоры 0,25   работа светильника 0,45   повреждение 0,20   видимость 0,10","textChars":80,"textLines":1,"bbox":[89,536,680,34]}
+{"kind":"textbox","id":"sh/bets3ap8","slide":13,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1190,679,38,22]}
+{"kind":"notes","id":"nt/h9zz2j","slide":13,"text":"Формула, веса и пороги являются предложением для пилота. Их необходимо калибровать по регламентам городских служб и экспертной разметке."}
+{"kind":"slide","id":"sl/4c2p1i","slide":14,"title":"Пользовательские продукты","textShapes":18}
+{"kind":"textbox","id":"sh/x83m1wfm","slide":14,"text":"Пользовательские продукты","textPreview":"Пользовательские продукты","textChars":25,"textLines":1,"bbox":[58,37,1100,62]}
+{"kind":"shape","id":"sh/a5s361gb","slide":14,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/b614z6xw","slide":14,"bbox":[55,145,735,455]}
+{"kind":"textbox","id":"sh/o3al4ry5","slide":14,"text":"Карта состояния инфраструктуры","textPreview":"Карта состояния инфраструктуры","textChars":30,"textLines":1,"bbox":[82,170,500,40]}
+{"kind":"shape","id":"sh/p4jmxwfq","slide":14,"bbox":[82,230,465,330]}
+{"kind":"shape","id":"sh/2hs32hgz","slide":14,"bbox":[120,275,360,8]}
+{"kind":"shape","id":"sh/ni14vmxk","slide":14,"bbox":[160,330,325,7]}
+{"kind":"shape","id":"sh/0fal07y9","slide":14,"bbox":[105,410,395,8]}
+{"kind":"shape","id":"sh/1gjmtcfu","slide":14,"bbox":[250,250,7,270]}
+{"kind":"shape","id":"sh/p4nm94b2","slide":14,"bbox":[360,245,8,290]}
+{"kind":"shape","id":"sh/4jelgzux","slide":14,"bbox":[170,320,18,18]}
+{"kind":"shape","id":"sh/3i547utc","slide":14,"bbox":[275,387,18,18]}
+{"kind":"shape","id":"sh/2hw3e9cr","slide":14,"bbox":[390,305,18,18]}
+{"kind":"shape","id":"sh/hgnm54v6","slide":14,"bbox":[448,475,18,18]}
+{"kind":"shape","id":"sh/gfelczul","slide":14,"bbox":[235,475,18,18]}
+{"kind":"textbox","id":"sh/fe543ud0","slide":14,"text":"Слои","textPreview":"Слои","textChars":4,"textLines":1,"bbox":[575,235,150,24]}
+{"kind":"shape","id":"sh/udc3apcf","slide":14,"bbox":[578,278,14,14]}
+{"kind":"textbox","id":"sh/tc3m1kvu","slide":14,"text":"освещение","textPreview":"освещение","textChars":9,"textLines":1,"bbox":[605,272,145,28]}
+{"kind":"shape","id":"sh/sbul8fup","slide":14,"bbox":[578,330,14,14]}
+{"kind":"textbox","id":"sh/kvylof2l","slide":14,"text":"покрытие","textPreview":"покрытие","textChars":8,"textLines":1,"bbox":[605,324,145,28]}
+{"kind":"shape","id":"sh/lw7mhk3q","slide":14,"bbox":[578,382,14,14]}
+{"kind":"textbox","id":"sh/ytg3mpkf","slide":14,"text":"разметка","textPreview":"разметка","textChars":8,"textLines":1,"bbox":[605,376,145,28]}
+{"kind":"shape","id":"sh/jup4ful0","slide":14,"bbox":[578,434,14,14]}
+{"kind":"textbox","id":"sh/wrylkf29","slide":14,"text":"зимнее состояние","textPreview":"зимнее состояние","textChars":16,"textLines":1,"bbox":[605,428,145,28]}
+{"kind":"textbox","id":"sh/xs7mdk3u","slide":14,"text":"87 объектов требуют проверки","textPreview":"87 объектов требуют проверки","textChars":28,"textLines":1,"bbox":[575,510,170,46]}
+{"kind":"textbox","id":"sh/apw3i5k3","slide":14,"text":"Выходные формы","textPreview":"Выходные формы","textChars":14,"textLines":1,"bbox":[845,152,320,40]}
+{"kind":"textbox","id":"sh/bq54balo","slide":14,"text":"Еженедельный отчёт","textPreview":"Еженедельный отчёт","textChars":18,"textLines":1,"bbox":[845,220,345,30]}
+{"kind":"textbox","id":"sh/gni5wz2d","slide":14,"text":"динамика, список отклонений, фотофрагменты","textPreview":"динамика, список отклонений, фотофрагменты","textChars":42,"textLines":1,"bbox":[845,255,345,46]}
+{"kind":"shape","id":"sh/hormp43y","slide":14,"bbox":[845,306,340,1]}
+{"kind":"textbox","id":"sh/ridofy5g","slide":14,"text":"Карточка объекта","textPreview":"Карточка объекта","textChars":16,"textLines":1,"bbox":[845,318,345,30]}
+{"kind":"textbox","id":"sh/qhk7md4v","slide":14,"text":"история наблюдений и подтверждений","textPreview":"история наблюдений и подтверждений","textChars":34,"textLines":1,"bbox":[845,353,345,46]}
+{"kind":"shape","id":"sh/dkv6h8n6","slide":14,"bbox":[845,404,340,1]}
+{"kind":"textbox","id":"sh/sjmpo3ml","slide":14,"text":"API и выгрузка","textPreview":"API и выгрузка","textChars":14,"textLines":1,"bbox":[845,416,345,30]}
+{"kind":"textbox","id":"sh/fmdoji5c","slide":14,"text":"GeoJSON, CSV, интеграция с диспетчерской","textPreview":"GeoJSON, CSV, интеграция с диспетчерской","textChars":40,"textLines":1,"bbox":[845,451,345,46]}
+{"kind":"shape","id":"sh/el47qd4r","slide":14,"bbox":[845,502,340,1]}
+{"kind":"textbox","id":"sh/1ovqls3i","slide":14,"text":"Задача службе","textPreview":"Задача службе","textChars":13,"textLines":1,"bbox":[845,514,345,30]}
+{"kind":"textbox","id":"sh/0nmpsnmx","slide":14,"text":"приоритет, координаты, срок проверки","textPreview":"приоритет, координаты, срок проверки","textChars":36,"textLines":1,"bbox":[845,549,345,46]}
+{"kind":"textbox","id":"sh/vq9o7e58","slide":14,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1190,679,38,22]}
+{"kind":"notes","id":"nt/4c2p1i","slide":14,"text":"Макет интерфейса иллюстративный. Форматы отчётности и интеграций следует согласовать с заказчиком пилота."}
+{"kind":"slide","id":"sl/dckelw","slide":15,"title":"Экспериментальная проверка","textShapes":23}
+{"kind":"textbox","id":"sh/25w7ud83","slide":15,"text":"Экспериментальная проверка","textPreview":"Экспериментальная проверка","textChars":26,"textLines":1,"bbox":[58,37,1100,62]}
+{"kind":"shape","id":"sh/p87q5s7u","slide":15,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/o7ypwnq9","slide":15,"bbox":[62,150,265,210]}
+{"kind":"textbox","id":"sh/f258zips","slide":15,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[82,170,40,28]}
+{"kind":"textbox","id":"sh/e1w7qd87","slide":15,"text":"Эталон","textPreview":"Эталон","textChars":6,"textLines":1,"bbox":[82,220,220,34]}
+{"kind":"textbox","id":"sh/14nq1s7i","slide":15,"text":"эксперты размечают выборку маршрутов и объектов","textPreview":"эксперты размечают выборку маршрутов и объектов","textChars":47,"textLines":1,"bbox":[82,275,220,65]}
+{"kind":"shape","id":"sh/03epsnqd","slide":15,"bbox":[360,150,265,210]}
+{"kind":"textbox","id":"sh/zy98b2pw","slide":15,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[380,170,40,28]}
+{"kind":"textbox","id":"sh/yxgr2x8b","slide":15,"text":"Слепой прогон","textPreview":"Слепой прогон","textChars":13,"textLines":1,"bbox":[380,220,220,34]}
+{"kind":"textbox","id":"sh/0f2xwv2h","slide":15,"text":"модель обрабатывает видео без ручной коррекции","textPreview":"модель обрабатывает видео без ручной коррекции","textChars":46,"textLines":1,"bbox":[380,275,220,65]}
+{"kind":"shape","id":"sh/1gby5032","slide":15,"bbox":[658,150,265,210]}
+{"kind":"textbox","id":"sh/edkfu54r","slide":15,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[678,170,40,28]}
+{"kind":"textbox","id":"sh/fetw3qlw","slide":15,"text":"Сопоставление","textPreview":"Сопоставление","textChars":13,"textLines":1,"bbox":[678,220,220,34]}
+{"kind":"textbox","id":"sh/sr2xsvml","slide":15,"text":"оценка на уровне кадра, события и объекта","textPreview":"оценка на уровне кадра, события и объекта","textChars":41,"textLines":1,"bbox":[678,275,220,65]}
+{"kind":"shape","id":"sh/tcbe1036","slide":15,"bbox":[956,150,265,210]}
+{"kind":"textbox","id":"sh/6p0fql4f","slide":15,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[976,170,40,28]}
+{"kind":"textbox","id":"sh/rqtwzql0","slide":15,"text":"Полевой аудит","textPreview":"Полевой аудит","textChars":13,"textLines":1,"bbox":[976,220,220,34]}
+{"kind":"textbox","id":"sh/4nixobm9","slide":15,"text":"служба проверяет критические случаи на месте","textPreview":"служба проверяет критические случаи на месте","textChars":44,"textLines":1,"bbox":[976,275,220,65]}
+{"kind":"textbox","id":"sh/5orexg3u","slide":15,"text":"Метрики принятия решения","textPreview":"Метрики принятия решения","textChars":24,"textLines":1,"bbox":[64,410,400,40]}
+{"kind":"textbox","id":"sh/l8zm58rm","slide":15,"text":"Качество модели","textPreview":"Качество модели","textChars":15,"textLines":1,"bbox":[64,475,180,27]}
+{"kind":"textbox","id":"sh/k7qlc3a1","slide":15,"text":"precision, recall, F1, mAP","textPreview":"precision, recall, F1, mAP","textChars":26,"textLines":1,"bbox":[254,475,360,46]}
+{"kind":"textbox","id":"sh/z6h43i9g","slide":15,"text":"Геопривязка","textPreview":"Геопривязка","textChars":11,"textLines":1,"bbox":[654,475,180,27]}
+{"kind":"textbox","id":"sh/y583adsv","slide":15,"text":"ошибка координат и доля верных соответствий","textPreview":"ошибка координат и доля верных соответствий","textChars":43,"textLines":1,"bbox":[844,475,360,46]}
+{"kind":"textbox","id":"sh/x4zm18ra","slide":15,"text":"Эксплуатация","textPreview":"Эксплуатация","textChars":12,"textLines":1,"bbox":[64,551,180,27]}
+{"kind":"textbox","id":"sh/c3ql83ap","slide":15,"text":"ложные тревоги и время формирования отчёта","textPreview":"ложные тревоги и время формирования отчёта","textChars":42,"textLines":1,"bbox":[254,551,360,46]}
+{"kind":"textbox","id":"sh/b2h4zy9k","slide":15,"text":"Полезность","textPreview":"Полезность","textChars":10,"textLines":1,"bbox":[654,551,180,27]}
+{"kind":"textbox","id":"sh/a1836tsz","slide":15,"text":"доля подтверждённых дефектов и сокращение ручной проверки","textPreview":"доля подтверждённых дефектов и сокращение ручной проверки","textChars":57,"textLines":1,"bbox":[844,551,360,46]}
+{"kind":"textbox","id":"sh/h03mdsru","slide":15,"text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[1190,679,38,22]}
+{"kind":"notes","id":"nt/dckelw","slide":15,"text":"Целевые пороги метрик следует установить после базового замера на локальных данных. В презентации намеренно не указаны вымышленные нормативы."}
+{"kind":"slide","id":"sl/j9qdvm","slide":16,"title":"Пилот в Астане на 12 недель","textShapes":16}
+{"kind":"textbox","id":"sh/5gvutc76","slide":16,"text":"Пилот в Астане на 12 недель","textPreview":"Пилот в Астане на 12 недель","textChars":27,"textLines":1,"bbox":[58,37,1100,62]}
+{"kind":"shape","id":"sh/id4byh8v","slide":16,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/3edcrmpg","slide":16,"bbox":[64,165,250,72]}
+{"kind":"textbox","id":"sh/s3mt4rqx","slide":16,"text":"НЕДЕЛИ 1–2","textPreview":"НЕДЕЛИ 1–2","textChars":10,"textLines":1,"bbox":[82,184,210,30]}
+{"kind":"shape","id":"sh/d4vuxw7i","slide":16,"bbox":[188,240,2,55]}
+{"kind":"shape","id":"sh/qh4b2h8r","slide":16,"bbox":[64,305,250,235]}
+{"kind":"textbox","id":"sh/r2dcvmpc","slide":16,"text":"Контур данных","textPreview":"Контур данных","textChars":13,"textLines":1,"bbox":[84,330,210,60]}
+{"kind":"textbox","id":"sh/872tsnqt","slide":16,"text":"маршруты, согласия, формат видео и GPS","textPreview":"маршруты, согласия, формат видео и GPS","textChars":38,"textLines":1,"bbox":[84,412,210,95]}
+{"kind":"shape","id":"sh/t8bals7e","slide":16,"bbox":[356,165,250,72]}
+{"kind":"textbox","id":"sh/p0n6547e","slide":16,"text":"НЕДЕЛИ 3–5","textPreview":"НЕДЕЛИ 3–5","textChars":10,"textLines":1,"bbox":[374,184,210,30]}
+{"kind":"shape","id":"sh/4ze5cz6t","slide":16,"bbox":[480,240,2,55]}
+{"kind":"shape","id":"sh/3ylo3up8","slide":16,"bbox":[356,305,250,235]}
+{"kind":"textbox","id":"sh/2xcnapon","slide":16,"text":"Набор и разметка","textPreview":"Набор и разметка","textChars":16,"textLines":1,"bbox":[376,330,210,60]}
+{"kind":"textbox","id":"sh/don6947a","slide":16,"text":"освещение и покрытие на выбранных коридорах","textPreview":"освещение и покрытие на выбранных коридорах","textChars":43,"textLines":1,"bbox":[376,412,210,95]}
+{"kind":"shape","id":"sh/cnepgz65","slide":16,"bbox":[648,165,250,72]}
+{"kind":"textbox","id":"sh/rm5o7upk","slide":16,"text":"НЕДЕЛИ 6–9","textPreview":"НЕДЕЛИ 6–9","textChars":10,"textLines":1,"bbox":[666,184,210,30]}
+{"kind":"shape","id":"sh/q1w7e9oz","slide":16,"bbox":[772,240,2,55]}
+{"kind":"shape","id":"sh/1s76do7m","slide":16,"bbox":[648,305,250,235]}
+{"kind":"textbox","id":"sh/0rypkj61","slide":16,"text":"Модели и геопривязка","textPreview":"Модели и геопривязка","textChars":20,"textLines":1,"bbox":[668,330,210,60]}
+{"kind":"textbox","id":"sh/k76hwri9","slide":16,"text":"обучение, сопоставление с реестром, тест","textPreview":"обучение, сопоставление с реестром, тест","textChars":40,"textLines":1,"bbox":[668,412,210,95]}
+{"kind":"shape","id":"sh/l8zi5cju","slide":16,"bbox":[940,165,250,72]}
+{"kind":"textbox","id":"sh/y5ozuh0j","slide":16,"text":"НЕДЕЛИ 10–12","textPreview":"НЕДЕЛИ 10–12","textChars":12,"textLines":1,"bbox":[958,184,210,30]}
+{"kind":"shape","id":"sh/j6x03m14","slide":16,"bbox":[1064,240,2,55]}
+{"kind":"shape","id":"sh/sbqh0ril","slide":16,"bbox":[940,305,250,235]}
+{"kind":"textbox","id":"sh/tczi9wz6","slide":16,"text":"Проверка в эксплуатации","textPreview":"Проверка в эксплуатации","textChars":23,"textLines":1,"bbox":[960,330,210,60]}
+{"kind":"textbox","id":"sh/698zyh0f","slide":16,"text":"карта, отчёт, аудит службой, решение о масштабировании","textPreview":"карта, отчёт, аудит службой, решение о масштабировании","textChars":54,"textLines":1,"bbox":[960,412,210,95]}
+{"kind":"textbox","id":"sh/7ah07mh0","slide":16,"text":"Контрольная точка","textPreview":"Контрольная точка","textChars":17,"textLines":1,"bbox":[64,585,190,28]}
+{"kind":"textbox","id":"sh/ofmho7ih","slide":16,"text":"После пилота заказчик получает измеренные метрики, перечень интеграций и расчёт ресурсов для городского масштаба.","textPreview":"После пилота заказчик получает измеренные метрики, перечень интеграций и расчёт ресурсов для городского масштаба.","textChars":113,"textLines":1,"bbox":[267,579,920,50]}
+{"kind":"textbox","id":"sh/9gvyxsjm","slide":16,"text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1190,679,38,22]}
+{"kind":"notes","id":"nt/j9qdvm","slide":16,"text":"Срок 12 недель является проектным предложением. Он зависит от доступности видеоданных, качества GPS, готовности реестра объектов и скорости экспертной разметки."}
+{"kind":"slide","id":"sl/ynk3lu","slide":17,"title":"Риски и меры управления","textShapes":22}
+{"kind":"textbox","id":"sh/wri5gfql","slide":17,"text":"Риски и меры управления","textPreview":"Риски и меры управления","textChars":23,"textLines":1,"bbox":[58,37,1100,62]}
+{"kind":"shape","id":"sh/bq9o7u9g","slide":17,"bbox":[58,104,74,5]}
+{"kind":"textbox","id":"sh/ap0nep8v","slide":17,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[64,148,50,34]}
+{"kind":"textbox","id":"sh/94r65kra","slide":17,"text":"Персональные данные","textPreview":"Персональные данные","textChars":19,"textLines":1,"bbox":[130,143,250,34]}
+{"kind":"textbox","id":"sh/o3i5cfqp","slide":17,"text":"лица и номера могут попадать в кадр","textPreview":"лица и номера могут попадать в кадр","textChars":35,"textLines":1,"bbox":[395,143,320,58]}
+{"kind":"textbox","id":"sh/n2po3a94","slide":17,"text":"обезличивание до хранения, разграничение доступа, сроки удаления","textPreview":"обезличивание до хранения, разграничение доступа, сроки удаления","textChars":64,"textLines":1,"bbox":[750,143,450,58]}
+{"kind":"shape","id":"sh/m1gna58j","slide":17,"bbox":[130,219,1070,1]}
+{"kind":"textbox","id":"sh/t0b6h47e","slide":17,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[64,247,50,34]}
+{"kind":"textbox","id":"sh/8z2pozqt","slide":17,"text":"Погода и сезонность","textPreview":"Погода и сезонность","textChars":19,"textLines":1,"bbox":[130,242,250,34]}
+{"kind":"textbox","id":"sh/q14ratg7","slide":17,"text":"снег, блики и темнота меняют качество","textPreview":"снег, блики и темнота меняют качество","textChars":37,"textLines":1,"bbox":[395,242,320,58]}
+{"kind":"textbox","id":"sh/r2d83yhs","slide":17,"text":"раздельные тестовые наборы, контроль дрейфа, переобучение","textPreview":"раздельные тестовые наборы, контроль дрейфа, переобучение","textChars":57,"textLines":1,"bbox":[750,242,450,58]}
+{"kind":"shape","id":"sh/s3m9c3yd","slide":17,"bbox":[130,318,1070,1]}
+{"kind":"textbox","id":"sh/d4vq58zy","slide":17,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[64,346,50,34]}
+{"kind":"textbox","id":"sh/id4r69gb","slide":17,"text":"Ошибочная тревога","textPreview":"Ошибочная тревога","textChars":17,"textLines":1,"bbox":[130,341,250,34]}
+{"kind":"textbox","id":"sh/3ed8zehg","slide":17,"text":"модель может неверно назначить критичность","textPreview":"модель может неверно назначить критичность","textChars":42,"textLines":1,"bbox":[395,341,320,58]}
+{"kind":"textbox","id":"sh/4zm98jy1","slide":17,"text":"порог доверия, повторные проезды, подтверждение оператором","textPreview":"порог доверия, повторные проезды, подтверждение оператором","textChars":58,"textLines":1,"bbox":[750,341,450,58]}
+{"kind":"shape","id":"sh/50vq1ozm","slide":17,"bbox":[130,417,1070,1]}
+{"kind":"textbox","id":"sh/29oridgf","slide":17,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[64,445,50,34]}
+{"kind":"textbox","id":"sh/naxsbih0","slide":17,"text":"Слабая геопривязка","textPreview":"Слабая геопривязка","textChars":18,"textLines":1,"bbox":[130,440,250,34]}
+{"kind":"textbox","id":"sh/z2pwn6t0","slide":17,"text":"GPS и курс не всегда точны","textPreview":"GPS и курс не всегда точны","textChars":26,"textLines":1,"bbox":[395,440,320,58]}
+{"kind":"textbox","id":"sh/y1gfelsf","slide":17,"text":"калибровка камеры, карта объектов, допуск и вероятностное сопоставление","textPreview":"калибровка камеры, карта объектов, допуск и вероятностное сопоставление","textChars":71,"textLines":1,"bbox":[750,440,450,58]}
+{"kind":"shape","id":"sh/l47epgb6","slide":17,"bbox":[130,516,1070,1]}
+{"kind":"textbox","id":"sh/k3yxgbal","slide":17,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[64,544,50,34]}
+{"kind":"textbox","id":"sh/76pwrqtc","slide":17,"text":"Организационный разрыв","textPreview":"Организационный разрыв","textChars":22,"textLines":1,"bbox":[130,539,250,34]}
+{"kind":"textbox","id":"sh/m5gfilsr","slide":17,"text":"отчёт не превращается в действие","textPreview":"отчёт не превращается в действие","textChars":32,"textLines":1,"bbox":[395,539,320,58]}
+{"kind":"textbox","id":"sh/98ret0b2","slide":17,"text":"владелец процесса, SLA проверки, интеграция с диспетчерской","textPreview":"владелец процесса, SLA проверки, интеграция с диспетчерской","textChars":59,"textLines":1,"bbox":[750,539,450,58]}
+{"kind":"textbox","id":"sh/87yxkvah","slide":17,"text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[1190,679,38,22]}
+{"kind":"notes","id":"nt/ynk3lu","slide":17,"text":"Правовые основания обработки видеоданных и требования к хранению необходимо проверить с юридической и информационной безопасностью заказчика до начала пилота."}
+{"kind":"slide","id":"sl/bbt35q","slide":18,"title":"Ожидаемый результат","textShapes":16}
+{"kind":"textbox","id":"sh/3mtcvqtw","slide":18,"text":"Ожидаемый результат","textPreview":"Ожидаемый результат","textChars":19,"textLines":1,"bbox":[58,37,1100,62]}
+{"kind":"shape","id":"sh/4n2t4vah","slide":18,"bbox":[58,104,74,5]}
+{"kind":"textbox","id":"sh/5obux0bm","slide":18,"text":"Пилот должен доказать связь между наблюдением из автомобиля и проверяемым состоянием конкретного городского объекта.","textPreview":"Пилот должен доказать связь между наблюдением из автомобиля и проверяемым состоянием конкретного городского объекта.","textChars":116,"textLines":1,"bbox":[64,143,760,120]}
+{"kind":"textbox","id":"sh/qpkb65s7","slide":18,"text":"Данные","textPreview":"Данные","textChars":6,"textLines":1,"bbox":[64,315,160,30]}
+{"kind":"textbox","id":"sh/rqtczats","slide":18,"text":"локальный размеченный набор для Астаны","textPreview":"локальный размеченный набор для Астаны","textChars":38,"textLines":1,"bbox":[64,354,365,55]}
+{"kind":"textbox","id":"sh/sr2t8fad","slide":18,"text":"Модели","textPreview":"Модели","textChars":6,"textLines":1,"bbox":[484,315,160,30]}
+{"kind":"textbox","id":"sh/dsbu10by","slide":18,"text":"освещение и дорожное покрытие","textPreview":"освещение и дорожное покрытие","textChars":29,"textLines":1,"bbox":[484,354,365,55]}
+{"kind":"textbox","id":"sh/6tgbu1c3","slide":18,"text":"Система","textPreview":"Система","textChars":7,"textLines":1,"bbox":[64,440,160,30]}
+{"kind":"textbox","id":"sh/7u9sn6to","slide":18,"text":"геопривязка, индекс состояния, карта и отчёт","textPreview":"геопривязка, индекс состояния, карта и отчёт","textChars":44,"textLines":1,"bbox":[64,479,365,55]}
+{"kind":"textbox","id":"sh/ja1w7uh8","slide":18,"text":"Решение","textPreview":"Решение","textChars":7,"textLines":1,"bbox":[484,440,160,30]}
+{"kind":"textbox","id":"sh/y9svepgn","slide":18,"text":"измеренные показатели для масштабирования","textPreview":"измеренные показатели для масштабирования","textChars":41,"textLines":1,"bbox":[484,479,365,55]}
+{"kind":"shape","id":"sh/lcje94zy","slide":18,"bbox":[900,145,315,430]}
+{"kind":"textbox","id":"sh/kbadgzyd","slide":18,"text":"Основные источники","textPreview":"Основные источники","textChars":18,"textLines":1,"bbox":[928,174,255,35]}
+{"kind":"textbox","id":"sh/bmhw3uhw","slide":18,"text":"Aiymbay et al.\nSymmetry, 2025\nDOI 10.3390/sym17081294","textPreview":"Aiymbay et al. | Symmetry, 2025 | DOI 10.3390/sym17081294","textChars":53,"textLines":3,"bbox":[928,232,255,75]}
+{"kind":"shape","id":"sh/al8vapgb","slide":18,"bbox":[928,322,250,1]}
+{"kind":"textbox","id":"sh/x8je5kz2","slide":18,"text":"SoftLogic.ai\nАвтономный комплекс ИИ\nпубличное описание продукта","textPreview":"SoftLogic.ai | Автономный комплекс ИИ | публичное описание продукта","textChars":63,"textLines":3,"bbox":[928,340,255,72]}
+{"kind":"shape","id":"sh/wnadczyh","slide":18,"bbox":[928,427,250,1]}
+{"kind":"textbox","id":"sh/nihwzah0","slide":18,"text":"Santiago Sanchez\nInstagram Reel\n1 июля 2026","textPreview":"Santiago Sanchez | Instagram Reel | 1 июля 2026","textChars":43,"textLines":3,"bbox":[928,445,255,70]}
+{"kind":"textbox","id":"sh/mh8v65gf","slide":18,"text":"Следующий шаг: согласовать владельца пилота, два приоритетных класса объектов и тестовые маршруты.","textPreview":"Следующий шаг: согласовать владельца пилота, два приоритетных класса объектов и тестовые маршруты.","textChars":98,"textLines":1,"bbox":[64,610,1080,50]}
+{"kind":"textbox","id":"sh/qdofi5k7","slide":18,"text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[1190,679,38,22]}
+{"kind":"notes","id":"nt/bbt35q","slide":18,"text":"Основная статья: https://www.mdpi.com/2073-8994/17/8/1294 и https://doi.org/10.3390/sym17081294\nПромышленный аналог: https://softlogic.ai/solution/kontrol_odx\nВидеореференс: https://www.instagram.com/santiagsanchezr/reel/DaRQP1vBLLu/\nВсе проектные сроки, формулы индекса и примеры объектов в презентации обозначены как предложения или иллюстрации."}

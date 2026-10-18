@@ -1,0 +1,469 @@
+{"kind":"deck","id":"pr/1xqxne","name":"Deck"}
+{"kind":"layout","layoutId":"af397f79-3762-4cb9-9273-9906e90784c1","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"4d3fab96-db70-409b-a206-f06b186fef88","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/s6q9jk","slide":1,"title":"PhD SEMINAR","textShapes":5}
+{"kind":"shape","id":"sh/5wjmdcjq","slide":1,"bbox":[0,0,735,720]}
+{"kind":"textbox","id":"sh/4val4725","slide":1,"text":"PhD SEMINAR","textPreview":"PhD SEMINAR","textChars":11,"textLines":1,"bbox":[64,60,150,30]}
+{"kind":"textbox","id":"sh/v6hk7218","slide":1,"text":"Intelligent Digital Monitoring of Road Infrastructure","textPreview":"Intelligent Digital Monitoring of Road Infrastructure","textChars":53,"textLines":1,"bbox":[64,145,625,170]}
+{"kind":"textbox","id":"sh/u583yxkn","slide":1,"text":"Vehicle video analytics for functional-condition assessment and evidence-based reporting","textPreview":"Vehicle video analytics for functional-condition assessment and evidence-based reporting","textChars":88,"textLines":1,"bbox":[66,350,555,90]}
+{"kind":"shape","id":"sh/hsz29sje","slide":1,"bbox":[66,492,220,4]}
+{"kind":"textbox","id":"sh/grql0n2t","slide":1,"text":"Astana  |  2026","textPreview":"Astana  |  2026","textChars":15,"textLines":1,"bbox":[66,520,280,32]}
+{"kind":"textbox","id":"sh/72xk3i1c","slide":1,"text":"PhD dissertation research programme","textPreview":"PhD dissertation research programme","textChars":35,"textLines":1,"bbox":[66,565,350,28]}
+{"kind":"image","id":"im/nals3258","slide":1,"name":"","alt":"Concept illustration of road video analytics in Astana","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/s6q9jk","slide":1,"text":"Cover image is a generated concept illustration and does not document a specific road segment. Presentation title and scope supplied by the author."}
+{"kind":"slide","id":"sl/7dcb6d","slide":2,"title":"Urban monitoring problem","textShapes":18}
+{"kind":"textbox","id":"sh/e9srmx4n","slide":2,"text":"Urban monitoring problem","textPreview":"Urban monitoring problem","textChars":24,"textLines":1,"bbox":[58,36,1120,62]}
+{"kind":"shape","id":"sh/1cjaxcny","slide":2,"bbox":[58,104,74,5]}
+{"kind":"textbox","id":"sh/gba9o7md","slide":2,"text":"Astana already produces a distributed stream of road observations","textPreview":"Astana already produces a distributed stream of road observations","textChars":65,"textLines":1,"bbox":[60,142,720,55]}
+{"kind":"textbox","id":"sh/r6h8ri5w","slide":2,"text":"Dashcams in municipal and private vehicles repeatedly record roads and roadside assets.\nManual review cannot scale to the volume, geographic coverage, and seasonal variability of the video stream.\nThe missing layer is a reproducible method that links visual evidence to a mapped asset, condition label, confidence score, and inspection date.","textPreview":"Dashcams in municipal and private vehicles repeatedly record roads and roadside assets. | Manual review cannot scale to the volume, geogr...","textChars":341,"textLines":3,"bbox":[65,220,585,300]}
+{"kind":"shape","id":"sh/6l8rix4b","slide":2,"bbox":[700,160,500,390]}
+{"kind":"shape","id":"sh/t8jqtsn2","slide":2,"bbox":[730,195,420,68]}
+{"kind":"textbox","id":"sh/s7a9knmh","slide":2,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[744,207,28,20]}
+{"kind":"textbox","id":"sh/jih8ni50","slide":2,"text":"Video + GPS","textPreview":"Video + GPS","textChars":11,"textLines":1,"bbox":[785,205,145,24]}
+{"kind":"textbox","id":"sh/ih8red4f","slide":2,"text":"mobile observations","textPreview":"mobile observations","textChars":19,"textLines":1,"bbox":[940,206,195,48]}
+{"kind":"shape","id":"sh/4nexc3yt","slide":2,"bbox":[730,281,420,68]}
+{"kind":"textbox","id":"sh/5ony5ofe","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[744,293,28,20]}
+{"kind":"textbox","id":"sh/ilwfatgn","slide":2,"text":"Perception","textPreview":"Perception","textChars":10,"textLines":1,"bbox":[785,291,145,24]}
+{"kind":"textbox","id":"sh/3m5g3yh8","slide":2,"text":"objects and surfaces","textPreview":"objects and surfaces","textChars":20,"textLines":1,"bbox":[940,292,195,48]}
+{"kind":"shape","id":"sh/gjux8jyh","slide":2,"bbox":[730,367,420,68]}
+{"kind":"textbox","id":"sh/hk3y1oz2","slide":2,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[744,379,28,20]}
+{"kind":"textbox","id":"sh/uxcf69gr","slide":2,"text":"Condition","textPreview":"Condition","textChars":9,"textLines":1,"bbox":[785,377,145,24]}
+{"kind":"textbox","id":"sh/vylgzehw","slide":2,"text":"functional state","textPreview":"functional state","textChars":16,"textLines":1,"bbox":[940,378,195,48]}
+{"kind":"shape","id":"sh/0fyhkny1","slide":2,"bbox":[730,453,420,68]}
+{"kind":"textbox","id":"sh/1g7yd8f6","slide":2,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[744,465,28,20]}
+{"kind":"textbox","id":"sh/9c3yx87q","slide":2,"text":"Report","textPreview":"Report","textChars":6,"textLines":1,"bbox":[785,463,145,24]}
+{"kind":"textbox","id":"sh/8buxo3q5","slide":2,"text":"map and work order","textPreview":"map and work order","textChars":18,"textLines":1,"bbox":[940,464,195,48]}
+{"kind":"textbox","id":"sh/nalgvypk","slide":2,"text":"Research premise","textPreview":"Research premise","textChars":16,"textLines":1,"bbox":[65,565,180,25]}
+{"kind":"textbox","id":"sh/m9cfmd8z","slide":2,"text":"Repeated observations can convert opportunistic video into a longitudinal infrastructure inventory.","textPreview":"Repeated observations can convert opportunistic video into a longitudinal infrastructure inventory.","textChars":99,"textLines":1,"bbox":[65,596,1050,42]}
+{"kind":"textbox","id":"sh/l83yt87e","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1190,680,35,18]}
+{"kind":"notes","id":"nt/7dcb6d","slide":2,"text":"Motivation based on the dissertation description provided by the author. No citywide video-volume estimate is asserted because no verified operational count was supplied."}
+{"kind":"slide","id":"sl/nmjoul","slide":3,"title":"Dissertation framing","textShapes":12}
+{"kind":"textbox","id":"sh/zq9c3250","slide":3,"text":"Dissertation framing","textPreview":"Dissertation framing","textChars":20,"textLines":1,"bbox":[58,36,1120,62]}
+{"kind":"shape","id":"sh/kritc7ml","slide":3,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/lsbu5cn6","slide":3,"bbox":[60,145,555,190]}
+{"kind":"shape","id":"sh/mdkveh4r","slide":3,"bbox":[60,145,7,190]}
+{"kind":"textbox","id":"sh/7etc725c","slide":3,"text":"Aim","textPreview":"Aim","textChars":3,"textLines":1,"bbox":[84,165,515,34]}
+{"kind":"textbox","id":"sh/8f2dg7mh","slide":3,"text":"Develop an intelligent system that estimates the functional condition of road infrastructure from vehicle video and produces traceable reports.","textPreview":"Develop an intelligent system that estimates the functional condition of road infrastructure from vehicle video and produces traceable re...","textChars":143,"textLines":1,"bbox":[84,212,513,108]}
+{"kind":"shape","id":"sh/9gbu9cn2","slide":3,"bbox":[665,145,555,190]}
+{"kind":"shape","id":"sh/2hgb2d47","slide":3,"bbox":[665,145,7,190]}
+{"kind":"textbox","id":"sh/nipcvi5s","slide":3,"text":"Hypothesis","textPreview":"Hypothesis","textChars":10,"textLines":1,"bbox":[689,165,515,34]}
+{"kind":"textbox","id":"sh/nqxgzu54","slide":3,"text":"Given mapped assets and repeated georeferenced observations, machine-learning models can infer functional condition with measurable uncertainty.","textPreview":"Given mapped assets and repeated georeferenced observations, machine-learning models can infer functional condition with measurable uncer...","textChars":144,"textLines":1,"bbox":[689,212,513,108]}
+{"kind":"shape","id":"sh/mpof69oj","slide":3,"bbox":[60,375,360,190]}
+{"kind":"shape","id":"sh/9sfy14na","slide":3,"bbox":[60,375,7,190]}
+{"kind":"textbox","id":"sh/or6h8z6p","slide":3,"text":"Object of research","textPreview":"Object of research","textChars":18,"textLines":1,"bbox":[84,395,320,34]}
+{"kind":"textbox","id":"sh/zmxgvu58","slide":3,"text":"Urban road infrastructure observed from moving vehicles.","textPreview":"Urban road infrastructure observed from moving vehicles.","textChars":56,"textLines":1,"bbox":[84,442,318,108]}
+{"kind":"shape","id":"sh/elof2pon","slide":3,"bbox":[460,375,360,190]}
+{"kind":"shape","id":"sh/1ofyx4ny","slide":3,"bbox":[460,375,7,190]}
+{"kind":"textbox","id":"sh/0n6x4z6t","slide":3,"text":"Subject of research","textPreview":"Subject of research","textChars":19,"textLines":1,"bbox":[484,395,320,34]}
+{"kind":"textbox","id":"sh/ridgra5w","slide":3,"text":"Methods for detection, segmentation, condition classification, spatial association, and temporal aggregation.","textPreview":"Methods for detection, segmentation, condition classification, spatial association, and temporal aggregation.","textChars":109,"textLines":1,"bbox":[484,442,318,108]}
+{"kind":"shape","id":"sh/qh4fypob","slide":3,"bbox":[860,375,360,190]}
+{"kind":"shape","id":"sh/utkza58j","slide":3,"bbox":[860,375,7,190]}
+{"kind":"textbox","id":"sh/vudgja94","slide":3,"text":"Unit of evidence","textPreview":"Unit of evidence","textChars":16,"textLines":1,"bbox":[884,395,320,34]}
+{"kind":"textbox","id":"sh/gfmhcfq9","slide":3,"text":"Asset or road segment + coordinates + timestamp + state + confidence + image fragment.","textPreview":"Asset or road segment + coordinates + timestamp + state + confidence + image fragment.","textChars":86,"textLines":1,"bbox":[884,442,318,108]}
+{"kind":"textbox","id":"sh/hgvylkru","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1190,680,35,18]}
+{"kind":"notes","id":"nt/nmjoul","slide":3,"text":"Research framing developed from the author's stated aim and hypothesis."}
+{"kind":"slide","id":"sl/69k6ap","slide":4,"title":"Research questions","textShapes":10}
+{"kind":"textbox","id":"sh/5or61cb6","slide":4,"text":"Research questions","textPreview":"Research questions","textChars":18,"textLines":1,"bbox":[58,36,1120,62]}
+{"kind":"shape","id":"sh/il076hsv","slide":4,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/3m9oz2tg","slide":4,"bbox":[70,155,550,175]}
+{"kind":"textbox","id":"sh/gjip47ap","slide":4,"text":"RQ1","textPreview":"RQ1","textChars":3,"textLines":1,"bbox":[95,179,65,30]}
+{"kind":"textbox","id":"sh/hkr6xcba","slide":4,"text":"Which representation fits each infrastructure class: bounding box, mask, keypoint, or road segment?","textPreview":"Which representation fits each infrastructure class: bounding box, mask, keypoint, or road segment?","textChars":99,"textLines":1,"bbox":[95,227,495,78]}
+{"kind":"shape","id":"sh/uh0n2xsj","slide":4,"bbox":[660,155,550,175]}
+{"kind":"textbox","id":"sh/vi9ov2t4","slide":4,"text":"RQ2","textPreview":"RQ2","textChars":3,"textLines":1,"bbox":[685,179,65,30]}
+{"kind":"textbox","id":"sh/0f2pgrat","slide":4,"text":"How much do spatial, geometric, and non-overlap priors improve recognition under occlusion?","textPreview":"How much do spatial, geometric, and non-overlap priors improve recognition under occlusion?","textChars":91,"textLines":1,"bbox":[685,227,495,78]}
+{"kind":"shape","id":"sh/1gvq9wre","slide":4,"bbox":[70,385,550,175]}
+{"kind":"textbox","id":"sh/tsr2h87y","slide":4,"text":"RQ3","textPreview":"RQ3","textChars":3,"textLines":1,"bbox":[95,409,65,30]}
+{"kind":"textbox","id":"sh/sri1o36d","slide":4,"text":"How can local Astana data correct domain shift caused by snow, darkness, glare, and camera diversity?","textPreview":"How can local Astana data correct domain shift caused by snow, darkness, glare, and camera diversity?","textChars":101,"textLines":1,"bbox":[95,457,495,78]}
+{"kind":"shape","id":"sh/rq9kfyps","slide":4,"bbox":[660,385,550,175]}
+{"kind":"textbox","id":"sh/6p0jmto7","slide":4,"text":"RQ4","textPreview":"RQ4","textChars":3,"textLines":1,"bbox":[685,409,65,30]}
+{"kind":"textbox","id":"sh/5or2do7m","slide":4,"text":"How should repeated observations be fused into a reliable operational state and report?","textPreview":"How should repeated observations be fused into a reliable operational state and report?","textChars":87,"textLines":1,"bbox":[685,457,495,78]}
+{"kind":"textbox","id":"sh/kni1kj6h","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1190,680,35,18]}
+{"kind":"notes","id":"nt/69k6ap","slide":4,"text":"The research questions operationalize model design, domain adaptation, and evidence aggregation."}
+{"kind":"slide","id":"sl/glmk4x","slide":5,"title":"Published starting point: street-light monitoring in Astana","textShapes":12}
+{"kind":"textbox","id":"sh/bil0fexk","slide":5,"text":"Published starting point: street-light monitoring in Astana","textPreview":"Published starting point: street-light monitoring in Astana","textChars":59,"textLines":1,"bbox":[58,36,1120,62]}
+{"kind":"shape","id":"sh/c3uhojy5","slide":5,"bbox":[58,104,74,5]}
+{"kind":"textbox","id":"sh/d4nihofq","slide":5,"text":"Our peer-reviewed study established the first validated component of the dissertation","textPreview":"Our peer-reviewed study established the first validated component of the dissertation","textChars":85,"textLines":1,"bbox":[60,137,1080,45]}
+{"kind":"shape","id":"sh/y5wjqtgb","slide":5,"bbox":[60,210,350,280]}
+{"kind":"shape","id":"sh/z650jyxw","slide":5,"bbox":[60,210,7,280]}
+{"kind":"textbox","id":"sh/k7e1s3y1","slide":5,"text":"Dataset","textPreview":"Dataset","textChars":7,"textLines":1,"bbox":[84,230,310,34]}
+{"kind":"textbox","id":"sh/l8nil8fm","slide":5,"text":"4,260 annotated night-time dashcam frames\n1280 × 720 pixels\nAstana road scenes\nPole and lamp classes","textPreview":"4,260 annotated night-time dashcam frames | 1280 × 720 pixels | Astana road scenes | Pole and lamp classes","textChars":100,"textLines":4,"bbox":[84,277,308,198]}
+{"kind":"shape","id":"sh/m9wjudg7","slide":5,"bbox":[465,210,350,280]}
+{"kind":"shape","id":"sh/7a50nyxs","slide":5,"bbox":[465,210,7,280]}
+{"kind":"textbox","id":"sh/3298rip8","slide":5,"text":"Environmental coverage","textPreview":"Environmental coverage","textChars":22,"textLines":1,"bbox":[489,230,310,34]}
+{"kind":"textbox","id":"sh/21grydon","slide":5,"text":"1,494 clear frames\n1,524 snowfall frames\n1,242 rain frames\n396 frames without poles or lamps","textPreview":"1,494 clear frames | 1,524 snowfall frames | 1,242 rain frames | 396 frames without poles or lamps","textChars":92,"textLines":4,"bbox":[489,277,308,198]}
+{"kind":"shape","id":"sh/p4rqt87e","slide":5,"bbox":[870,210,350,280]}
+{"kind":"shape","id":"sh/43i90n6t","slide":5,"bbox":[870,210,7,280]}
+{"kind":"textbox","id":"sh/fyp8nypw","slide":5,"text":"Validated result","textPreview":"Validated result","textChars":16,"textLines":1,"bbox":[894,230,310,34]}
+{"kind":"textbox","id":"sh/uxg7utor","slide":5,"text":"YOLO-CSE achieved the best reported recall and F1 among the evaluated models, supporting reliable detection under difficult night conditions.","textPreview":"YOLO-CSE achieved the best reported recall and F1 among the evaluated models, supporting reliable detection under difficult night conditi...","textChars":141,"textLines":1,"bbox":[894,277,308,198]}
+{"kind":"textbox","id":"sh/h07qp872","slide":5,"text":"Dissertation extension","textPreview":"Dissertation extension","textChars":22,"textLines":1,"bbox":[60,548,220,28]}
+{"kind":"textbox","id":"sh/gzypw36h","slide":5,"text":"Scale the evidence model from lighting to roads, markings, curbs, traffic control, and public-transport assets.","textPreview":"Scale the evidence model from lighting to roads, markings, curbs, traffic control, and public-transport assets.","textChars":111,"textLines":1,"bbox":[285,542,910,50]}
+{"kind":"textbox","id":"sh/zut8z25g","slide":5,"text":"Aiymbay et al., Symmetry 17(8), 1294, 2025","textPreview":"Aiymbay et al., Symmetry 17(8), 1294, 2025","textChars":42,"textLines":1,"bbox":[58,683,1060,18]}
+{"kind":"textbox","id":"sh/etkr6xov","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1190,680,35,18]}
+{"kind":"notes","id":"nt/glmk4x","slide":5,"text":"Source: Aiymbay, S.; Zhumadillayeva, A.; Matson, E.T.; Matkarimov, B.; Mukhametzhanova, B. Applying Computer Vision for the Detection and Analysis of the Condition and Operation of Street Lighting. Symmetry 2025, 17, 1294. https://doi.org/10.3390/sym17081294"}
+{"kind":"slide","id":"sl/i9u357","slide":6,"title":"Published dataset and training protocol","textShapes":17}
+{"kind":"textbox","id":"sh/g7q9k3ix","slide":6,"text":"Published dataset and training protocol","textPreview":"Published dataset and training protocol","textChars":39,"textLines":1,"bbox":[58,36,1120,62]}
+{"kind":"shape","id":"sh/fmhsry1s","slide":6,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/elorit07","slide":6,"bbox":[75,160,265,245]}
+{"kind":"textbox","id":"sh/tkfapojm","slide":6,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[89,172,28,20]}
+{"kind":"textbox","id":"sh/sj69gji1","slide":6,"text":"Acquisition","textPreview":"Acquisition","textChars":11,"textLines":1,"bbox":[89,199,237,56]}
+{"kind":"textbox","id":"sh/rixsne1g","slide":6,"text":"Fujida Karma Duos cameras mounted on SUVs and sedans; night-time routes in Astana.","textPreview":"Fujida Karma Duos cameras mounted on SUVs and sedans; night-time routes in Astana.","textChars":82,"textLines":1,"bbox":[89,261,237,134]}
+{"kind":"shape","id":"sh/6hore90v","slide":6,"bbox":[375,160,265,245]}
+{"kind":"textbox","id":"sh/dgja1szq","slide":6,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[389,172,28,20]}
+{"kind":"textbox","id":"sh/cfatsni5","slide":6,"text":"Annotation","textPreview":"Annotation","textChars":10,"textLines":1,"bbox":[389,199,237,56]}
+{"kind":"textbox","id":"sh/6lsbyxk3","slide":6,"text":"Two object classes: poles and lamps. Partial visibility and adverse weather retained.","textPreview":"Two object classes: poles and lamps. Partial visibility and adverse weather retained.","textChars":85,"textLines":1,"bbox":[389,261,237,134]}
+{"kind":"shape","id":"sh/7m1cr2lo","slide":6,"bbox":[675,160,265,245]}
+{"kind":"textbox","id":"sh/8nad072t","slide":6,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[689,172,28,20]}
+{"kind":"textbox","id":"sh/t8jutc3e","slide":6,"text":"Split","textPreview":"Split","textChars":5,"textLines":1,"bbox":[689,199,237,56]}
+{"kind":"textbox","id":"sh/yh8buxkr","slide":6,"text":"75% training, 10% validation, 15% testing.","textPreview":"75% training, 10% validation, 15% testing.","textChars":42,"textLines":1,"bbox":[689,261,237,134]}
+{"kind":"shape","id":"sh/zi1cnilc","slide":6,"bbox":[975,160,265,245]}
+{"kind":"textbox","id":"sh/kjatwn2x","slide":6,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[989,172,28,20]}
+{"kind":"textbox","id":"sh/lkjups3i","slide":6,"text":"Training","textPreview":"Training","textChars":8,"textLines":1,"bbox":[989,199,237,56]}
+{"kind":"textbox","id":"sh/idcv6hkb","slide":6,"text":"640 × 640 input; COCO2017 pretraining; 100 epochs; batch 32; NVIDIA A10.","textPreview":"640 × 640 input; COCO2017 pretraining; 100 epochs; batch 32; NVIDIA A10.","textChars":72,"textLines":1,"bbox":[989,261,237,134]}
+{"kind":"shape","id":"sh/3elczmlw","slide":6,"bbox":[75,455,1165,105]}
+{"kind":"textbox","id":"sh/fyd8re18","slide":6,"text":"Methodological lesson","textPreview":"Methodological lesson","textChars":21,"textLines":1,"bbox":[105,478,240,28]}
+{"kind":"textbox","id":"sh/ex4ry90n","slide":6,"text":"Retaining snowfall, rain, empty frames, and vehicle-dependent viewpoints makes the benchmark closer to the intended municipal operating environment.","textPreview":"Retaining snowfall, rain, empty frames, and vehicle-dependent viewpoints makes the benchmark closer to the intended municipal operating e...","textChars":148,"textLines":1,"bbox":[105,515,1070,42]}
+{"kind":"textbox","id":"sh/1kfatojy","slide":6,"text":"Aiymbay et al., 2025","textPreview":"Aiymbay et al., 2025","textChars":20,"textLines":1,"bbox":[58,683,1060,18]}
+{"kind":"textbox","id":"sh/0j690jit","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1190,680,35,18]}
+{"kind":"notes","id":"nt/i9u357","slide":6,"text":"Experimental settings and dataset counts from https://doi.org/10.3390/sym17081294"}
+{"kind":"slide","id":"sl/59bqnw","slide":7,"title":"YOLO-CSE architecture and structural priors","textShapes":22}
+{"kind":"textbox","id":"sh/2dgjqlor","slide":7,"text":"YOLO-CSE architecture and structural priors","textPreview":"YOLO-CSE architecture and structural priors","textChars":43,"textLines":1,"bbox":[58,36,1120,62]}
+{"kind":"shape","id":"sh/pg72l0ni","slide":7,"bbox":[58,104,74,5]}
+{"kind":"textbox","id":"sh/ofy1sv6x","slide":7,"text":"YOLO-CSE adds convolution and squeeze-and-excitation attention within the YOLOv5 C3 bottleneck.","textPreview":"YOLO-CSE adds convolution and squeeze-and-excitation attention within the YOLOv5 C3 bottleneck.","textChars":95,"textLines":1,"bbox":[65,135,1080,45]}
+{"kind":"shape","id":"sh/bi9knq58","slide":7,"bbox":[65,225,250,155]}
+{"kind":"textbox","id":"sh/qh0julon","slide":7,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[79,237,28,20]}
+{"kind":"textbox","id":"sh/dkr2p0ne","slide":7,"text":"Input","textPreview":"Input","textChars":5,"textLines":1,"bbox":[79,264,222,56]}
+{"kind":"textbox","id":"sh/cji1wv6t","slide":7,"text":"640 × 640 frame","textPreview":"640 × 640 frame","textChars":15,"textLines":1,"bbox":[79,326,222,44]}
+{"kind":"shape","id":"sh/zm9kra5k","slide":7,"bbox":[320,280,30,30]}
+{"kind":"shape","id":"sh/yl0jy5oz","slide":7,"bbox":[365,225,250,155]}
+{"kind":"textbox","id":"sh/kvy5cnih","slide":7,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[379,237,28,20]}
+{"kind":"textbox","id":"sh/5w76lsz2","slide":7,"text":"Backbone","textPreview":"Backbone","textChars":8,"textLines":1,"bbox":[379,264,222,56]}
+{"kind":"textbox","id":"sh/itgnad0b","slide":7,"text":"multi-scale features","textPreview":"multi-scale features","textChars":20,"textLines":1,"bbox":[379,326,222,44]}
+{"kind":"shape","id":"sh/jupojihw","slide":7,"bbox":[620,280,30,30]}
+{"kind":"shape","id":"sh/sji5g7id","slide":7,"bbox":[665,225,250,155]}
+{"kind":"textbox","id":"sh/tkr6pczy","slide":7,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[679,237,28,20]}
+{"kind":"textbox","id":"sh/6hgnex0n","slide":7,"text":"C3 + SE","textPreview":"C3 + SE","textChars":7,"textLines":1,"bbox":[679,264,222,56]}
+{"kind":"textbox","id":"sh/7ipon2h8","slide":7,"text":"channel recalibration","textPreview":"channel recalibration","textChars":21,"textLines":1,"bbox":[679,326,222,44]}
+{"kind":"shape","id":"sh/gnipk7ip","slide":7,"bbox":[920,280,30,30]}
+{"kind":"shape","id":"sh/hor6tcza","slide":7,"bbox":[965,225,250,155]}
+{"kind":"textbox","id":"sh/psneh8n2","slide":7,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[979,237,28,20]}
+{"kind":"textbox","id":"sh/4ruxonmh","slide":7,"text":"Detection heads","textPreview":"Detection heads","textChars":15,"textLines":1,"bbox":[979,264,222,56]}
+{"kind":"textbox","id":"sh/3qlwfi5w","slide":7,"text":"pole and lamp boxes","textPreview":"pole and lamp boxes","textChars":19,"textLines":1,"bbox":[979,326,222,44]}
+{"kind":"shape","id":"sh/25cfmd4b","slide":7,"bbox":[65,440,350,150]}
+{"kind":"shape","id":"sh/dwnelsny","slide":7,"bbox":[65,440,7,150]}
+{"kind":"textbox","id":"sh/cvexsnmt","slide":7,"text":"Bilateral symmetry","textPreview":"Bilateral symmetry","textChars":18,"textLines":1,"bbox":[89,460,310,34]}
+{"kind":"textbox","id":"sh/ru5wji58","slide":7,"text":"Pole and luminaire designs often contain mirrored structure.","textPreview":"Pole and luminaire designs often contain mirrored structure.","textChars":60,"textLines":1,"bbox":[89,507,308,68]}
+{"kind":"shape","id":"sh/qtwfqd4n","slide":7,"bbox":[465,440,350,150]}
+{"kind":"shape","id":"sh/t03e9onu","slide":7,"bbox":[465,440,7,150]}
+{"kind":"textbox","id":"sh/szadgj69","slide":7,"text":"Translational regularity","textPreview":"Translational regularity","textChars":24,"textLines":1,"bbox":[489,460,310,34]}
+{"kind":"textbox","id":"sh/y58bqp47","slide":7,"text":"Streetlights recur along road trajectories.","textPreview":"Streetlights recur along road trajectories.","textChars":43,"textLines":1,"bbox":[489,507,308,68]}
+{"kind":"shape","id":"sh/j6hcjuls","slide":7,"bbox":[865,440,350,150]}
+{"kind":"shape","id":"sh/k7qtsz2d","slide":7,"bbox":[865,440,7,150]}
+{"kind":"textbox","id":"sh/l8jul43y","slide":7,"text":"Radial emission","textPreview":"Radial emission","textChars":15,"textLines":1,"bbox":[889,460,310,34]}
+{"kind":"textbox","id":"sh/69sbu9k3","slide":7,"text":"Light patterns provide a functional cue at night.","textPreview":"Light patterns provide a functional cue at night.","textChars":49,"textLines":1,"bbox":[889,507,308,68]}
+{"kind":"textbox","id":"sh/7a1cnelo","slide":7,"text":"Aiymbay et al., 2025","textPreview":"Aiymbay et al., 2025","textChars":20,"textLines":1,"bbox":[58,683,1060,18]}
+{"kind":"textbox","id":"sh/sbadwj29","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1190,680,35,18]}
+{"kind":"notes","id":"nt/59bqnw","slide":7,"text":"Architecture and symmetry discussion from https://doi.org/10.3390/sym17081294"}
+{"kind":"slide","id":"sl/rhtyf2","slide":8,"title":"Published benchmark results","textShapes":38}
+{"kind":"textbox","id":"sh/twny18fy","slide":8,"text":"Published benchmark results","textPreview":"Published benchmark results","textChars":27,"textLines":1,"bbox":[58,36,1120,62]}
+{"kind":"shape","id":"sh/6twz6tg7","slide":8,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/ru5gzyxs","slide":8,"bbox":[70,145,760,42]}
+{"kind":"textbox","id":"sh/gzyhc3e9","slide":8,"text":"Model","textPreview":"Model","textChars":5,"textLines":1,"bbox":[90,155,300,20]}
+{"kind":"textbox","id":"sh/1k7i58fu","slide":8,"text":"F1","textPreview":"F1","textChars":2,"textLines":1,"bbox":[555,155,80,20]}
+{"kind":"textbox","id":"sh/exgzadw3","slide":8,"text":"mAP","textPreview":"mAP","textChars":3,"textLines":1,"bbox":[690,155,90,20]}
+{"kind":"shape","id":"sh/fypg3ixo","slide":8,"bbox":[70,194,760,38]}
+{"kind":"textbox","id":"sh/w3uh0jy5","slide":8,"text":"YOLOv5n","textPreview":"YOLOv5n","textChars":7,"textLines":1,"bbox":[90,202,330,20]}
+{"kind":"textbox","id":"sh/h43ytofq","slide":8,"text":"0.743","textPreview":"0.743","textChars":5,"textLines":1,"bbox":[555,202,80,20]}
+{"kind":"textbox","id":"sh/xof2h47e","slide":8,"text":"0.772","textPreview":"0.772","textChars":5,"textLines":1,"bbox":[690,202,90,20]}
+{"kind":"shape","id":"sh/wn618zqt","slide":8,"bbox":[70,237,760,38]}
+{"kind":"textbox","id":"sh/bmxkfep8","slide":8,"text":"YOLOv5s","textPreview":"YOLOv5s","textChars":7,"textLines":1,"bbox":[90,245,330,20]}
+{"kind":"textbox","id":"sh/a1oj698n","slide":8,"text":"0.772","textPreview":"0.772","textChars":5,"textLines":1,"bbox":[555,245,80,20]}
+{"kind":"textbox","id":"sh/lsz2lo7a","slide":8,"text":"0.753","textPreview":"0.753","textChars":5,"textLines":1,"bbox":[690,245,90,20]}
+{"kind":"shape","id":"sh/krqlcjqp","slide":8,"bbox":[70,280,760,38]}
+{"kind":"textbox","id":"sh/jqxkjepk","slide":8,"text":"YOLOv5m","textPreview":"YOLOv5m","textChars":7,"textLines":1,"bbox":[90,288,330,20]}
+{"kind":"textbox","id":"sh/ypo3a98z","slide":8,"text":"0.777","textPreview":"0.777","textChars":5,"textLines":1,"bbox":[555,288,80,20]}
+{"kind":"textbox","id":"sh/twz2po7m","slide":8,"text":"0.740","textPreview":"0.740","textChars":5,"textLines":1,"bbox":[690,288,90,20]}
+{"kind":"shape","id":"sh/svqlgjq1","slide":8,"bbox":[70,323,760,38]}
+{"kind":"textbox","id":"sh/szy5c7yx","slide":8,"text":"YOLOv8n","textPreview":"YOLOv8n","textChars":7,"textLines":1,"bbox":[90,331,330,20]}
+{"kind":"textbox","id":"sh/d07mlcfi","slide":8,"text":"0.711","textPreview":"0.711","textChars":5,"textLines":1,"bbox":[555,331,80,20]}
+{"kind":"textbox","id":"sh/qxgnaxg7","slide":8,"text":"0.749","textPreview":"0.749","textChars":5,"textLines":1,"bbox":[690,331,90,20]}
+{"kind":"shape","id":"sh/ryp4j2xs","slide":8,"bbox":[70,366,760,38]}
+{"kind":"textbox","id":"sh/03i5g7y9","slide":8,"text":"YOLOv8s","textPreview":"YOLOv8s","textChars":7,"textLines":1,"bbox":[90,374,330,20]}
+{"kind":"textbox","id":"sh/14rmpcfu","slide":8,"text":"0.757","textPreview":"0.757","textChars":5,"textLines":1,"bbox":[555,374,80,20]}
+{"kind":"textbox","id":"sh/e1gnexg3","slide":8,"text":"0.764","textPreview":"0.764","textChars":5,"textLines":1,"bbox":[690,374,90,20]}
+{"kind":"shape","id":"sh/f294n2xo","slide":8,"bbox":[70,409,760,38]}
+{"kind":"textbox","id":"sh/g7el4ny5","slide":8,"text":"YOLOv8m","textPreview":"YOLOv8m","textChars":7,"textLines":1,"bbox":[90,417,330,20]}
+{"kind":"textbox","id":"sh/h8nmdsfa","slide":8,"text":"0.788","textPreview":"0.788","textChars":5,"textLines":1,"bbox":[555,417,80,20]}
+{"kind":"textbox","id":"sh/zmd8jqh8","slide":8,"text":"0.791","textPreview":"0.791","textChars":5,"textLines":1,"bbox":[690,417,90,20]}
+{"kind":"shape","id":"sh/ylk7al0n","slide":8,"bbox":[70,452,760,38]}
+{"kind":"textbox","id":"sh/lovql0zy","slide":8,"text":"RT-DETR","textPreview":"RT-DETR","textChars":7,"textLines":1,"bbox":[90,460,330,20]}
+{"kind":"textbox","id":"sh/knmpcvid","slide":8,"text":"0.748","textPreview":"0.748","textChars":5,"textLines":1,"bbox":[555,460,80,20]}
+{"kind":"textbox","id":"sh/byt8f6hw","slide":8,"text":"0.788","textPreview":"0.788","textChars":5,"textLines":1,"bbox":[690,460,90,20]}
+{"kind":"shape","id":"sh/axk7610b","slide":8,"bbox":[70,495,760,38]}
+{"kind":"textbox","id":"sh/xkbqhgz2","slide":8,"text":"Faster R-CNN","textPreview":"Faster R-CNN","textChars":12,"textLines":1,"bbox":[90,503,330,20]}
+{"kind":"textbox","id":"sh/cj2p8bih","slide":8,"text":"0.757","textPreview":"0.757","textChars":5,"textLines":1,"bbox":[555,503,80,20]}
+{"kind":"textbox","id":"sh/nutob6h0","slide":8,"text":"0.754","textPreview":"0.754","textChars":5,"textLines":1,"bbox":[690,503,90,20]}
+{"kind":"shape","id":"sh/2t07210f","slide":8,"bbox":[70,538,760,38]}
+{"kind":"textbox","id":"sh/214bmpwz","slide":8,"text":"YOLO-CSE","textPreview":"YOLO-CSE","textChars":8,"textLines":1,"bbox":[90,546,330,20]}
+{"kind":"textbox","id":"sh/32dcfudk","slide":8,"text":"0.808","textPreview":"0.808","textChars":5,"textLines":1,"bbox":[555,546,80,20]}
+{"kind":"textbox","id":"sh/43mtoze5","slide":8,"text":"0.798","textPreview":"0.798","textChars":5,"textLines":1,"bbox":[690,546,90,20]}
+{"kind":"shape","id":"sh/p4vuh4va","slide":8,"bbox":[870,160,330,300]}
+{"kind":"textbox","id":"sh/uxkbipwn","slide":8,"text":"YOLO-CSE","textPreview":"YOLO-CSE","textChars":8,"textLines":1,"bbox":[900,195,270,38]}
+{"kind":"textbox","id":"sh/vytsbud8","slide":8,"text":"Recall  0.794\nF1 score  0.808\nmAP  0.798","textPreview":"Recall  0.794 | F1 score  0.808 | mAP  0.798","textChars":40,"textLines":3,"bbox":[900,258,250,135]}
+{"kind":"textbox","id":"sh/gz2tkzet","slide":8,"text":"Best recall and F1 in the reported comparison.","textPreview":"Best recall and F1 in the reported comparison.","textChars":46,"textLines":1,"bbox":[900,410,260,68]}
+{"kind":"textbox","id":"sh/h0vad4ve","slide":8,"text":"Interpretation","textPreview":"Interpretation","textChars":14,"textLines":1,"bbox":[875,510,150,25]}
+{"kind":"textbox","id":"sh/69kbe5wr","slide":8,"text":"The architecture improves missed-object control while retaining competitive precision.","textPreview":"The architecture improves missed-object control while retaining competitive precision.","textChars":86,"textLines":1,"bbox":[875,542,300,72]}
+{"kind":"textbox","id":"sh/7ats7adc","slide":8,"text":"Values reported in Aiymbay et al., 2025","textPreview":"Values reported in Aiymbay et al., 2025","textChars":39,"textLines":1,"bbox":[58,683,1060,18]}
+{"kind":"textbox","id":"sh/90jm9cj6","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1190,680,35,18]}
+{"kind":"notes","id":"nt/rhtyf2","slide":8,"text":"All values reproduced from the comparison table in https://doi.org/10.3390/sym17081294. Precision/recall values are discussed in the paper; this chart displays F1 and mAP."}
+{"kind":"slide","id":"sl/s5o3ah","slide":9,"title":"Observed limitations and dissertation response","textShapes":10}
+{"kind":"textbox","id":"sh/r6hcn690","slide":9,"text":"Observed limitations and dissertation response","textPreview":"Observed limitations and dissertation response","textChars":46,"textLines":1,"bbox":[58,36,1120,62]}
+{"kind":"shape","id":"sh/c7qdgbql","slide":9,"bbox":[58,104,74,5]}
+{"kind":"textbox","id":"sh/d8zupwr6","slide":9,"text":"Small and distant luminaires","textPreview":"Small and distant luminaires","textChars":28,"textLines":1,"bbox":[75,150,420,64]}
+{"kind":"shape","id":"sh/yt8vi18r","slide":9,"bbox":[505,162,42,32]}
+{"kind":"textbox","id":"sh/zuhcr69c","slide":9,"text":"Higher-resolution tiling and temporal track aggregation","textPreview":"Higher-resolution tiling and temporal track aggregation","textChars":55,"textLines":1,"bbox":[585,150,585,70]}
+{"kind":"shape","id":"sh/0vqdkbqh","slide":9,"bbox":[75,238,1095,1]}
+{"kind":"textbox","id":"sh/lwzutgr2","slide":9,"text":"Partial occlusion by trees, buildings, and vehicles","textPreview":"Partial occlusion by trees, buildings, and vehicles","textChars":51,"textLines":1,"bbox":[75,258,420,64]}
+{"kind":"shape","id":"sh/ux4b6h87","slide":9,"bbox":[505,270,42,32]}
+{"kind":"textbox","id":"sh/fyxcfm9s","slide":9,"text":"Instance-level association plus structural priors","textPreview":"Instance-level association plus structural priors","textChars":49,"textLines":1,"bbox":[585,258,585,70]}
+{"kind":"shape","id":"sh/nu5kny1o","slide":9,"bbox":[75,346,1095,1]}
+{"kind":"textbox","id":"sh/mtwjetkj","slide":9,"text":"Bright windows and vehicle lights","textPreview":"Bright windows and vehicle lights","textChars":33,"textLines":1,"bbox":[75,366,420,64]}
+{"kind":"shape","id":"sh/9w72p8ju","slide":9,"bbox":[505,378,42,32]}
+{"kind":"textbox","id":"sh/ovylg329","slide":9,"text":"Hard-negative mining and context-aware classification","textPreview":"Hard-negative mining and context-aware classification","textChars":53,"textLines":1,"bbox":[585,366,585,70]}
+{"kind":"shape","id":"sh/zq5kjy1s","slide":9,"bbox":[75,454,1095,1]}
+{"kind":"textbox","id":"sh/epwjatk7","slide":9,"text":"Single-city, two-class scope","textPreview":"Single-city, two-class scope","textChars":28,"textLines":1,"bbox":[75,474,420,64]}
+{"kind":"shape","id":"sh/1sn2lojy","slide":9,"bbox":[505,486,42,32]}
+{"kind":"textbox","id":"sh/0re1c32d","slide":9,"text":"Multi-class Astana dataset and external benchmark pretraining","textPreview":"Multi-class Astana dataset and external benchmark pretraining","textChars":61,"textLines":1,"bbox":[585,474,585,70]}
+{"kind":"textbox","id":"sh/r2lkfe1w","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1190,680,35,18]}
+{"kind":"notes","id":"nt/s5o3ah","slide":9,"text":"Limitations synthesize failure modes and scope boundaries discussed in the author's published study. Proposed responses are dissertation hypotheses to be tested."}
+{"kind":"slide","id":"sl/cxhgx8","slide":10,"title":"Infrastructure classes in the dissertation","textShapes":14}
+{"kind":"textbox","id":"sh/s3mt4nm1","slide":10,"text":"Infrastructure classes in the dissertation","textPreview":"Infrastructure classes in the dissertation","textChars":42,"textLines":1,"bbox":[58,36,1120,62]}
+{"kind":"shape","id":"sh/r2tcb2lg","slide":10,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/61kb2x4v","slide":10,"bbox":[65,150,350,170]}
+{"kind":"shape","id":"sh/50bu9s3a","slide":10,"bbox":[65,150,7,170]}
+{"kind":"textbox","id":"sh/4z2t0nmp","slide":10,"text":"Streetlights","textPreview":"Streetlights","textChars":12,"textLines":1,"bbox":[89,170,310,34]}
+{"kind":"textbox","id":"sh/jyts7il4","slide":10,"text":"pole, luminaire, operating state","textPreview":"pole, luminaire, operating state","textChars":32,"textLines":1,"bbox":[89,217,308,88]}
+{"kind":"shape","id":"sh/ixkbyd4z","slide":10,"bbox":[465,150,350,170]}
+{"kind":"shape","id":"sh/pwfulc3e","slide":10,"bbox":[465,150,7,170]}
+{"kind":"textbox","id":"sh/ov6tc7m9","slide":10,"text":"Road surface","textPreview":"Road surface","textChars":12,"textLines":1,"bbox":[489,170,310,34]}
+{"kind":"textbox","id":"sh/u1ob250v","slide":10,"text":"drivable area, snow, ice, damage","textPreview":"drivable area, snow, ice, damage","textChars":32,"textLines":1,"bbox":[489,217,308,88]}
+{"kind":"shape","id":"sh/f2hsva10","slide":10,"bbox":[865,150,350,170]}
+{"kind":"shape","id":"sh/g3qt4fil","slide":10,"bbox":[865,150,7,170]}
+{"kind":"textbox","id":"sh/h4zaxkj6","slide":10,"text":"Road markings","textPreview":"Road markings","textChars":13,"textLines":1,"bbox":[889,170,310,34]}
+{"kind":"textbox","id":"sh/6xobyl0j","slide":10,"text":"visibility and wear","textPreview":"visibility and wear","textChars":19,"textLines":1,"bbox":[889,217,308,88]}
+{"kind":"shape","id":"sh/7yxsrq14","slide":10,"bbox":[65,370,350,170]}
+{"kind":"shape","id":"sh/sz6t0vip","slide":10,"bbox":[65,370,7,170]}
+{"kind":"textbox","id":"sh/t0fat0ja","slide":10,"text":"Curbs and road blocks","textPreview":"Curbs and road blocks","textChars":21,"textLines":1,"bbox":[89,390,310,34]}
+{"kind":"textbox","id":"sh/qtsbap0n","slide":10,"text":"curb, barrier, speed bump","textPreview":"curb, barrier, speed bump","textChars":25,"textLines":1,"bbox":[89,437,308,88]}
+{"kind":"shape","id":"sh/ru1c3u18","slide":10,"bbox":[465,370,350,170]}
+{"kind":"shape","id":"sh/net8vmh0","slide":10,"bbox":[465,370,7,170]}
+{"kind":"textbox","id":"sh/mdk72hgf","slide":10,"text":"Traffic control","textPreview":"Traffic control","textChars":15,"textLines":1,"bbox":[489,390,310,34]}
+{"kind":"textbox","id":"sh/9gbqxwzq","slide":10,"text":"traffic lights and signs","textPreview":"traffic lights and signs","textChars":24,"textLines":1,"bbox":[489,437,308,88]}
+{"kind":"shape","id":"sh/8f2p4ry5","slide":10,"bbox":[865,370,350,170]}
+{"kind":"shape","id":"sh/v2d8zmhw","slide":10,"bbox":[865,370,7,170]}
+{"kind":"textbox","id":"sh/ahk76hgb","slide":10,"text":"Public transport","textPreview":"Public transport","textChars":16,"textLines":1,"bbox":[889,390,310,34]}
+{"kind":"textbox","id":"sh/x4vq1wz2","slide":10,"text":"bus stops and accessibility","textPreview":"bus stops and accessibility","textChars":27,"textLines":1,"bbox":[889,437,308,88]}
+{"kind":"textbox","id":"sh/w3m98ryh","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1190,680,35,18]}
+{"kind":"notes","id":"nt/cxhgx8","slide":10,"text":"Class scope supplied by the author. Labels will be refined through a formal annotation ontology before data collection."}
+{"kind":"slide","id":"sl/43v0u9","slide":11,"title":"Spatial and overlap priors","textShapes":17}
+{"kind":"textbox","id":"sh/1gby5oja","slide":11,"text":"Spatial and overlap priors","textPreview":"Spatial and overlap priors","textChars":26,"textLines":1,"bbox":[58,36,1120,62]}
+{"kind":"shape","id":"sh/etkfatkz","slide":11,"bbox":[58,104,74,5]}
+{"kind":"textbox","id":"sh/zutgjy1k","slide":11,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[65,143,45,30]}
+{"kind":"textbox","id":"sh/crix8j2t","slide":11,"text":"Streetlights","textPreview":"Streetlights","textChars":12,"textLines":1,"bbox":[130,135,255,38]}
+{"kind":"textbox","id":"sh/dsryhoje","slide":11,"text":"Upper image; partial poles and luminaires; overlaps with trees, vehicles, buildings, and window light. Vehicle and signal lights provide hard negatives.","textPreview":"Upper image; partial poles and luminaires; overlaps with trees, vehicles, buildings, and window light. Vehicle and signal lights provide ...","textChars":152,"textLines":1,"bbox":[390,135,810,74]}
+{"kind":"shape","id":"sh/qp0f69kn","slide":11,"bbox":[130,218,1070,1]}
+{"kind":"textbox","id":"sh/rq9wfe18","slide":11,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[65,242,45,30]}
+{"kind":"textbox","id":"sh/4nix4z2x","slide":11,"text":"Road + markings","textPreview":"Road + markings","textChars":15,"textLines":1,"bbox":[130,234,255,38]}
+{"kind":"textbox","id":"sh/pored4ji","slide":11,"text":"Lower image; large, non-rectangular regions; vehicles and pedestrians occlude the surface. Gaps between vehicle masks may still belong to road.","textPreview":"Lower image; large, non-rectangular regions; vehicles and pedestrians occlude the surface. Gaps between vehicle masks may still belong to...","textChars":143,"textLines":1,"bbox":[390,234,810,74]}
+{"kind":"shape","id":"sh/l4nit8ru","slide":11,"bbox":[130,317,1070,1]}
+{"kind":"textbox","id":"sh/k3eh03a9","slide":11,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[65,341,45,30]}
+{"kind":"textbox","id":"sh/z250ry9o","slide":11,"text":"Curbs / blocks / bumps","textPreview":"Curbs / blocks / bumps","textChars":22,"textLines":1,"bbox":[130,333,255,38]}
+{"kind":"textbox","id":"sh/y1czyts3","slide":11,"text":"Lower image; few physical types; frequent vehicle occlusion and strong perspective distortion.","textPreview":"Lower image; few physical types; frequent vehicle occlusion and strong perspective distortion.","textChars":94,"textLines":1,"bbox":[390,333,810,74]}
+{"kind":"shape","id":"sh/x03ipori","slide":11,"bbox":[130,416,1070,1]}
+{"kind":"textbox","id":"sh/czuhwjax","slide":11,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[65,440,45,30]}
+{"kind":"textbox","id":"sh/bylgne9c","slide":11,"text":"Traffic lights / signs","textPreview":"Traffic lights / signs","textChars":22,"textLines":1,"bbox":[130,432,255,38]}
+{"kind":"textbox","id":"sh/axczuts7","slide":11,"text":"Intersection and roadside context; candidate non-overlap constraints must be validated rather than assumed universally.","textPreview":"Intersection and roadside context; candidate non-overlap constraints must be validated rather than assumed universally.","textChars":119,"textLines":1,"bbox":[390,432,810,74]}
+{"kind":"shape","id":"sh/pw3ylorm","slide":11,"bbox":[130,515,1070,1]}
+{"kind":"textbox","id":"sh/obuhsja1","slide":11,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[65,539,45,30]}
+{"kind":"textbox","id":"sh/gfyh8jix","slide":11,"text":"Bus stops","textPreview":"Bus stops","textChars":9,"textLines":1,"bbox":[130,531,255,38]}
+{"kind":"textbox","id":"sh/1g7ihozi","slide":11,"text":"Roadside structure with high appearance diversity; detection requires local examples and map context.","textPreview":"Roadside structure with high appearance diversity; detection requires local examples and map context.","textChars":101,"textLines":1,"bbox":[390,531,810,74]}
+{"kind":"textbox","id":"sh/edwz690r","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1190,680,35,18]}
+{"kind":"notes","id":"nt/43v0u9","slide":11,"text":"Operational priors supplied by the author. The dissertation will encode them as testable constraints and report ablations, because real scenes can contain annotation and projection exceptions."}
+{"kind":"slide","id":"sl/phxm4g","slide":12,"title":"Multi-task perception design","textShapes":16}
+{"kind":"textbox","id":"sh/g7m90j21","slide":12,"text":"Multi-task perception design","textPreview":"Multi-task perception design","textChars":28,"textLines":1,"bbox":[58,36,1120,62]}
+{"kind":"shape","id":"sh/v6d87e1g","slide":12,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/u54rytkv","slide":12,"bbox":[70,160,265,270]}
+{"kind":"textbox","id":"sh/t4vq5oja","slide":12,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[84,172,28,20]}
+{"kind":"textbox","id":"sh/8329wj2p","slide":12,"text":"Object detection","textPreview":"Object detection","textChars":16,"textLines":1,"bbox":[84,199,237,56]}
+{"kind":"textbox","id":"sh/72t83e14","slide":12,"text":"poles, luminaires, signs, signals, bus stops","textPreview":"poles, luminaires, signs, signals, bus stops","textChars":44,"textLines":1,"bbox":[84,261,237,159]}
+{"kind":"shape","id":"sh/61kru9kj","slide":12,"bbox":[370,160,265,270]}
+{"kind":"textbox","id":"sh/l0bq14je","slide":12,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[384,172,28,20]}
+{"kind":"textbox","id":"sh/kz29sz2t","slide":12,"text":"Semantic / instance segmentation","textPreview":"Semantic / instance segmentation","textChars":32,"textLines":1,"bbox":[384,199,237,56]}
+{"kind":"textbox","id":"sh/q1obad8f","slide":12,"text":"road surface, markings, curbs, snow and ice regions","textPreview":"road surface, markings, curbs, snow and ice regions","textChars":51,"textLines":1,"bbox":[384,261,237,159]}
+{"kind":"shape","id":"sh/rmxsji90","slide":12,"bbox":[670,160,265,270]}
+{"kind":"textbox","id":"sh/snqtcnql","slide":12,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[684,172,28,20]}
+{"kind":"textbox","id":"sh/dozals76","slide":12,"text":"Binary or multilabel classification","textPreview":"Binary or multilabel classification","textChars":35,"textLines":1,"bbox":[684,199,237,56]}
+{"kind":"textbox","id":"sh/ixob6d8j","slide":12,"text":"functional condition of each asset or road segment","textPreview":"functional condition of each asset or road segment","textChars":50,"textLines":1,"bbox":[684,261,237,159]}
+{"kind":"shape","id":"sh/3yxsfi94","slide":12,"bbox":[970,160,265,270]}
+{"kind":"textbox","id":"sh/4z6t8nq9","slide":12,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[984,172,28,20]}
+{"kind":"textbox","id":"sh/50fahsru","slide":12,"text":"Tracking and geospatial fusion","textPreview":"Tracking and geospatial fusion","textChars":30,"textLines":1,"bbox":[984,199,237,56]}
+{"kind":"textbox","id":"sh/ut4r2t87","slide":12,"text":"deduplicate observations and associate them with mapped assets","textPreview":"deduplicate observations and associate them with mapped assets","textChars":62,"textLines":1,"bbox":[984,261,237,159]}
+{"kind":"shape","id":"sh/vudsby9s","slide":12,"bbox":[70,478,1165,100]}
+{"kind":"textbox","id":"sh/zyt8jupk","slide":12,"text":"Joint evidence record","textPreview":"Joint evidence record","textChars":21,"textLines":1,"bbox":[100,500,215,28]}
+{"kind":"textbox","id":"sh/yxk7apoz","slide":12,"text":"geometry + class + condition + confidence + coordinates + timestamp + provenance","textPreview":"geometry + class + condition + confidence + coordinates + timestamp + provenance","textChars":80,"textLines":1,"bbox":[325,495,835,43]}
+{"kind":"textbox","id":"sh/l0bql47q","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1190,680,35,18]}
+{"kind":"notes","id":"nt/phxm4g","slide":12,"text":"Proposed dissertation architecture. Models and loss functions remain experimental choices and will be compared empirically."}
+{"kind":"slide","id":"sl/szoozk","slide":13,"title":"Road segmentation will be implemented","textShapes":11}
+{"kind":"textbox","id":"sh/qx8bmxgv","slide":13,"text":"Road segmentation will be implemented","textPreview":"Road segmentation will be implemented","textChars":37,"textLines":1,"bbox":[58,36,1120,62]}
+{"kind":"shape","id":"sh/d0zahcfm","slide":13,"bbox":[58,104,74,5]}
+{"kind":"textbox","id":"sh/czqto7y1","slide":13,"text":"Bounding boxes do not represent the geometry of road surfaces or markings","textPreview":"Bounding boxes do not represent the geometry of road surfaces or markings","textChars":73,"textLines":1,"bbox":[65,136,950,45]}
+{"kind":"shape","id":"sh/3axsbixk","slide":13,"bbox":[65,220,350,250]}
+{"kind":"shape","id":"sh/29oridgz","slide":13,"bbox":[65,220,7,250]}
+{"kind":"textbox","id":"sh/pcfadsfq","slide":13,"text":"Drivable-area mask","textPreview":"Drivable-area mask","textChars":18,"textLines":1,"bbox":[89,240,310,34]}
+{"kind":"textbox","id":"sh/4b6tkny5","slide":13,"text":"Separates visible road from sidewalks, medians, buildings, and background. Occluding vehicles remain separate instances.","textPreview":"Separates visible road from sidewalks, medians, buildings, and background. Occluding vehicles remain separate instances.","textChars":120,"textLines":1,"bbox":[89,287,308,168]}
+{"kind":"shape","id":"sh/n61snmxo","slide":13,"bbox":[465,220,350,250]}
+{"kind":"shape","id":"sh/m5sbuhg3","slide":13,"bbox":[465,220,7,250]}
+{"kind":"textbox","id":"sh/0jux8fet","slide":13,"text":"Surface-condition mask","textPreview":"Surface-condition mask","textChars":22,"textLines":1,"bbox":[489,240,310,34]}
+{"kind":"textbox","id":"sh/l43ehkve","slide":13,"text":"Segments snow, ice, water, potholes, cracks, and repaired patches where pixel-level evidence is required.","textPreview":"Segments snow, ice, water, potholes, cracks, and repaired patches where pixel-level evidence is required.","textChars":105,"textLines":1,"bbox":[489,287,308,168]}
+{"kind":"shape","id":"sh/yhcf6pwn","slide":13,"bbox":[865,220,350,250]}
+{"kind":"shape","id":"sh/zilwfad8","slide":13,"bbox":[865,220,7,250]}
+{"kind":"textbox","id":"sh/cfux4fex","slide":13,"text":"Marking mask","textPreview":"Marking mask","textChars":12,"textLines":1,"bbox":[889,240,310,34]}
+{"kind":"textbox","id":"sh/dg3edkv2","slide":13,"text":"Estimates line visibility and wear without forcing thin, elongated structures into unstable boxes.","textPreview":"Estimates line visibility and wear without forcing thin, elongated structures into unstable boxes.","textChars":98,"textLines":1,"bbox":[889,287,308,168]}
+{"kind":"textbox","id":"sh/qdsf25wr","slide":13,"text":"Primary metrics","textPreview":"Primary metrics","textChars":15,"textLines":1,"bbox":[65,540,180,25]}
+{"kind":"textbox","id":"sh/be1wbadc","slide":13,"text":"mIoU and class IoU for segmentation; boundary F1 for markings; calibration error for confidence.","textPreview":"mIoU and class IoU for segmentation; boundary F1 for markings; calibration error for confidence.","textChars":96,"textLines":1,"bbox":[250,534,900,42]}
+{"kind":"textbox","id":"sh/obax0vel","slide":13,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1190,680,35,18]}
+{"kind":"notes","id":"nt/szoozk","slide":13,"text":"Road segmentation is a planned dissertation component. Metric definitions will follow the public benchmark protocols where applicable."}
+{"kind":"slide","id":"sl/cdxwoj","slide":14,"title":"Binary functional-condition classifiers","textShapes":11}
+{"kind":"textbox","id":"sh/7y18zidg","slide":14,"text":"Binary functional-condition classifiers","textPreview":"Binary functional-condition classifiers","textChars":39,"textLines":1,"bbox":[58,36,1120,62]}
+{"kind":"shape","id":"sh/szapsnu1","slide":14,"bbox":[58,104,74,5]}
+{"kind":"textbox","id":"sh/t0jq1sbm","slide":14,"text":"Condition labels answer operational questions after localization or segmentation","textPreview":"Condition labels answer operational questions after localization or segmentation","textChars":80,"textLines":1,"bbox":[60,135,1000,42]}
+{"kind":"shape","id":"sh/i9s7mdcz","slide":14,"bbox":[60,210,570,165]}
+{"kind":"textbox","id":"sh/ja1ovidk","slide":14,"text":"Road segment","textPreview":"Road segment","textChars":12,"textLines":1,"bbox":[84,230,210,30]}
+{"kind":"textbox","id":"sh/kbaponup","slide":14,"text":"snow cleared / not cleared\nice present / absent\nsurface damaged / acceptable","textPreview":"snow cleared / not cleared | ice present / absent | surface damaged / acceptable","textChars":76,"textLines":3,"bbox":[310,230,285,120]}
+{"kind":"shape","id":"sh/5wj6xsva","slide":14,"bbox":[650,210,570,165]}
+{"kind":"textbox","id":"sh/a587idcn","slide":14,"text":"Road markings","textPreview":"Road markings","textChars":13,"textLines":1,"bbox":[674,230,210,30]}
+{"kind":"textbox","id":"sh/v6horyd8","slide":14,"text":"visible / not visible\nworn / acceptable\noccluded / observable","textPreview":"visible / not visible | worn / acceptable | occluded / observable","textChars":61,"textLines":3,"bbox":[900,230,285,120]}
+{"kind":"shape","id":"sh/3udwfuho","slide":14,"bbox":[60,430,570,165]}
+{"kind":"textbox","id":"sh/it4fmp03","slide":14,"text":"Street lighting","textPreview":"Street lighting","textChars":15,"textLines":1,"bbox":[84,450,210,30]}
+{"kind":"textbox","id":"sh/5wveh4ze","slide":14,"text":"lamp on / off\npole intact / damaged\nobservable / uncertain","textPreview":"lamp on / off | pole intact / damaged | observable / uncertain","textChars":58,"textLines":3,"bbox":[310,450,285,120]}
+{"kind":"shape","id":"sh/4vmxozit","slide":14,"bbox":[650,430,570,165]}
+{"kind":"textbox","id":"sh/rydwjehk","slide":14,"text":"Other assets","textPreview":"Other assets","textChars":12,"textLines":1,"bbox":[674,450,210,30]}
+{"kind":"textbox","id":"sh/qx4fq90z","slide":14,"text":"curb intact / damaged\nbus stop accessible / obstructed\nsign present / missing","textPreview":"curb intact / damaged | bus stop accessible / obstructed | sign present / missing","textChars":77,"textLines":3,"bbox":[900,450,285,120]}
+{"kind":"textbox","id":"sh/d0vyl4zq","slide":14,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1190,680,35,18]}
+{"kind":"notes","id":"nt/cdxwoj","slide":14,"text":"Proposed binary and multilabel operational states. Final definitions require municipal acceptance criteria and an annotation manual. 'Snow cleared' is a local service-state label, not a generic weather label."}
+{"kind":"slide","id":"sl/pmbyks","slide":15,"title":"Public datasets for pretraining and benchmarking","textShapes":18}
+{"kind":"textbox","id":"sh/al03e1gj","slide":15,"text":"Public datasets for pretraining and benchmarking","textPreview":"Public datasets for pretraining and benchmarking","textChars":48,"textLines":1,"bbox":[58,36,1120,62]}
+{"kind":"shape","id":"sh/hob2pgfa","slide":15,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/wn2lgbyp","slide":15,"bbox":[60,145,1160,55]}
+{"kind":"textbox","id":"sh/jqtkrqxg","slide":15,"text":"Dataset","textPreview":"Dataset","textChars":7,"textLines":1,"bbox":[82,160,210,24]}
+{"kind":"textbox","id":"sh/ipk3ilgv","slide":15,"text":"Verified scope","textPreview":"Verified scope","textChars":14,"textLines":1,"bbox":[300,160,540,24]}
+{"kind":"textbox","id":"sh/5sb2tgf6","slide":15,"text":"Role in this dissertation","textPreview":"Role in this dissertation","textChars":25,"textLines":1,"bbox":[865,160,315,24]}
+{"kind":"shape","id":"sh/4r2lkvyl","slide":15,"bbox":[60,212,1160,80]}
+{"kind":"textbox","id":"sh/zu9kfmhw","slide":15,"text":"BDD100K","textPreview":"BDD100K","textChars":7,"textLines":1,"bbox":[82,230,190,38]}
+{"kind":"textbox","id":"sh/ytgj6hgb","slide":15,"text":"100K driving videos; drivable area, lanes, detection, segmentation","textPreview":"100K driving videos; drivable area, lanes, detection, segmentation","textChars":66,"textLines":1,"bbox":[300,225,525,52]}
+{"kind":"textbox","id":"sh/4buhsnal","slide":15,"text":"Road and marking pretraining","textPreview":"Road and marking pretraining","textChars":28,"textLines":1,"bbox":[865,225,315,52]}
+{"kind":"shape","id":"sh/pcnylsb6","slide":15,"bbox":[60,304,1160,80]}
+{"kind":"textbox","id":"sh/29czqdsv","slide":15,"text":"Mapillary Vistas","textPreview":"Mapillary Vistas","textChars":16,"textLines":1,"bbox":[82,322,190,38]}
+{"kind":"textbox","id":"sh/3algjit0","slide":15,"text":"25,000 high-resolution street images; 66 categories","textPreview":"25,000 high-resolution street images; 66 categories","textChars":51,"textLines":1,"bbox":[300,317,525,52]}
+{"kind":"textbox","id":"sh/cfehwnax","slide":15,"text":"Fine-grained street-object segmentation","textPreview":"Fine-grained street-object segmentation","textChars":39,"textLines":1,"bbox":[865,317,315,52]}
+{"kind":"shape","id":"sh/dgnipsri","slide":15,"bbox":[60,396,1160,80]}
+{"kind":"textbox","id":"sh/qdwzuxsr","slide":15,"text":"ACDC","textPreview":"ACDC","textChars":4,"textLines":1,"bbox":[82,414,190,38]}
+{"kind":"textbox","id":"sh/re5gn29c","slide":15,"text":"4,006 adverse-condition images with pixel labels; fog, night, rain, snow","textPreview":"4,006 adverse-condition images with pixel labels; fog, night, rain, snow","textChars":72,"textLines":1,"bbox":[300,409,525,52]}
+{"kind":"textbox","id":"sh/sjahk3ad","slide":15,"text":"Robustness under adverse visibility","textPreview":"Robustness under adverse visibility","textChars":35,"textLines":1,"bbox":[865,409,315,52]}
+{"kind":"shape","id":"sh/tkjyd8by","slide":15,"bbox":[60,488,1160,80]}
+{"kind":"textbox","id":"sh/9ob610zq","slide":15,"text":"RDD2022","textPreview":"RDD2022","textChars":7,"textLines":1,"bbox":[82,506,190,38]}
+{"kind":"textbox","id":"sh/8ni5svy5","slide":15,"text":"47,420 images from six countries; 55,000+ damage instances","textPreview":"47,420 images from six countries; 55,000+ damage instances","textChars":58,"textLines":1,"bbox":[300,501,525,52]}
+{"kind":"textbox","id":"sh/n29ozqhk","slide":15,"text":"Crack and pothole detection","textPreview":"Crack and pothole detection","textChars":27,"textLines":1,"bbox":[865,501,315,52]}
+{"kind":"textbox","id":"sh/m10nqlgz","slide":15,"text":"Public data supports representation learning. It does not replace local Astana condition labels or municipal acceptance criteria.","textPreview":"Public data supports representation learning. It does not replace local Astana condition labels or municipal acceptance criteria.","textChars":129,"textLines":1,"bbox":[65,606,1110,42]}
+{"kind":"textbox","id":"sh/xsb65kzm","slide":15,"text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[1190,680,35,18]}
+{"kind":"notes","id":"nt/pmbyks","slide":15,"text":"Sources: BDD100K official repository and CVPR paper: https://github.com/bdd100k/bdd100k and https://openaccess.thecvf.com/content_CVPR_2020/html/Yu_BDD100K_A_Diverse_Driving_Dataset_for_Heterogeneous_Multitask_Learning_CVPR_2020_paper.html ; Mapillary Vistas ICCV paper: https://openaccess.thecvf.com/content_iccv_2017/html/Neuhold_The_Mapillary_Vistas_ICCV_2017_paper.html ; ACDC official dataset and ICCV paper: https://acdc.vision.ee.ethz.ch/ and https://openaccess.thecvf.com/content/ICCV2021/html/Sakaridis_ACDC_The_Adverse_Conditions_Dataset_With_Correspondences_for_Semantic_Driving_ICCV_2021_paper.html ; RDD2022: https://github.com/sekilab/RoadDamageDetector and https://arxiv.org/abs/2209.08538"}
+{"kind":"slide","id":"sl/8rjuqq","slide":16,"title":"Local Astana dataset is the core empirical contribution","textShapes":17}
+{"kind":"textbox","id":"sh/5wnid4ry","slide":16,"text":"Local Astana dataset is the core empirical contribution","textPreview":"Local Astana dataset is the core empirical contribution","textChars":55,"textLines":1,"bbox":[58,36,1120,62]}
+{"kind":"shape","id":"sh/i9wz2psn","slide":16,"bbox":[58,104,74,5]}
+{"kind":"textbox","id":"sh/3u50bu98","slide":16,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[68,140,48,30]}
+{"kind":"textbox","id":"sh/szeh8zqp","slide":16,"text":"Sampling frame","textPreview":"Sampling frame","textChars":14,"textLines":1,"bbox":[140,130,245,32]}
+{"kind":"textbox","id":"sh/d07ih4ra","slide":16,"text":"Road hierarchy, districts, intersections, bridges, bus corridors, and known assets.","textPreview":"Road hierarchy, districts, intersections, bridges, bus corridors, and known assets.","textChars":83,"textLines":1,"bbox":[390,130,805,70]}
+{"kind":"textbox","id":"sh/qxwz6p8j","slide":16,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[68,242,48,30]}
+{"kind":"textbox","id":"sh/ry50fu94","slide":16,"text":"Seasonal design","textPreview":"Seasonal design","textChars":15,"textLines":1,"bbox":[140,232,245,32]}
+{"kind":"textbox","id":"sh/03y1cjql","slide":16,"text":"Dry, rain, snowfall, post-clearing, freeze-thaw, day, dusk, and night.","textPreview":"Dry, rain, snowfall, post-clearing, freeze-thaw, day, dusk, and night.","textChars":70,"textLines":1,"bbox":[390,232,805,70]}
+{"kind":"textbox","id":"sh/147ilor6","slide":16,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[68,344,48,30]}
+{"kind":"textbox","id":"sh/lkzmlwra","slide":16,"text":"Annotation layers","textPreview":"Annotation layers","textChars":17,"textLines":1,"bbox":[140,334,245,32]}
+{"kind":"textbox","id":"sh/kjqlcrqp","slide":16,"text":"Boxes, masks, binary states, observability flags, GPS, timestamp, route, and camera metadata.","textPreview":"Boxes, masks, binary states, observability flags, GPS, timestamp, route, and camera metadata.","textChars":93,"textLines":1,"bbox":[390,334,805,70]}
+{"kind":"textbox","id":"sh/jih4jm94","slide":16,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[68,446,48,30]}
+{"kind":"textbox","id":"sh/yx83ah8z","slide":16,"text":"Leakage control","textPreview":"Leakage control","textChars":15,"textLines":1,"bbox":[140,436,245,32]}
+{"kind":"textbox","id":"sh/tojmpgrm","slide":16,"text":"Split by route, location, and time so adjacent video frames cannot inflate test performance.","textPreview":"Split by route, location, and time so adjacent video frames cannot inflate test performance.","textChars":92,"textLines":1,"bbox":[390,436,805,70]}
+{"kind":"textbox","id":"sh/8nalgbq1","slide":16,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[68,548,48,30]}
+{"kind":"textbox","id":"sh/7mh4n69g","slide":16,"text":"Governance","textPreview":"Governance","textChars":10,"textLines":1,"bbox":[140,538,245,32]}
+{"kind":"textbox","id":"sh/6l83e18v","slide":16,"text":"Privacy filtering, retention rules, annotator agreement, and auditable label revisions.","textPreview":"Privacy filtering, retention rules, annotator agreement, and auditable label revisions.","textChars":87,"textLines":1,"bbox":[390,538,805,70]}
+{"kind":"textbox","id":"sh/9sf2dcr2","slide":16,"text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1190,680,35,18]}
+{"kind":"notes","id":"nt/8rjuqq","slide":16,"text":"Proposed local data protocol. Exact route counts and sample sizes should be fixed after a pilot and power/coverage analysis, so this slide deliberately avoids invented targets."}
+{"kind":"slide","id":"sl/1ewwcf","slide":17,"title":"Industrial analogue: mobile road-condition analytics","textShapes":7}
+{"kind":"textbox","id":"sh/9w3y1onu","slide":17,"text":"Industrial analogue: mobile road-condition analytics","textPreview":"Industrial analogue: mobile road-condition analytics","textChars":52,"textLines":1,"bbox":[58,36,1120,62]}
+{"kind":"shape","id":"sh/mtsf69o3","slide":17,"bbox":[58,104,74,5]}
+{"kind":"textbox","id":"sh/xk3y5onq","slide":17,"text":"Road-surface defect example","textPreview":"Road-surface defect example","textChars":27,"textLines":1,"bbox":[60,468,555,28]}
+{"kind":"textbox","id":"sh/axcfat4z","slide":17,"text":"Asphalt contamination example","textPreview":"Asphalt contamination example","textChars":29,"textLines":1,"bbox":[665,468,555,28]}
+{"kind":"shape","id":"sh/vilg3e5k","slide":17,"bbox":[60,530,1160,85]}
+{"kind":"textbox","id":"sh/knexg3mh","slide":17,"text":"Interpretation","textPreview":"Interpretation","textChars":14,"textLines":1,"bbox":[88,550,150,24]}
+{"kind":"textbox","id":"sh/5ony98nm","slide":17,"text":"The vendor material demonstrates feasibility and reporting concepts. It does not provide an independent scientific benchmark for Astana.","textPreview":"The vendor material demonstrates feasibility and reporting concepts. It does not provide an independent scientific benchmark for Astana.","textChars":136,"textLines":1,"bbox":[250,545,910,45]}
+{"kind":"textbox","id":"sh/x8r6p8bu","slide":17,"text":"Images: SoftLogic Kontrol ODX product page","textPreview":"Images: SoftLogic Kontrol ODX product page","textChars":42,"textLines":1,"bbox":[58,683,1060,18]}
+{"kind":"textbox","id":"sh/w7ipw3u9","slide":17,"text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[1190,680,35,18]}
+{"kind":"image","id":"im/2hk3m1wz","slide":17,"name":"","alt":"SoftLogic example of detected road-surface defect","bbox":[60,145,555,305]}
+{"kind":"image","id":"im/1gbmdwve","slide":17,"name":"","alt":"SoftLogic example of detected asphalt contamination","bbox":[665,145,555,305]}
+{"kind":"notes","id":"nt/1ewwcf","slide":17,"text":"Images and product context: https://softlogic.ai/solution/kontrol_odx. Vendor-provided examples are shown as an industrial analogue, not as independent validation. Image URLs: https://softlogic.ai/media/file/solutions/image/detects/1/1.1(1).webp and https://softlogic.ai/media/file/solutions/image/detects/2/2.1.webp"}
+{"kind":"slide","id":"sl/4q0bfd","slide":18,"title":"Proposed end-to-end system","textShapes":22}
+{"kind":"textbox","id":"sh/n2lcb2tw","slide":18,"text":"Proposed end-to-end system","textPreview":"Proposed end-to-end system","textChars":26,"textLines":1,"bbox":[58,36,1120,62]}
+{"kind":"shape","id":"sh/83udk7uh","slide":18,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/943udsb2","slide":18,"bbox":[45,205,175,220]}
+{"kind":"textbox","id":"sh/a5cvmxcn","slide":18,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[59,217,28,20]}
+{"kind":"textbox","id":"sh/v6lcf2t8","slide":18,"text":"Capture","textPreview":"Capture","textChars":7,"textLines":1,"bbox":[59,244,147,56]}
+{"kind":"textbox","id":"sh/wrudo7ud","slide":18,"text":"video, GPS, time, camera","textPreview":"video, GPS, time, camera","textChars":24,"textLines":1,"bbox":[59,306,147,109]}
+{"kind":"shape","id":"sh/xs3ehcby","slide":18,"bbox":[224,292,22,30]}
+{"kind":"shape","id":"sh/itwvqhcj","slide":18,"bbox":[250,205,175,220]}
+{"kind":"textbox","id":"sh/ju5wjmt4","slide":18,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[264,217,28,20]}
+{"kind":"textbox","id":"sh/zyt4vulo","slide":18,"text":"Quality control","textPreview":"Quality control","textChars":15,"textLines":1,"bbox":[264,244,147,56]}
+{"kind":"textbox","id":"sh/yxk32pkj","slide":18,"text":"blur, darkness, privacy","textPreview":"blur, darkness, privacy","textChars":23,"textLines":1,"bbox":[264,306,147,109]}
+{"kind":"shape","id":"sh/l0bmx43u","slide":18,"bbox":[429,292,22,30]}
+{"kind":"shape","id":"sh/kz2l4z29","slide":18,"bbox":[455,205,175,220]}
+{"kind":"textbox","id":"sh/bu94rals","slide":18,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[469,217,28,20]}
+{"kind":"textbox","id":"sh/at03ypk7","slide":18,"text":"Perception","textPreview":"Perception","textChars":10,"textLines":1,"bbox":[469,244,147,56]}
+{"kind":"textbox","id":"sh/xwbmtk3y","slide":18,"text":"detection and segmentation","textPreview":"detection and segmentation","textChars":26,"textLines":1,"bbox":[469,306,147,109]}
+{"kind":"shape","id":"sh/cv2l0f2d","slide":18,"bbox":[634,292,22,30]}
+{"kind":"shape","id":"sh/vqd43elw","slide":18,"bbox":[660,205,175,220]}
+{"kind":"textbox","id":"sh/up4na9kr","slide":18,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[674,217,28,20]}
+{"kind":"textbox","id":"sh/6l872d4z","slide":18,"text":"State inference","textPreview":"State inference","textChars":15,"textLines":1,"bbox":[674,244,147,56]}
+{"kind":"textbox","id":"sh/rmhovi54","slide":18,"text":"binary / multilabel condition","textPreview":"binary / multilabel condition","textChars":29,"textLines":1,"bbox":[674,306,147,109]}
+{"kind":"shape","id":"sh/snqp4nmp","slide":18,"bbox":[839,292,22,30]}
+{"kind":"shape","id":"sh/toz6xsna","slide":18,"bbox":[865,205,175,220]}
+{"kind":"textbox","id":"sh/ep876d4v","slide":18,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[879,217,28,20]}
+{"kind":"textbox","id":"sh/fqhozilg","slide":18,"text":"Spatial fusion","textPreview":"Spatial fusion","textChars":14,"textLines":1,"bbox":[879,244,147,56]}
+{"kind":"textbox","id":"sh/0bqp8nm1","slide":18,"text":"asset and segment association","textPreview":"asset and segment association","textChars":29,"textLines":1,"bbox":[879,306,147,109]}
+{"kind":"shape","id":"sh/1czq1s3m","slide":18,"bbox":[1044,292,22,30]}
+{"kind":"shape","id":"sh/ut47ut4r","slide":18,"bbox":[1070,205,175,220]}
+{"kind":"textbox","id":"sh/vuxony5w","slide":18,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1084,217,28,20]}
+{"kind":"textbox","id":"sh/x83atwnu","slide":18,"text":"Decision layer","textPreview":"Decision layer","textChars":14,"textLines":1,"bbox":[1084,244,147,56]}
+{"kind":"textbox","id":"sh/c7u90r69","slide":18,"text":"map, report, inspection queue","textPreview":"map, report, inspection queue","textChars":29,"textLines":1,"bbox":[1084,306,147,109]}
+{"kind":"shape","id":"sh/b6lsrmpo","slide":18,"bbox":[70,500,1140,90]}
+{"kind":"textbox","id":"sh/a5cryho3","slide":18,"text":"Temporal rule","textPreview":"Temporal rule","textChars":13,"textLines":1,"bbox":[98,522,155,25]}
+{"kind":"textbox","id":"sh/lcnaxgnq","slide":18,"text":"A single frame creates an observation. Repeated independent observations create a condition estimate and trigger a report.","textPreview":"A single frame creates an observation. Repeated independent observations create a condition estimate and trigger a report.","textChars":122,"textLines":1,"bbox":[260,516,900,46]}
+{"kind":"textbox","id":"sh/kbu94b65","slide":18,"text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[1190,680,35,18]}
+{"kind":"notes","id":"nt/4q0bfd","slide":18,"text":"Proposed system architecture. Thresholds for temporal fusion and report generation will be learned or selected on validation data and tested prospectively."}
+{"kind":"slide","id":"sl/0yi7zf","slide":19,"title":"Experimental design and expected contribution","textShapes":13}
+{"kind":"textbox","id":"sh/bi9cru9w","slide":19,"text":"Experimental design and expected contribution","textPreview":"Experimental design and expected contribution","textChars":45,"textLines":1,"bbox":[58,36,1120,62]}
+{"kind":"shape","id":"sh/cjidkza1","slide":19,"bbox":[58,104,74,5]}
+{"kind":"textbox","id":"sh/xkrut4rm","slide":19,"text":"Perception accuracy","textPreview":"Perception accuracy","textChars":19,"textLines":1,"bbox":[70,130,270,40]}
+{"kind":"textbox","id":"sh/yl0vm9s7","slide":19,"text":"mAP, recall, F1; mIoU and boundary F1 for masks","textPreview":"mAP, recall, F1; mIoU and boundary F1 for masks","textChars":47,"textLines":1,"bbox":[350,130,830,62]}
+{"kind":"shape","id":"sh/zm9cve9s","slide":19,"bbox":[70,203,1110,1]}
+{"kind":"textbox","id":"sh/k7idojad","slide":19,"text":"Condition accuracy","textPreview":"Condition accuracy","textChars":18,"textLines":1,"bbox":[70,221,270,40]}
+{"kind":"textbox","id":"sh/l8ruxory","slide":19,"text":"balanced accuracy, macro F1, AUROC, calibration error","textPreview":"balanced accuracy, macro F1, AUROC, calibration error","textChars":53,"textLines":1,"bbox":[350,221,830,62]}
+{"kind":"shape","id":"sh/epwbaps3","slide":19,"bbox":[70,294,1110,1]}
+{"kind":"textbox","id":"sh/fqpcja9o","slide":19,"text":"Robustness","textPreview":"Robustness","textChars":10,"textLines":1,"bbox":[70,312,270,40]}
+{"kind":"textbox","id":"sh/net0bah4","slide":19,"text":"season, weather, time, camera, distance, occlusion, and district strata","textPreview":"season, weather, time, camera, distance, occlusion, and district strata","textChars":71,"textLines":1,"bbox":[350,312,830,62]}
+{"kind":"shape","id":"sh/mdkzi50j","slide":19,"bbox":[70,385,1110,1]}
+{"kind":"textbox","id":"sh/9gbidkza","slide":19,"text":"Generalization","textPreview":"Generalization","textChars":14,"textLines":1,"bbox":[70,403,270,40]}
+{"kind":"textbox","id":"sh/8f2hkfip","slide":19,"text":"public-data pretraining vs Astana-only vs combined domain adaptation","textPreview":"public-data pretraining vs Astana-only vs combined domain adaptation","textChars":68,"textLines":1,"bbox":[350,403,830,62]}
+{"kind":"shape","id":"sh/zq9g7qh8","slide":19,"bbox":[70,476,1110,1]}
+{"kind":"textbox","id":"sh/ep0ze50n","slide":19,"text":"Operational validity","textPreview":"Operational validity","textChars":20,"textLines":1,"bbox":[70,494,270,40]}
+{"kind":"textbox","id":"sh/1cby90zy","slide":19,"text":"asset-level precision, false alerts per kilometre, time-to-confirm, report completeness","textPreview":"asset-level precision, false alerts per kilometre, time-to-confirm, report completeness","textChars":87,"textLines":1,"bbox":[350,494,830,62]}
+{"kind":"shape","id":"sh/0b2hgvid","slide":19,"bbox":[70,585,1110,70]}
+{"kind":"textbox","id":"sh/rm9g3qhw","slide":19,"text":"Expected contribution: an Astana-specific, uncertainty-aware method that converts repeated vehicle observations into auditable asset and road-segment histories.","textPreview":"Expected contribution: an Astana-specific, uncertainty-aware method that converts repeated vehicle observations into auditable asset and ...","textChars":160,"textLines":1,"bbox":[92,598,1065,46]}
+{"kind":"textbox","id":"sh/ql0zal0b","slide":19,"text":"19","textPreview":"19","textChars":2,"textLines":1,"bbox":[1190,680,35,18]}
+{"kind":"notes","id":"nt/0yi7zf","slide":19,"text":"Proposed evaluation framework and expected contribution. Exact primary endpoints and acceptance thresholds will be preregistered after the pilot dataset establishes prevalence and uncertainty."}

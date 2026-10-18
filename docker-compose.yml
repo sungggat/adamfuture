@@ -22,9 +22,16 @@ services:
       ADMIN_API_KEY: ${ADMIN_API_KEY:?set ADMIN_API_KEY in .env}
       PRIVACY_SECRET: ${PRIVACY_SECRET:?set PRIVACY_SECRET in .env}
       DATA_ENCRYPTION_KEY: ${DATA_ENCRYPTION_KEY:?set DATA_ENCRYPTION_KEY in .env}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-5}
+      REPORTS_DIR: /data/reports
+      MAX_REPORT_BYTES: ${MAX_REPORT_BYTES:-15728640}
       ENVIRONMENT: ${ENVIRONMENT:-production}
     depends_on:
       postgres: { condition: service_healthy }
+      reports-init: { condition: service_completed_successfully }
+    volumes:
+      - reports_data:/data/reports
     networks: [database, app]
     read_only: true
     tmpfs: [/tmp]
@@ -35,6 +42,17 @@ services:
       interval: 10s
       timeout: 3s
       retries: 5
+
+  reports-init:
+    image: alpine:3.22
+    restart: "no"
+    command: ["sh", "-c", "mkdir -p /data/reports && chown -R 65532:65532 /data/reports && chmod 750 /data/reports"]
+    volumes:
+      - reports_data:/data/reports
+    networks: [app]
+    cap_drop: [ALL]
+    cap_add: [CHOWN, FOWNER]
+    security_opt: ["no-new-privileges:true"]
 
   frontend:
     build: ./frontend
@@ -69,6 +87,7 @@ volumes:
   postgres_data:
   certbot_webroot:
   letsencrypt:
+  reports_data:
 
 networks:
   app:

@@ -1,0 +1,159 @@
+{"kind":"layout","layoutId":"af397f79-3762-4cb9-9273-9906e90784c1","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"4d3fab96-db70-409b-a206-f06b186fef88","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/s6q9jk","slide":1,"title":"PhD SEMINAR","textShapes":5}
+{"kind":"shape","id":"sh/5wjmdcjq","slide":1,"bbox":[0,0,735,720]}
+{"kind":"shape","id":"sh/hsz29sje","slide":1,"bbox":[66,492,220,4]}
+{"kind":"image","id":"im/nals3258","slide":1,"name":"","alt":"Concept illustration of road video analytics in Astana","bbox":[0,0,1280,720]}
+{"kind":"slide","id":"sl/7dcb6d","slide":2,"title":"Urban monitoring problem","textShapes":18}
+{"kind":"shape","id":"sh/1cjaxcny","slide":2,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/6l8rix4b","slide":2,"bbox":[700,160,500,390]}
+{"kind":"shape","id":"sh/t8jqtsn2","slide":2,"bbox":[730,195,420,68]}
+{"kind":"shape","id":"sh/4nexc3yt","slide":2,"bbox":[730,281,420,68]}
+{"kind":"shape","id":"sh/gjux8jyh","slide":2,"bbox":[730,367,420,68]}
+{"kind":"shape","id":"sh/0fyhkny1","slide":2,"bbox":[730,453,420,68]}
+{"kind":"slide","id":"sl/nmjoul","slide":3,"title":"Dissertation framing","textShapes":12}
+{"kind":"shape","id":"sh/kritc7ml","slide":3,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/lsbu5cn6","slide":3,"bbox":[60,145,555,190]}
+{"kind":"shape","id":"sh/mdkveh4r","slide":3,"bbox":[60,145,7,190]}
+{"kind":"shape","id":"sh/9gbu9cn2","slide":3,"bbox":[665,145,555,190]}
+{"kind":"shape","id":"sh/2hgb2d47","slide":3,"bbox":[665,145,7,190]}
+{"kind":"shape","id":"sh/mpof69oj","slide":3,"bbox":[60,375,360,190]}
+{"kind":"shape","id":"sh/9sfy14na","slide":3,"bbox":[60,375,7,190]}
+{"kind":"shape","id":"sh/elof2pon","slide":3,"bbox":[460,375,360,190]}
+{"kind":"shape","id":"sh/1ofyx4ny","slide":3,"bbox":[460,375,7,190]}
+{"kind":"shape","id":"sh/qh4fypob","slide":3,"bbox":[860,375,360,190]}
+{"kind":"shape","id":"sh/utkza58j","slide":3,"bbox":[860,375,7,190]}
+{"kind":"slide","id":"sl/69k6ap","slide":4,"title":"Research questions","textShapes":10}
+{"kind":"shape","id":"sh/il076hsv","slide":4,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/3m9oz2tg","slide":4,"bbox":[70,155,550,175]}
+{"kind":"shape","id":"sh/uh0n2xsj","slide":4,"bbox":[660,155,550,175]}
+{"kind":"shape","id":"sh/1gvq9wre","slide":4,"bbox":[70,385,550,175]}
+{"kind":"shape","id":"sh/rq9kfyps","slide":4,"bbox":[660,385,550,175]}
+{"kind":"slide","id":"sl/glmk4x","slide":5,"title":"Published starting point: street-light monitoring in Astana","textShapes":12}
+{"kind":"shape","id":"sh/c3uhojy5","slide":5,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/y5wjqtgb","slide":5,"bbox":[60,210,350,280]}
+{"kind":"shape","id":"sh/z650jyxw","slide":5,"bbox":[60,210,7,280]}
+{"kind":"shape","id":"sh/m9wjudg7","slide":5,"bbox":[465,210,350,280]}
+{"kind":"shape","id":"sh/7a50nyxs","slide":5,"bbox":[465,210,7,280]}
+{"kind":"shape","id":"sh/p4rqt87e","slide":5,"bbox":[870,210,350,280]}
+{"kind":"shape","id":"sh/43i90n6t","slide":5,"bbox":[870,210,7,280]}
+{"kind":"slide","id":"sl/i9u357","slide":6,"title":"Published dataset and training protocol","textShapes":17}
+{"kind":"shape","id":"sh/fmhsry1s","slide":6,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/elorit07","slide":6,"bbox":[75,160,265,245]}
+{"kind":"shape","id":"sh/6hore90v","slide":6,"bbox":[375,160,265,245]}
+{"kind":"shape","id":"sh/7m1cr2lo","slide":6,"bbox":[675,160,265,245]}
+{"kind":"shape","id":"sh/zi1cnilc","slide":6,"bbox":[975,160,265,245]}
+{"kind":"shape","id":"sh/3elczmlw","slide":6,"bbox":[75,455,1165,105]}
+{"kind":"slide","id":"sl/59bqnw","slide":7,"title":"YOLO-CSE architecture and structural priors","textShapes":22}
+{"kind":"shape","id":"sh/pg72l0ni","slide":7,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/bi9knq58","slide":7,"bbox":[65,225,250,155]}
+{"kind":"shape","id":"sh/zm9kra5k","slide":7,"bbox":[320,280,30,30]}
+{"kind":"shape","id":"sh/yl0jy5oz","slide":7,"bbox":[365,225,250,155]}
+{"kind":"shape","id":"sh/jupojihw","slide":7,"bbox":[620,280,30,30]}
+{"kind":"shape","id":"sh/sji5g7id","slide":7,"bbox":[665,225,250,155]}
+{"kind":"shape","id":"sh/gnipk7ip","slide":7,"bbox":[920,280,30,30]}
+{"kind":"shape","id":"sh/hor6tcza","slide":7,"bbox":[965,225,250,155]}
+{"kind":"shape","id":"sh/25cfmd4b","slide":7,"bbox":[65,440,350,150]}
+{"kind":"shape","id":"sh/dwnelsny","slide":7,"bbox":[65,440,7,150]}
+{"kind":"shape","id":"sh/qtwfqd4n","slide":7,"bbox":[465,440,350,150]}
+{"kind":"shape","id":"sh/t03e9onu","slide":7,"bbox":[465,440,7,150]}
+{"kind":"shape","id":"sh/j6hcjuls","slide":7,"bbox":[865,440,350,150]}
+{"kind":"shape","id":"sh/k7qtsz2d","slide":7,"bbox":[865,440,7,150]}
+{"kind":"slide","id":"sl/rhtyf2","slide":8,"title":"Published benchmark results","textShapes":38}
+{"kind":"shape","id":"sh/6twz6tg7","slide":8,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/ru5gzyxs","slide":8,"bbox":[70,145,760,42]}
+{"kind":"shape","id":"sh/fypg3ixo","slide":8,"bbox":[70,194,760,38]}
+{"kind":"shape","id":"sh/wn618zqt","slide":8,"bbox":[70,237,760,38]}
+{"kind":"shape","id":"sh/krqlcjqp","slide":8,"bbox":[70,280,760,38]}
+{"kind":"shape","id":"sh/svqlgjq1","slide":8,"bbox":[70,323,760,38]}
+{"kind":"shape","id":"sh/ryp4j2xs","slide":8,"bbox":[70,366,760,38]}
+{"kind":"shape","id":"sh/f294n2xo","slide":8,"bbox":[70,409,760,38]}
+{"kind":"shape","id":"sh/ylk7al0n","slide":8,"bbox":[70,452,760,38]}
+{"kind":"shape","id":"sh/axk7610b","slide":8,"bbox":[70,495,760,38]}
+{"kind":"shape","id":"sh/2t07210f","slide":8,"bbox":[70,538,760,38]}
+{"kind":"shape","id":"sh/p4vuh4va","slide":8,"bbox":[870,160,330,300]}
+{"kind":"slide","id":"sl/s5o3ah","slide":9,"title":"Observed limitations and dissertation response","textShapes":10}
+{"kind":"shape","id":"sh/c7qdgbql","slide":9,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/yt8vi18r","slide":9,"bbox":[505,162,42,32]}
+{"kind":"shape","id":"sh/0vqdkbqh","slide":9,"bbox":[75,238,1095,1]}
+{"kind":"shape","id":"sh/ux4b6h87","slide":9,"bbox":[505,270,42,32]}
+{"kind":"shape","id":"sh/nu5kny1o","slide":9,"bbox":[75,346,1095,1]}
+{"kind":"shape","id":"sh/9w72p8ju","slide":9,"bbox":[505,378,42,32]}
+{"kind":"shape","id":"sh/zq5kjy1s","slide":9,"bbox":[75,454,1095,1]}
+{"kind":"shape","id":"sh/1sn2lojy","slide":9,"bbox":[505,486,42,32]}
+{"kind":"slide","id":"sl/cxhgx8","slide":10,"title":"Infrastructure classes in the dissertation","textShapes":14}
+{"kind":"shape","id":"sh/r2tcb2lg","slide":10,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/61kb2x4v","slide":10,"bbox":[65,150,350,170]}
+{"kind":"shape","id":"sh/50bu9s3a","slide":10,"bbox":[65,150,7,170]}
+{"kind":"shape","id":"sh/ixkbyd4z","slide":10,"bbox":[465,150,350,170]}
+{"kind":"shape","id":"sh/pwfulc3e","slide":10,"bbox":[465,150,7,170]}
+{"kind":"shape","id":"sh/f2hsva10","slide":10,"bbox":[865,150,350,170]}
+{"kind":"shape","id":"sh/g3qt4fil","slide":10,"bbox":[865,150,7,170]}
+{"kind":"shape","id":"sh/7yxsrq14","slide":10,"bbox":[65,370,350,170]}
+{"kind":"shape","id":"sh/sz6t0vip","slide":10,"bbox":[65,370,7,170]}
+{"kind":"shape","id":"sh/ru1c3u18","slide":10,"bbox":[465,370,350,170]}
+{"kind":"shape","id":"sh/net8vmh0","slide":10,"bbox":[465,370,7,170]}
+{"kind":"shape","id":"sh/8f2p4ry5","slide":10,"bbox":[865,370,350,170]}
+{"kind":"shape","id":"sh/v2d8zmhw","slide":10,"bbox":[865,370,7,170]}
+{"kind":"slide","id":"sl/43v0u9","slide":11,"title":"Spatial and overlap priors","textShapes":17}
+{"kind":"shape","id":"sh/etkfatkz","slide":11,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/qp0f69kn","slide":11,"bbox":[130,218,1070,1]}
+{"kind":"shape","id":"sh/l4nit8ru","slide":11,"bbox":[130,317,1070,1]}
+{"kind":"shape","id":"sh/x03ipori","slide":11,"bbox":[130,416,1070,1]}
+{"kind":"shape","id":"sh/pw3ylorm","slide":11,"bbox":[130,515,1070,1]}
+{"kind":"slide","id":"sl/phxm4g","slide":12,"title":"Multi-task perception design","textShapes":16}
+{"kind":"shape","id":"sh/v6d87e1g","slide":12,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/u54rytkv","slide":12,"bbox":[70,160,265,270]}
+{"kind":"shape","id":"sh/61kru9kj","slide":12,"bbox":[370,160,265,270]}
+{"kind":"shape","id":"sh/rmxsji90","slide":12,"bbox":[670,160,265,270]}
+{"kind":"shape","id":"sh/3yxsfi94","slide":12,"bbox":[970,160,265,270]}
+{"kind":"shape","id":"sh/vudsby9s","slide":12,"bbox":[70,478,1165,100]}
+{"kind":"slide","id":"sl/szoozk","slide":13,"title":"Road segmentation will be implemented","textShapes":11}
+{"kind":"shape","id":"sh/d0zahcfm","slide":13,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/3axsbixk","slide":13,"bbox":[65,220,350,250]}
+{"kind":"shape","id":"sh/29oridgz","slide":13,"bbox":[65,220,7,250]}
+{"kind":"shape","id":"sh/n61snmxo","slide":13,"bbox":[465,220,350,250]}
+{"kind":"shape","id":"sh/m5sbuhg3","slide":13,"bbox":[465,220,7,250]}
+{"kind":"shape","id":"sh/yhcf6pwn","slide":13,"bbox":[865,220,350,250]}
+{"kind":"shape","id":"sh/zilwfad8","slide":13,"bbox":[865,220,7,250]}
+{"kind":"slide","id":"sl/cdxwoj","slide":14,"title":"Binary functional-condition classifiers","textShapes":11}
+{"kind":"shape","id":"sh/szapsnu1","slide":14,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/i9s7mdcz","slide":14,"bbox":[60,210,570,165]}
+{"kind":"shape","id":"sh/5wj6xsva","slide":14,"bbox":[650,210,570,165]}
+{"kind":"shape","id":"sh/3udwfuho","slide":14,"bbox":[60,430,570,165]}
+{"kind":"shape","id":"sh/4vmxozit","slide":14,"bbox":[650,430,570,165]}
+{"kind":"slide","id":"sl/pmbyks","slide":15,"title":"Public datasets for pretraining and benchmarking","textShapes":18}
+{"kind":"shape","id":"sh/hob2pgfa","slide":15,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/wn2lgbyp","slide":15,"bbox":[60,145,1160,55]}
+{"kind":"shape","id":"sh/4r2lkvyl","slide":15,"bbox":[60,212,1160,80]}
+{"kind":"shape","id":"sh/pcnylsb6","slide":15,"bbox":[60,304,1160,80]}
+{"kind":"shape","id":"sh/dgnipsri","slide":15,"bbox":[60,396,1160,80]}
+{"kind":"shape","id":"sh/tkjyd8by","slide":15,"bbox":[60,488,1160,80]}
+{"kind":"slide","id":"sl/8rjuqq","slide":16,"title":"Local Astana dataset is the core empirical contribution","textShapes":17}
+{"kind":"shape","id":"sh/i9wz2psn","slide":16,"bbox":[58,104,74,5]}
+{"kind":"slide","id":"sl/1ewwcf","slide":17,"title":"Industrial analogue: mobile road-condition analytics","textShapes":7}
+{"kind":"shape","id":"sh/mtsf69o3","slide":17,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/vilg3e5k","slide":17,"bbox":[60,530,1160,85]}
+{"kind":"image","id":"im/2hk3m1wz","slide":17,"name":"","alt":"SoftLogic example of detected road-surface defect","bbox":[60,145,555,305]}
+{"kind":"image","id":"im/1gbmdwve","slide":17,"name":"","alt":"SoftLogic example of detected asphalt contamination","bbox":[665,145,555,305]}
+{"kind":"slide","id":"sl/4q0bfd","slide":18,"title":"Proposed end-to-end system","textShapes":22}
+{"kind":"shape","id":"sh/83udk7uh","slide":18,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/943udsb2","slide":18,"bbox":[45,205,175,220]}
+{"kind":"shape","id":"sh/xs3ehcby","slide":18,"bbox":[224,292,22,30]}
+{"kind":"shape","id":"sh/itwvqhcj","slide":18,"bbox":[250,205,175,220]}
+{"kind":"shape","id":"sh/l0bmx43u","slide":18,"bbox":[429,292,22,30]}
+{"kind":"shape","id":"sh/kz2l4z29","slide":18,"bbox":[455,205,175,220]}
+{"kind":"shape","id":"sh/cv2l0f2d","slide":18,"bbox":[634,292,22,30]}
+{"kind":"shape","id":"sh/vqd43elw","slide":18,"bbox":[660,205,175,220]}
+{"kind":"shape","id":"sh/snqp4nmp","slide":18,"bbox":[839,292,22,30]}
+{"kind":"shape","id":"sh/toz6xsna","slide":18,"bbox":[865,205,175,220]}
+{"kind":"shape","id":"sh/1czq1s3m","slide":18,"bbox":[1044,292,22,30]}
+{"kind":"shape","id":"sh/ut47ut4r","slide":18,"bbox":[1070,205,175,220]}
+{"kind":"shape","id":"sh/b6lsrmpo","slide":18,"bbox":[70,500,1140,90]}
+{"kind":"slide","id":"sl/0yi7zf","slide":19,"title":"Experimental design and expected contribution","textShapes":13}
+{"kind":"shape","id":"sh/cjidkza1","slide":19,"bbox":[58,104,74,5]}
+{"kind":"shape","id":"sh/zm9cve9s","slide":19,"bbox":[70,203,1110,1]}
+{"kind":"shape","id":"sh/epwbaps3","slide":19,"bbox":[70,294,1110,1]}
+{"kind":"shape","id":"sh/mdkzi50j","slide":19,"bbox":[70,385,1110,1]}
+{"kind":"shape","id":"sh/zq9g7qh8","slide":19,"bbox":[70,476,1110,1]}
+{"kind":"shape","id":"sh/0b2hgvid","slide":19,"bbox":[70,585,1110,70]}

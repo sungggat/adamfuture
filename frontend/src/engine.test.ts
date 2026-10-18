@@ -3,6 +3,7 @@ import { calculate, cosine } from "./engine";
 import questions from "./data/questions.json";
 import professions from "./data/professions.json";
 import type { Profession, Question, RadicalKey } from "./types";
+import { calculateIntelligences } from "./portalStore";
 
 describe("recommendation engine", () => {
   it("assigns exactly six points per scale", () => {
@@ -36,5 +37,13 @@ describe("recommendation engine", () => {
       return acc;
     }, {});
     expect(Math.max(...Object.values(counts))).toBeLessThanOrEqual(3);
+  });
+  it("calculates intelligence blocks from the workbook key", () => {
+    const answers = Object.fromEntries((questions as Question[]).map((q) => [q.id, true]));
+    const result = calculateIntelligences(answers);
+    expect(result.find((item) => item.key === "existential")?.score).toBe(100);
+    expect(result).toHaveLength(7);
+    expect(result.some((item) => item.key === "musical" || item.key === "naturalistic")).toBe(false);
+    expect(result.find((item) => item.key === "intrapersonal")?.score).toBe(50);
   });
 });

@@ -1,10 +1,14 @@
 import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link, Route, Routes, useLocation, useNavigate } from "react-router-dom";
+import { Link, Navigate, Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import { ArrowRightOutlined, CheckOutlined, SearchOutlined } from "@ant-design/icons";
 import { Button, Input, Progress, Select, Tag } from "antd";
 import questionsData from "./data/questions.json";
 import professionsData from "./data/professions.json";
+import { calculate } from "./engine";
+import { enrichInterpretation } from "./interpretation";
+import { calculateIntelligences, findUser, loadSession, saveResult, saveSession } from "./portalStore";
+import { AdminPage, LoginPage, ProfilePage, ReportPage } from "./Portal";
 import type { AssessmentResult, Lang, PoleKey, Profession, Question } from "./types";
 
 const questions = questionsData as Question[];
@@ -33,24 +37,53 @@ function useLang(): Lang {
   return i18n.language.startsWith("kk") ? "kk" : "ru";
 }
 
+function resolveTestEntry() {
+  const session = loadSession();
+  if (!session) return "/login";
+  if (session.role === "admin") return "/admin";
+  const user = findUser(session.userId);
+  if (!user) return "/login";
+  if (!user.firstName.trim() || !user.lastName.trim()) return "/profile";
+  return user.result ? "/results" : "/test";
+}
+
+function useTestEntry() {
+  const location = useLocation();
+  const [entry, setEntry] = useState(resolveTestEntry);
+  useEffect(() => {
+    const sync = () => setEntry(resolveTestEntry());
+    sync();
+    window.addEventListener("adam-session-updated", sync);
+    window.addEventListener("adam-users-updated", sync);
+    return () => {
+      window.removeEventListener("adam-session-updated", sync);
+      window.removeEventListener("adam-users-updated", sync);
+    };
+  }, [location.pathname]);
+  return entry;
+}
+
 function Header() {
   const { t, i18n } = useTranslation();
   const lang = useLang();
+  const testEntry = useTestEntry();
+  const isLoggedIn = Boolean(loadSession());
   const setLanguage = (value: Lang) => {
     i18n.changeLanguage(value);
     localStorage.setItem("adam-language", value);
     document.documentElement.lang = value;
   };
   return <header className="header">
-    <Link to="/" className="brand"><span>ADAM</span><small>FUTURE</small></Link>
+    <Link to="/" className="brand brand-logo"><img src="/adam-logo.svg" alt="ADAM" /></Link>
     <nav>
-      <Link to="/test">{t("navTest")}</Link>
+      <Link to={testEntry}>{t("navTest")}</Link>
       <Link to="/professions">{t("navCatalog")}</Link>
       <a href="/#method">{t("navAbout")}</a>
+      <Link to={testEntry} className="header-login">{isLoggedIn ? (lang === "kk" ? "Кабинет" : "Кабинет") : (lang === "kk" ? "Кіру" : "Войти")}</Link>
     </nav>
     <div className="language" aria-label="Language">
-      <button className={lang === "ru" ? "active" : ""} onClick={() => setLanguage("ru")}>RU</button>
       <button className={lang === "kk" ? "active" : ""} onClick={() => setLanguage("kk")}>ҚАЗ</button>
+      <button className={lang === "ru" ? "active" : ""} onClick={() => setLanguage("ru")}>RU</button>
     </div>
   </header>;
 }
@@ -64,23 +97,25 @@ function TestHeader() {
     document.documentElement.lang = value;
   };
   return <header className="header test-header">
-    <Link to="/" className="brand"><span>ADAM</span><small>FUTURE</small></Link>
+    <Link to="/" className="brand brand-logo"><img src="/adam-logo.svg" alt="ADAM" /></Link>
     <div className="test-header-note">{t("testHeaderNote")}</div>
     <div className="language" aria-label="Language">
-      <button className={lang === "ru" ? "active" : ""} onClick={() => setLanguage("ru")}>RU</button>
       <button className={lang === "kk" ? "active" : ""} onClick={() => setLanguage("kk")}>ҚАЗ</button>
+      <button className={lang === "ru" ? "active" : ""} onClick={() => setLanguage("ru")}>RU</button>
     </div>
   </header>;
 }
 
 function Shell({ children }: { children: React.ReactNode }) {
-  return <><Header /><main>{children}</main><footer>FUTURE · 2026 <span>Профориентация с уважением к личности</span></footer></>;
+  const testEntry = useTestEntry();
+  return <><Header /><main>{children}</main><footer>FUTURE · 2026 <span>Профориентация с уважением к личности</span><Link to={testEntry}>Личный кабинет</Link></footer></>;
 }
 
 function Landing() {
   const { t } = useTranslation();
+  const testEntry = useTestEntry();
   const careerCards = [
-    { image: "/images/careers/pexels-ai-engineer.jpg", code: "AI", title: t("futureAI"), position: "34% 48%" },
+    { image: "/images/careers/robotics.jpg", code: "AI", title: t("futureAI"), position: "50% 35%" },
     { image: "/images/careers/pexels-biotech.jpg", code: "BIO", title: t("futureBiotechResearcher"), position: "50% 42%" },
     { image: "/images/careers/pexels-climate-scientist.jpg", code: "CLIMATE", title: t("futureClimateScientist"), position: "55% 44%" },
     { image: "/images/careers/green-energy.jpg", code: "ENERGY", title: t("futureEnergy"), position: "72% 45%" },
@@ -91,9 +126,8 @@ function Landing() {
         <p className="eyebrow">{t("heroEyebrow")}</p>
         <h1>{t("heroTitle")}</h1>
         <p className="lead">{t("heroText")}</p>
-        <p className="hero-cta-note">{t("heroCtaNote")}</p>
         <div className="actions">
-          <Link to="/test"><Button size="large" type="primary">{t("start")} <ArrowRightOutlined /></Button></Link>
+          <Link to={testEntry}><Button size="large" type="primary">{t("start")} <ArrowRightOutlined /></Button></Link>
           <Link to="/professions"><Button size="large">{t("explore")}</Button></Link>
         </div>
       </div>
@@ -160,6 +194,20 @@ function Landing() {
           <article key={n}><span>{n}</span><h3>{t(a)}</h3><p>{t(b)}</p></article>)}
       </div>
     </section>
+    <section className="home-audiences">
+      <div className="home-audiences-heading">
+        <h2>{t("audienceTitle")}</h2>
+        <p>{t("audienceLead")}</p>
+      </div>
+      <div className="audience-cards">
+        <article><span>01</span><h3>{t("audienceStudent")}</h3><p>{t("audienceStudentText")}</p></article>
+        <article><span>02</span><h3>{t("audienceParent")}</h3><p>{t("audienceParentText")}</p></article>
+      </div>
+    </section>
+    <section className="home-final-cta">
+      <div><h2>{t("finalCtaTitle")}</h2><p>{t("finalCtaText")}</p></div>
+      <Link to={testEntry}><Button size="large" type="primary">{t("start")} <ArrowRightOutlined /></Button></Link>
+    </section>
   </Shell>;
 }
 
@@ -167,6 +215,8 @@ function TestPage() {
   const { t } = useTranslation();
   const lang = useLang();
   const navigate = useNavigate();
+  const session = loadSession();
+  const activeUser = session?.role === "user" ? findUser(session.userId) : undefined;
   const [answers, setAnswers] = useState<Record<number, boolean>>({});
   const [index, setIndex] = useState(0);
   const [submitting, setSubmitting] = useState(false);
@@ -182,31 +232,33 @@ function TestPage() {
     if (submitting || Object.keys(answers).length !== 36) return;
     setSubmitting(true);
     setSubmitError(false);
-    const controller = new AbortController();
-    const timeout = window.setTimeout(() => controller.abort(), 15_000);
     try {
-      const response = await fetch("/api/assessments", {
-        method: "POST",
-        credentials: "omit",
-        cache: "no-store",
-        signal: controller.signal,
-        headers: { "Content-Type": "application/json", "Accept": "application/json" },
-        body: JSON.stringify({
-          language: lang,
-          answers: questions.map(({ id }) => ({ questionId: id, value: answers[id] })),
-        }),
-      });
-      if (!response.ok) throw new Error(`Assessment request failed: ${response.status}`);
-      const result = await response.json() as AssessmentResult;
+      const calculation = calculate(answers, questions, professions);
+      const baseResult: AssessmentResult = {
+        scales: calculation.scales.map(({ first, second, firstScore, secondScore }) => ({
+          first, second, firstScore, secondScore,
+        })),
+        professions: calculation.recommendations.slice(0, 10).map(({ profession }) => ({
+          id: profession.id,
+          name_ru: profession.name_ru,
+          name_kk: profession.name_kk,
+          category_ru: profession.category_ru,
+          category_kk: profession.category_kk,
+        })),
+        intelligences: calculateIntelligences(answers),
+      };
+      const result: AssessmentResult = { ...baseResult, interpretation: await enrichInterpretation(baseResult, answers) };
+      if (activeUser) saveResult(activeUser.id, result);
       navigate("/results", { state: { result }, replace: true });
     } catch {
       setSubmitError(true);
     } finally {
-      window.clearTimeout(timeout);
       setSubmitting(false);
     }
   };
   const answered = Object.keys(answers).length;
+  if (!activeUser) return <Navigate to="/login" replace />;
+  if (!activeUser.firstName.trim() || !activeUser.lastName.trim()) return <Navigate to="/profile" replace />;
   return <><TestHeader /><main>
     <section className="test-shell">
       <div className="test-story-progress" aria-hidden="true">
@@ -246,11 +298,13 @@ function ResultsPage() {
   const lang = useLang();
   const navigate = useNavigate();
   const location = useLocation();
-  const [result] = useState(() => (location.state as { result?: AssessmentResult } | null)?.result);
+  const session = loadSession();
+  const activeUser = session?.role === "user" ? findUser(session.userId) : undefined;
+  const [result] = useState(() => (location.state as { result?: AssessmentResult } | null)?.result ?? activeUser?.result);
   useEffect(() => {
     if (location.state) window.history.replaceState({}, document.title, location.pathname);
   }, [location.pathname, location.state]);
-  if (!result) return <Shell><div className="empty"><h1>{t("resultExpired")}</h1><p>{t("resultExpiredText")}</p><Button type="primary" onClick={() => navigate("/test")}>{t("start")}</Button></div></Shell>;
+  if (!result) return <Navigate to={activeUser ? "/test" : "/login"} replace />;
   const scaleProfiles = result.scales.map((scale) => {
     const firstLeads = scale.firstScore >= scale.secondScore;
     return {
@@ -260,27 +314,28 @@ function ResultsPage() {
       balance: Math.abs(scale.firstScore - scale.secondScore),
     };
   }).sort((a, b) => b.balance - a.balance);
-  const strongestProfile = scaleProfiles[0]?.label ?? "";
   const maxProfileValue = 6;
+  const levelLabel = (balance: number) => lang === "kk"
+    ? (balance >= 4 ? "айқын көрінеді" : balance >= 2 ? "тұрақты көрінеді" : "екі тәсіл де қолжетімді")
+    : (balance >= 4 ? "выражен явно" : balance >= 2 ? "проявляется устойчиво" : "доступны обе стратегии");
   return <Shell>
     <section className="result-head">
-      <p className="eyebrow">ADAM / RESULT</p>
       <h1>{t("resultsTitle")}</h1>
       <p className="result-summary">{lang === "kk"
-        ? `Саған «${strongestProfile}» тәсілі жақын. Төменде оны оқу мен мамандық таңдауда қалай қолдануға болатыны көрсетілген.`
-        : `Тебе ближе подход «${strongestProfile}». Ниже — как это проявляется в работе и какие направления стоит исследовать.`}</p>
+        ? "Төмендегі бейін жауаптарыңда көрінген жұмыс тәсілдерін көрсетеді. Бірнеше тәсіл бірдей айқын болуы мүмкін — бұл қалыпты жағдай."
+        : "Профиль показывает способы работы, которые проявились в твоих ответах. Несколько способов могут быть выражены одинаково — это нормально."}</p>
     </section>
     <section className="work-dashboard">
       <div className="dashboard-heading">
-        <div><p className="eyebrow">WORK DNA</p><h2>{t("topProfiles")}</h2></div>
+        <div><h2>{t("topProfiles")}</h2></div>
         <p>{lang === "kk" ? "Бұл рейтинг емес. Диаграмма тапсырмаларға қай тәсілмен кірісу саған табиғи екенін көрсетеді." : "Это не оценка и не рейтинг. Диаграмма показывает, какие способы решать задачи даются тебе естественнее."}</p>
       </div>
       <div className="profile-highlights">
         {scaleProfiles.slice(0, 3).map((profile, i) =>
-          <article className={i === 0 ? "primary" : ""} key={profile.key}>
+          <article key={profile.key}>
             <span>{String(i + 1).padStart(2, "0")}</span>
             <h3>{profile.label}</h3>
-            <p>{lang === "kk" ? (i === 0 ? "Негізгі тәсіл" : "Қосымша күш") : (i === 0 ? "Основной способ" : "Дополняющая сила")}</p>
+            <p>{levelLabel(profile.balance)}</p>
           </article>)}
       </div>
       <div className="work-map">
@@ -289,25 +344,30 @@ function ResultsPage() {
             <span className="work-map-index">{String(index + 1).padStart(2, "0")}</span>
             <span className="work-map-label">{profile.label}</span>
             <div className="work-map-track"><i style={{ width: `${Math.max(18, profile.value / maxProfileValue * 100)}%`, animationDelay: `${index * 70}ms` }} /></div>
-            <b>{index < 2 ? (lang === "kk" ? "күшті" : "сильная") : index < 4 ? (lang === "kk" ? "тұрақты" : "устойчивая") : (lang === "kk" ? "қосымша" : "дополняющая")}</b>
+            <b>{levelLabel(profile.balance)}</b>
           </div>)}
       </div>
     </section>
     <section className="recommendation-section">
-      <div className="recommendation-heading"><div><p className="eyebrow">CAREER MAP</p><h2>{t("recommendations")}</h2></div>
+      <div className="recommendation-heading"><div><h2>{t("recommendations")}</h2></div>
         <p>{lang === "kk" ? "Алдымен осы бағыттарды зертте: сипаттаманы оқы, маманмен сөйлес және шағын тапсырма жасап көр." : "Начни исследование с этих направлений: изучи задачи, поговори со специалистом и попробуй небольшой проект."}</p></div>
       <div className="recommendations">
-        {result.professions.slice(0, 10).map((profession, index) =>
-          <article className={index < 3 ? "featured" : ""} key={profession.id} style={{ animationDelay: `${index * 55}ms` }}>
+        {result.professions.slice(0, 10).map((profession, index) => { const detail = professions.find((item) => item.id === profession.id); return <article className={index < 3 ? "featured" : ""} key={profession.id} style={{ animationDelay: `${index * 55}ms` }}>
             <div className="rec-rank">{String(index + 1).padStart(2, "0")}</div>
             <div className="rec-main"><Tag>{lang === "kk" ? profession.category_kk : profession.category_ru}</Tag>
               <h3>{lang === "kk" ? profession.name_kk : profession.name_ru}</h3>
+              <p>{lang === "kk" ? `${profession.category_kk} саласындағы міндеттер мен жұмыс ортасын зерттеуге арналған бағыт.` : detail?.description_ru}</p>
+              {detail && <div className="rec-gop"><b>{detail.gop_code}</b><span>{lang === "kk" ? "Білім беру бағдарламаларының тобы" : detail.gop_name}</span></div>}
             </div>
-          </article>)}
+          </article>})}
       </div>
     </section>
     <aside className="disclaimer">{t("disclaimer")}</aside>
-    <div className="center"><Button onClick={() => navigate("/test", { replace: true })}>{t("restart")}</Button></div>
+    <div className="center result-actions">
+      {activeUser && <Button type="primary" onClick={() => navigate(`/report/${activeUser.id}`)}>{lang === "kk" ? "PDF есебін ашу" : "Открыть PDF-отчёт"}</Button>}
+      <Button onClick={() => navigate("/test", { replace: true })}>{t("restart")}</Button>
+      <Button onClick={() => { saveSession(null); navigate("/login", { replace:true }); }}>{lang === "kk" ? "Шығу" : "Выйти"}</Button>
+    </div>
   </Shell>;
 }
 
@@ -322,8 +382,8 @@ function Catalog() {
     return name.toLowerCase().includes(search.toLowerCase()) && (category === "all" || profession.category_ru === category);
   }).slice(0, 60);
   return <Shell><section className="catalog">
-    <p className="eyebrow">744 / KZ</p><h1>{t("catalogTitle")}</h1>
-    <div className="filters">
+    <div className="catalog-intro"><div><h1>{t("catalogTitle")}</h1><p>{t("catalogLead")}</p></div><strong>{filtered.length}<span>{t("catalogShown")}</span></strong></div>
+    <div className="filters catalog-filter-panel">
       <Input size="large" prefix={<SearchOutlined />} placeholder={t("search")} value={search} onChange={(event) => setSearch(event.target.value)} />
       <Select size="large" value={category} onChange={setCategory} options={[
         { value: "all", label: t("all") }, ...categories.map((item) => ({ value: item, label: item })),
@@ -334,6 +394,8 @@ function Catalog() {
         <span className="profession-number">{String(profession.id).padStart(3, "0")}</span>
         <p className="profession-category">{lang === "kk" ? profession.category_kk : profession.category_ru}</p>
         <h2>{lang === "kk" ? profession.name_kk : profession.name_ru}</h2>
+        <p className="profession-description">{lang === "kk" ? `${profession.category_kk} саласындағы міндеттерді, құралдарды және жұмыс ортасын зерттеуге арналған кәсіби бағыт.` : profession.description_ru}</p>
+        <div className="profession-gop"><b>{profession.gop_code}</b><span>{lang === "kk" ? "Білім беру бағдарламаларының тобы" : profession.gop_name}</span></div>
       </article>)}</div>
   </section></Shell>;
 }
@@ -344,5 +406,9 @@ export function App() {
     <Route path="/test" element={<TestPage />} />
     <Route path="/results" element={<ResultsPage />} />
     <Route path="/professions" element={<Catalog />} />
+    <Route path="/login" element={<LoginPage />} />
+    <Route path="/profile" element={<ProfilePage />} />
+    <Route path="/admin" element={<AdminPage />} />
+    <Route path="/report/:id" element={<ReportPage />} />
   </Routes>;
 }
