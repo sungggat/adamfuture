@@ -66,10 +66,9 @@ export function LoginPage() {
       <p className="eyebrow">{lang === "kk" ? "ЖЕКЕ КАБИНЕТ" : "ЛИЧНЫЙ КАБИНЕТ"}</p>
       <h1>{lang === "kk" ? "Код арқылы кір" : "Войдите по коду"}</h1>
       <p>{lang === "kk" ? "Кәсіби бағдар маманы берген лицензиялық кодты енгіз. Құпиясөз бен тіркелу қажет емес." : "Введите лицензионный код, который выдал профориентолог. Пароль и регистрация не нужны."}</p>
-      <Input size="large" value={code} onChange={(e) => { setCode(e.target.value); setError(""); }} onPressEnter={login} placeholder="ADAM-XXXX-0000" />
+      <Input.Password size="large" value={code} onChange={(e) => { setCode(e.target.value); setError(""); }} onPressEnter={login} placeholder={lang === "kk" ? "Лицензиялық код" : "Лицензионный код"} autoComplete="current-password" />
       {error && <p className="form-error">{error}</p>}
       <Button size="large" type="primary" block onClick={login}>{lang === "kk" ? "Жалғастыру" : "Продолжить"}</Button>
-      <div className="demo-access"><span>{lang === "kk" ? "Жергілікті демонстрация үшін" : "Для локальной демонстрации"}</span><code>{lang === "kk" ? "Оқушы" : "Ученик"}: ADAM-DEMO-001</code><code>{lang === "kk" ? "Әкімші" : "Администратор"}: ADAM-ADMIN-2026</code></div>
     </section>
   </main>;
 }

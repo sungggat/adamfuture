@@ -46,13 +46,11 @@ services:
   reports-init:
     image: alpine:3.22
     restart: "no"
+    user: "0:0"
     command: ["sh", "-c", "mkdir -p /data/reports && chown -R 65532:65532 /data/reports && chmod 750 /data/reports"]
     volumes:
       - reports_data:/data/reports
     networks: [app]
-    cap_drop: [ALL]
-    cap_add: [CHOWN, FOWNER]
-    security_opt: ["no-new-privileges:true"]
 
   frontend:
     build: ./frontend

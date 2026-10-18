@@ -2,11 +2,11 @@ import type { AssessmentResult, DemoSession, DemoUser, IntelligenceResult } from
 
 const USERS_KEY = "adam-demo-users-v2";
 const SESSION_KEY = "adam-demo-session-v2";
-export const ADMIN_CODE = "ADAM-ADMIN-2026";
+export const ADMIN_CODE = "ADAM-ADMIN-X7Q9-M4VK-2P8C-6R5T";
 
 const seedUsers: DemoUser[] = [{
   id: "demo-student",
-  code: "ADAM-DEMO-001",
+  code: "ADAM-STUDENT-7K9M-4Q2X-8V6P",
   firstName: "",
   lastName: "",
   birthYear: "",
@@ -20,7 +20,19 @@ const seedUsers: DemoUser[] = [{
 export function loadUsers(): DemoUser[] {
   try {
     const stored = localStorage.getItem(USERS_KEY);
-    if (stored) return JSON.parse(stored) as DemoUser[];
+    if (stored) {
+      const users = JSON.parse(stored) as DemoUser[];
+      let migrated = false;
+      const updated = users.map((user) => {
+        if (user.id === "demo-student" && user.code === "ADAM-DEMO-001") {
+          migrated = true;
+          return { ...user, code: "ADAM-STUDENT-7K9M-4Q2X-8V6P" };
+        }
+        return user;
+      });
+      if (migrated) localStorage.setItem(USERS_KEY, JSON.stringify(updated));
+      return updated;
+    }
   } catch { /* Reset corrupted local demo state. */ }
   localStorage.setItem(USERS_KEY, JSON.stringify(seedUsers));
   return seedUsers;
@@ -49,7 +61,9 @@ export function createUser(input: Pick<DemoUser, "firstName" | "lastName" | "gra
   const users = loadUsers();
   let code = "";
   do {
-    code = `ADAM-${Math.random().toString(36).slice(2, 6).toUpperCase()}-${Math.floor(1000 + Math.random() * 9000)}`;
+    const token = crypto.randomUUID().replaceAll("-", "").slice(0, 24).toUpperCase();
+    const groups = token.match(/.{6}/g) ?? [token];
+    code = `ADAM-${groups.join("-")}`;
   } while (users.some((user) => user.code === code));
   const user: DemoUser = {
     id: crypto.randomUUID(), code,

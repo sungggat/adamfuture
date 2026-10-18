@@ -18,7 +18,7 @@ await page.screenshot({ path: "/tmp/adam-home-checked.png", fullPage: true });
 console.log("STEP login");
 await page.locator(".actions .ant-btn-primary").click();
 await page.waitForURL("**/login");
-await page.locator(".login-card .ant-input").fill("ADAM-DEMO-001");
+await page.locator(".login-card .ant-input").fill("ADAM-STUDENT-7K9M-4Q2X-8V6P");
 await page.locator(".login-card .ant-btn-primary").click();
 await page.waitForURL("**/profile");
 await page.locator(".profile-form-grid input").nth(0).fill("Аян");
